@@ -1,0 +1,24 @@
+{
+    "name": "hanser-ui",
+    "version": "1.0.0",
+    "description": "hanser弹幕组UI库(Vue版)",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ZCreturn0/hanser-ui.git"
+    },
+    "keywords": [
+        "hanser",
+        "弹幕组",
+        "UI"
+    ],
+    "author": "hanser弹幕组技术团队",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ZCreturn0/hanser-ui/issues"
+    },
+    "homepage": "https://github.com/ZCreturn0/hanser-ui#readme"
+}
