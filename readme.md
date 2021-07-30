@@ -29,4 +29,4 @@
 
 3. 创建新组件
 
-   2.1 运行 **`npm run component 组件名 注释`** 创建组件
+    运行 **`npm run component 组件名 注释`** 创建组件
