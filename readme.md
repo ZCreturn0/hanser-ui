@@ -27,6 +27,8 @@
 
     2.2 组件使用时使用小写加 `-` 形式:<br>组件类: HButton<br>使用:`<h-button></h-button>`
 
+    2.3 参考 `h-standard` 组件
+
 3. 创建新组件
 
     运行 **`npm run component 组件名 注释`** 创建组件
