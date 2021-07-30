@@ -36,8 +36,44 @@ const makeComponent = () => {
     }
     if (!arr[0].startsWith('h-')) {
         console.error('组件名必须以 h- 开头');
+        return;
     }
-    console.log('done');
+    // 生成组件的目录
+    const rootPath = path.resolve('./components');
+    const workPath = path.resolve(rootPath, arr[0]);
+    const componentName = toHumpNaming(arr[0]);
+    const htmlContent = `<template>\n${space(4)}<!-- ${arr[1]} -->\n${space(4)}<div class="${arr[0]}">\n${space(8)}\n${space(4)}</div>\n</template>`;
+    const scriptContent = `<script>\nexport default {\n${space(4)}name: '${arr[0]}',\n${space(4)}data () {\n${space(8)}return {\n${space(12)}\n${space(8)}}\n${space(4)}}\n}\n</script>`;
+    const styleContent = `<style scoped>\n\n</style>`;
+    const vueContent = `${htmlContent}\n\n${scriptContent}\n\n${styleContent}`;
+    const jsContent = `import ${componentName} from './main.vue';\n\nexport default ${componentName};\n`;
+
+    // 开始建文件夹 -> 写文件
+    fs.mkdir(workPath, (err) => {
+        if (err) {
+            throw err;
+        }
+        fs.writeFile(
+            path.resolve(workPath, 'index.js'),
+            jsContent,
+            'utf-8',
+            (err) => {
+                if (err) {
+                    throw err;
+                }
+            }
+        );
+        fs.writeFile(
+            path.resolve(workPath, 'main.vue'),
+            vueContent,
+            'utf-8',
+            (err) => {
+                if (err) {
+                    throw err;
+                }
+            }
+        );
+    });
 };
 
 makeComponent();
