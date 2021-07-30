@@ -48,5 +48,8 @@ export default {
 /* 使用 BEM 命名规范: 块__元素--修饰符 */
 .search-input--active {}
 .search-result__post-title--visited {}
-.swiper__cart--left {}
+.swiper__cart--left {
+    /* 颜色统一使用16进制 */
+    color: #ccc;
+}
 </style>
