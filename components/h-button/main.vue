@@ -23,5 +23,6 @@ export default {
 </script>
 
 <style scoped>
-@import 'hanser-css/components/h-button/index.css';
+/* 前面加上 '/' 表示根路径，否则可能报错 */
+@import '/hanser-css/components/h-button/index.css';
 </style>
