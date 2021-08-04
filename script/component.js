@@ -44,9 +44,10 @@ const makeComponent = () => {
     const componentName = toHumpNaming(arr[0]);
     const htmlContent = `<template>\n${space(4)}<!-- ${arr[1]} -->\n${space(4)}<div class="${arr[0]}">\n${space(8)}\n${space(4)}</div>\n</template>`;
     const scriptContent = `<script>\nexport default {\n${space(4)}name: '${arr[0]}',\n${space(4)}data () {\n${space(8)}return {\n${space(12)}\n${space(8)}}\n${space(4)}}\n}\n</script>`;
-    const styleContent = `<style scoped>\n\n</style>`;
+    const styleContent = `<style scoped>\n\n@import './index.css';\n\n</style>`;
     const vueContent = `${htmlContent}\n\n${scriptContent}\n\n${styleContent}`;
     const jsContent = `import ${componentName} from './main.vue';\n\nexport default ${componentName};\n`;
+    const cssContent = `@import '../../theme/var.css';\n\n.${arr[0]} {}`;
 
     // 开始建文件夹 -> 写文件
     fs.mkdir(workPath, (err) => {
@@ -66,6 +67,16 @@ const makeComponent = () => {
         fs.writeFile(
             path.resolve(workPath, 'main.vue'),
             vueContent,
+            'utf-8',
+            (err) => {
+                if (err) {
+                    throw err;
+                }
+            }
+        );
+        fs.writeFile(
+            path.resolve(workPath, 'index.css'),
+            cssContent,
             'utf-8',
             (err) => {
                 if (err) {

@@ -23,5 +23,5 @@ export default {
 </script>
 
 <style scoped>
-@import 'hanser-css/components/h-button/index.css';
+@import './index.css';
 </style>

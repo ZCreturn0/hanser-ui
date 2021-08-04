@@ -22,8 +22,5 @@
     "bugs": {
         "url": "https://github.com/ZCreturn0/hanser-ui/issues"
     },
-    "dependencies": {
-        "hanser-css": "git+https://github.com/ZCreturn0/hanser-css.git#master"
-    },
     "homepage": "https://github.com/ZCreturn0/hanser-ui#readme"
 }

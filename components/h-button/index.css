@@ -1,0 +1,6 @@
+@import '../../theme/var.css';
+
+.h-button {
+    cursor: pointer;
+    background-color: var(--theme-color-primary);
+}

@@ -37,19 +37,6 @@ export default {
 </script>
 
 <style scoped>
-/* 尽量给要写样式的元素一个类 */
-.a {}
-.b {}
-.c {}
-
-/* 避免写大于3层的嵌套 */
-.aa .aaa .aaa {}
-
-/* 使用 BEM 命名规范: 块__元素--修饰符 */
-.search-input--active {}
-.search-result__post-title--visited {}
-.swiper__cart--left {
-    /* 颜色统一使用16进制 */
-    color: #ccc;
-}
+/* 统一通过引入来加载css */
+@import './index.css';
 </style>
