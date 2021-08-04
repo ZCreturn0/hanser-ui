@@ -1,6 +1,10 @@
 @import '../../theme/var.css';
 
 .h-button {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
     cursor: pointer;
     background-color: var(--theme-color-primary);
+    color: var(--theme-text-color);
 }

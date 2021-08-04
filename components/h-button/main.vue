@@ -1,8 +1,8 @@
 <template>
     <!-- 按钮 -->
-    <div class="h-button" @click="handleClick">
+    <button class="h-button" @click="handleClick">
         <slot name="text" />
-    </div>
+    </button>
 </template>
 
 <script>
