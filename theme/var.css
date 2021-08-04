@@ -54,6 +54,7 @@
     --theme-bg-block: #ffffff;
     --theme-bg-block-dark: #f5f6f7;
     --theme-text-color: #333333;
+    --theme-text-color-white: #fff;
     --theme-text-color-auxiliary: #666666;
     --theme-text-color-secondary: #999999;
     --theme-text-color-disabled: #cccccc;
@@ -62,7 +63,7 @@
     --theme-border-color-dark: #e6e6e6;
     --theme-border-color-divider: #e6e6e6;
     --theme-hover-color: #f0f0f0;
-    --theme-hover-color-primary: #7cb043;
+    --theme-hover-color-primary: #f7835c;
     --theme-active-color: #f0f0f0;
     --theme-button-border-radius: 100px;
 }
