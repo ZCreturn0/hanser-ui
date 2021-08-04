@@ -1,7 +1,7 @@
 <template>
     <!-- 按钮 -->
     <div class="h-button" @click="handleClick">
-        {{ text }}
+        <slot name="text" />
     </div>
 </template>
 
@@ -13,7 +13,6 @@ export default {
 
         }
     },
-    props: ['text'],
     methods: {
         handleClick () {
             // 事件名使用 '-' 连接
