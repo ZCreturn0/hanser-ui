@@ -2,9 +2,13 @@
 
 .h-button {
     display: inline-block;
-    padding: 5px 10px;
+    padding: 15px 20px;
     border-radius: 5px;
     cursor: pointer;
     background-color: var(--theme-color-primary);
-    color: var(--theme-text-color);
+    color: var(--theme-text-color-white);
+}
+
+.h-button:hover {
+    background-color: var(--theme-hover-color-primary);
 }
