@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "component": "node script/component.js"
+        "component": "node script/component.js",
+        "build-js": "node script/css-to-js.js"
     },
     "repository": {
         "type": "git",
