@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主题色展示</title>
+    <link type="text/css" rel="styleSheet" href="./var.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 15px;
+            font-size: 14px;
+            background-color: var(--theme-bg-global);
+        }
+        .box {
+            width: 250px;
+            padding: 20px 10px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .box div {
+            line-height: 30px;
+            text-shadow: 0px 0px 5px #fff;
+            color: var(--theme-text-color);
+        }
+        /* .--theme-color-primary {
+            background-color: var(--theme-color-primary);
+        }
+        .--theme-color-success {
+            background-color: var(--theme-color-success);
+        }
+        .--theme-color-warning {
+            background-color: var(--theme-color-warning);
+        } */
+        /* css-template */
+    </style>
+</head>
+<body data-theme="light">
+    <div class="wrapper">
+        <!-- <div class="box --theme-color-primary">
+            <div>--theme-color-primary</div>
+            <div>COLOR_PRIMARY</div>
+            <div>主色</div>
+        </div>
+        <div class="box --theme-color-success">
+            <div>--theme-color-success</div>
+            <div>COLOR_SUCCESS</div>
+            <div>成功色</div>
+        </div>
+        <div class="box --theme-color-warning">
+            <div>--theme-color-warning</div>
+            <div>COLOR_WARNING</div>
+            <div>警告色</div>
+        </div>
+        <div class="box --theme-color-warning">
+            <div>--theme-color-warning</div>
+            <div>COLOR_WARNING</div>
+            <div>警告色</div>
+        </div>
+        <div class="box --theme-color-warning">
+            <div>--theme-color-warning</div>
+            <div>COLOR_WARNING</div>
+            <div>警告色</div>
+        </div>
+        <div class="box --theme-color-warning">
+            <div>--theme-color-warning</div>
+            <div>COLOR_WARNING</div>
+            <div>警告色</div>
+        </div>
+        <div class="box --theme-color-warning">
+            <div>--theme-color-warning</div>
+            <div>COLOR_WARNING</div>
+            <div>警告色</div>
+        </div>
+        <div class="box --theme-color-warning">
+            <div>--theme-color-warning</div>
+            <div>COLOR_WARNING</div>
+            <div>警告色</div>
+        </div>
+        <div class="box --theme-color-warning">
+            <div>--theme-color-warning</div>
+            <div>COLOR_WARNING</div>
+            <div>警告色</div>
+        </div>
+        <div class="box --theme-color-warning">
+            <div>--theme-color-warning</div>
+            <div>COLOR_WARNING</div>
+            <div>警告色</div>
+        </div>
+        <div class="box --theme-color-warning">
+            <div>--theme-color-warning</div>
+            <div>COLOR_WARNING</div>
+            <div>警告色</div>
+        </div>
+        <div class="box --theme-color-warning">
+            <div>--theme-color-warning</div>
+            <div>COLOR_WARNING</div>
+            <div>警告色</div>
+        </div>
+        <div class="box --theme-color-warning">
+            <div>--theme-color-warning</div>
+            <div>COLOR_WARNING</div>
+            <div>警告色</div>
+        </div> -->
+        <!-- html-template -->
+    </div>
+</body>
+</html>

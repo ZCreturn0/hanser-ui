@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主题色展示</title>
+    <link type="text/css" rel="styleSheet" href="./var.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 15px;
+            font-size: 14px;
+            background-color: var(--theme-bg-global);
+        }
+        .box {
+            width: 250px;
+            padding: 20px 10px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .box div {
+            line-height: 30px;
+            text-shadow: 0px 0px 5px #fff;
+            color: var(--theme-text-color);
+        }
+        /* .--theme-color-primary {
+            background-color: var(--theme-color-primary);
+        }
+        .--theme-color-success {
+            background-color: var(--theme-color-success);
+        }
+        .--theme-color-warning {
+            background-color: var(--theme-color-warning);
+        } */
+                .--theme-color-primary {
+            background-color: var(--theme-color-primary);
+        }
+        .--theme-color-success {
+            background-color: var(--theme-color-success);
+        }
+        .--theme-color-warning {
+            background-color: var(--theme-color-warning);
+        }
+        .--theme-color-danger {
+            background-color: var(--theme-color-danger);
+        }
+        .--theme-color-secondary {
+            background-color: var(--theme-color-secondary);
+        }
+        .--theme-bg-global {
+            background-color: var(--theme-bg-global);
+        }
+        .--theme-bg-primary {
+            background-color: var(--theme-bg-primary);
+        }
+        .--theme-bg-success {
+            background-color: var(--theme-bg-success);
+        }
+        .--theme-bg-warning {
+            background-color: var(--theme-bg-warning);
+        }
+        .--theme-bg-danger {
+            background-color: var(--theme-bg-danger);
+        }
+        .--theme-bg-secondary {
+            background-color: var(--theme-bg-secondary);
+        }
+        .--theme-bg-block {
+            background-color: var(--theme-bg-block);
+        }
+        .--theme-bg-block-dark {
+            background-color: var(--theme-bg-block-dark);
+        }
+        .--theme-bg-reverse {
+            background-color: var(--theme-bg-reverse);
+        }
+        .--theme-text-color {
+            background-color: var(--theme-text-color);
+        }
+        .--theme-text-color-auxiliary {
+            background-color: var(--theme-text-color-auxiliary);
+        }
+        .--theme-text-color-secondary {
+            background-color: var(--theme-text-color-secondary);
+        }
+        .--theme-text-color-white {
+            background-color: var(--theme-text-color-white);
+        }
+        .--theme-text-color-disabled {
+            background-color: var(--theme-text-color-disabled);
+        }
+        .--theme-text-color-link {
+            background-color: var(--theme-text-color-link);
+        }
+        .--theme-text-color-reverse {
+            background-color: var(--theme-text-color-reverse);
+        }
+        .--theme-border-color {
+            background-color: var(--theme-border-color);
+        }
+        .--theme-border-color-dark {
+            background-color: var(--theme-border-color-dark);
+        }
+        .--theme-border-color-divider {
+            background-color: var(--theme-border-color-divider);
+        }
+        .--theme-border-color-input {
+            background-color: var(--theme-border-color-input);
+        }
+        .--theme-hover-color {
+            background-color: var(--theme-hover-color);
+        }
+        .--theme-hover-color-primary {
+            background-color: var(--theme-hover-color-primary);
+        }
+        .--theme-active-color {
+            background-color: var(--theme-active-color);
+        }
+
+    </style>
+</head>
+<body data-theme="light">
+    <div class="wrapper">
+        <!-- <div class="box --theme-color-primary">
+            <div>--theme-color-primary</div>
+            <div>COLOR_PRIMARY</div>
+            <div>主色</div>
+        </div>
+        <div class="box --theme-color-success">
+            <div>--theme-color-success</div>
+            <div>COLOR_SUCCESS</div>
+            <div>成功色</div>
+        </div>
+        <div class="box --theme-color-warning">
+            <div>--theme-color-warning</div>
+            <div>COLOR_WARNING</div>
+            <div>警告色</div>
+        </div>
+        <div class="box --theme-color-warning">
+            <div>--theme-color-warning</div>
+            <div>COLOR_WARNING</div>
+            <div>警告色</div>
+        </div>
+        <div class="box --theme-color-warning">
+            <div>--theme-color-warning</div>
+            <div>COLOR_WARNING</div>
+            <div>警告色</div>
+        </div>
+        <div class="box --theme-color-warning">
+            <div>--theme-color-warning</div>
+            <div>COLOR_WARNING</div>
+            <div>警告色</div>
+        </div>
+        <div class="box --theme-color-warning">
+            <div>--theme-color-warning</div>
+            <div>COLOR_WARNING</div>
+            <div>警告色</div>
+        </div>
+        <div class="box --theme-color-warning">
+            <div>--theme-color-warning</div>
+            <div>COLOR_WARNING</div>
+            <div>警告色</div>
+        </div>
+        <div class="box --theme-color-warning">
+            <div>--theme-color-warning</div>
+            <div>COLOR_WARNING</div>
+            <div>警告色</div>
+        </div>
+        <div class="box --theme-color-warning">
+            <div>--theme-color-warning</div>
+            <div>COLOR_WARNING</div>
+            <div>警告色</div>
+        </div>
+        <div class="box --theme-color-warning">
+            <div>--theme-color-warning</div>
+            <div>COLOR_WARNING</div>
+            <div>警告色</div>
+        </div>
+        <div class="box --theme-color-warning">
+            <div>--theme-color-warning</div>
+            <div>COLOR_WARNING</div>
+            <div>警告色</div>
+        </div>
+        <div class="box --theme-color-warning">
+            <div>--theme-color-warning</div>
+            <div>COLOR_WARNING</div>
+            <div>警告色</div>
+        </div> -->
+                <div class="box --theme-color-primary">
+            <div>--theme-color-primary</div>
+            <div>COLOR_PRIMARY</div>
+            <div>主色</div>
+        </div>
+        <div class="box --theme-color-success">
+            <div>--theme-color-success</div>
+            <div>COLOR_SUCCESS</div>
+            <div>成功色</div>
+        </div>
+        <div class="box --theme-color-warning">
+            <div>--theme-color-warning</div>
+            <div>COLOR_WARNING</div>
+            <div>警告色</div>
+        </div>
+        <div class="box --theme-color-danger">
+            <div>--theme-color-danger</div>
+            <div>COLOR_DANGER</div>
+            <div>危险，错误色</div>
+        </div>
+        <div class="box --theme-color-secondary">
+            <div>--theme-color-secondary</div>
+            <div>COLOR_SECONDARY</div>
+            <div>次要色</div>
+        </div>
+        <div class="box --theme-bg-global">
+            <div>--theme-bg-global</div>
+            <div>BG_GLOBAL</div>
+            <div>全局背景色</div>
+        </div>
+        <div class="box --theme-bg-primary">
+            <div>--theme-bg-primary</div>
+            <div>BG_PRIMARY</div>
+            <div>主题背景色</div>
+        </div>
+        <div class="box --theme-bg-success">
+            <div>--theme-bg-success</div>
+            <div>BG_SUCCESS</div>
+            <div>成功背景色</div>
+        </div>
+        <div class="box --theme-bg-warning">
+            <div>--theme-bg-warning</div>
+            <div>BG_WARNING</div>
+            <div>警告背景色</div>
+        </div>
+        <div class="box --theme-bg-danger">
+            <div>--theme-bg-danger</div>
+            <div>BG_DANGER</div>
+            <div>危险，错误背景色</div>
+        </div>
+        <div class="box --theme-bg-secondary">
+            <div>--theme-bg-secondary</div>
+            <div>BG_SECONDARY</div>
+            <div>次要背景色</div>
+        </div>
+        <div class="box --theme-bg-block">
+            <div>--theme-bg-block</div>
+            <div>BG_BLOCK</div>
+            <div>模块背景色</div>
+        </div>
+        <div class="box --theme-bg-block-dark">
+            <div>--theme-bg-block-dark</div>
+            <div>BG_BLOCK_DARK</div>
+            <div>模块深色背景</div>
+        </div>
+        <div class="box --theme-bg-reverse">
+            <div>--theme-bg-reverse</div>
+            <div>BG_REVERSE</div>
+            <div>全局背景反色</div>
+        </div>
+        <div class="box --theme-text-color">
+            <div>--theme-text-color</div>
+            <div>TEXT_COLOR</div>
+            <div>字体颜色</div>
+        </div>
+        <div class="box --theme-text-color-auxiliary">
+            <div>--theme-text-color-auxiliary</div>
+            <div>TEXT_COLOR_AUXILIARY</div>
+            <div>辅助字体颜色</div>
+        </div>
+        <div class="box --theme-text-color-secondary">
+            <div>--theme-text-color-secondary</div>
+            <div>TEXT_COLOR_SECONDARY</div>
+            <div>次要字体颜色</div>
+        </div>
+        <div class="box --theme-text-color-white">
+            <div>--theme-text-color-white</div>
+            <div>TEXT_COLOR_WHITE</div>
+            <div>字体白色</div>
+        </div>
+        <div class="box --theme-text-color-disabled">
+            <div>--theme-text-color-disabled</div>
+            <div>TEXT_COLOR_DISABLED</div>
+            <div>禁用字体颜色</div>
+        </div>
+        <div class="box --theme-text-color-link">
+            <div>--theme-text-color-link</div>
+            <div>TEXT_COLOR_LINK</div>
+            <div>链接字体颜色</div>
+        </div>
+        <div class="box --theme-text-color-reverse">
+            <div>--theme-text-color-reverse</div>
+            <div>TEXT_COLOR_REVERSE</div>
+            <div>字体反色</div>
+        </div>
+        <div class="box --theme-border-color">
+            <div>--theme-border-color</div>
+            <div>BORDER_COLOR</div>
+            <div>边框颜色</div>
+        </div>
+        <div class="box --theme-border-color-dark">
+            <div>--theme-border-color-dark</div>
+            <div>BORDER_COLOR_DARK</div>
+            <div>深色边框颜色</div>
+        </div>
+        <div class="box --theme-border-color-divider">
+            <div>--theme-border-color-divider</div>
+            <div>BORDER_COLOR_DIVIDER</div>
+            <div>分割线颜色</div>
+        </div>
+        <div class="box --theme-border-color-input">
+            <div>--theme-border-color-input</div>
+            <div>BORDER_COLOR_INPUT</div>
+            <div>输入框边框颜色</div>
+        </div>
+        <div class="box --theme-hover-color">
+            <div>--theme-hover-color</div>
+            <div>HOVER_COLOR</div>
+            <div>全局默认悬浮色</div>
+        </div>
+        <div class="box --theme-hover-color-primary">
+            <div>--theme-hover-color-primary</div>
+            <div>HOVER_COLOR_PRIMARY</div>
+            <div>主色悬浮</div>
+        </div>
+        <div class="box --theme-active-color">
+            <div>--theme-active-color</div>
+            <div>ACTIVE_COLOR</div>
+            <div>激活色</div>
+        </div>
+
+    </div>
+</body>
+</html>

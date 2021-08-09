@@ -6,7 +6,9 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "component": "node script/component.js",
-        "build-js": "node script/css-to-js.js"
+        "build-js": "node script/css-to-js.js",
+        "build-html": "node script/build-html.js",
+        "build-theme": "node script/css-to-js.js && node script/build-html.js"
     },
     "repository": {
         "type": "git",
