@@ -5,6 +5,7 @@
     padding: 15px 20px;
     border-radius: 5px;
     cursor: pointer;
+    border: none;
     background-color: var(--theme-color-primary);
     color: var(--theme-text-color-white);
 }
