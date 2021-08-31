@@ -21,6 +21,7 @@ export default {
             if (this.size && size.includes(this.size)) {
                 classes.push(`h-button--${this.size}`);
             }
+            return classes;
         }
     },
     methods: {
