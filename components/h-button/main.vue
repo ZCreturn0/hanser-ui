@@ -1,6 +1,6 @@
 <template>
     <!-- 按钮 -->
-    <button class="h-button" @click="handleClick">
+    <button class="h-button" @click="handleClick" :class="buttonClass">
         <slot name="text" />
     </button>
 </template>
@@ -11,6 +11,16 @@ export default {
     data () {
         return {
 
+        }
+    },
+    props: ['size'],
+    computed: {
+        buttonClass() {
+            const classes = [];
+            const size = ['medium', 'small', 'mini'];
+            if (this.size && size.includes(this.size)) {
+                classes.push(`h-button--${this.size}`);
+            }
         }
     },
     methods: {

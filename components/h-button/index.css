@@ -4,6 +4,7 @@
     display: inline-block;
     padding: 12px 20px;
     border-radius: 5px;
+    font-size: 14px;
     cursor: pointer;
     border: none;
     background-color: var(--theme-color-primary);
@@ -12,4 +13,19 @@
 
 .h-button:hover {
     background-color: var(--theme-hover-color-primary);
+}
+
+.h-button--medium {
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.h-button--small {
+    padding: 9px 15px;
+    font-size: 12px;
+}
+
+.h-button--mini {
+    padding: 7px 15px;
+    font-size: 12px;
 }
