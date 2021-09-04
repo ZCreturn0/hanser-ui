@@ -1,7 +1,7 @@
 <template>
     <!-- 输入框 -->
     <div class="h-input">
-        <input class="h-input__inner" :type="type" />
+        <input class="h-input__inner" :type="type" :value="value" @input="input" />
     </div>
 </template>
 
@@ -16,6 +16,18 @@ export default {
     props: {
         type: {
             default: 'text'
+        },
+        value: {
+            type: String,
+            default: ''
+        }
+    },
+    mounted() {
+        console.log('aaaa', this.value);
+    },
+    methods: {
+        input($event) {
+            this.$emit('input', $event.target.value);
         }
     }
 }
