@@ -4,6 +4,8 @@
     position: relative;
     font-size: 14px;
     display: inline-block;
+    background-color: var(--theme-input-bg-color);
+    color: var(--theme-input-text-color);
 }
 
 .h-input__inner {
@@ -28,4 +30,8 @@
 .h-input__inner:focus {
     outline: none;
     border-color: var(--theme-border-color-input-focus);
+}
+
+.h-input__inner::-webkit-input-placeholder {
+    color: var(--theme-input-placeholder-color);
 }
