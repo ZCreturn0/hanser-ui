@@ -27,11 +27,11 @@ export default {
             default: ''
         },
         bgColor: {
-            type: string,
+            type: String,
             default: 'transparent'
         },
         color: {
-            type: string,
+            type: String,
             default: '#333'
         }
     },
