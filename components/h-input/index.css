@@ -1,3 +1,31 @@
 @import '../../theme/var.css';
 
-.h-input {}
+.h-input {
+    position: relative;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.h-input__inner {
+    -webkit-appearance: none;
+    background-color: var(--theme-bg-global);
+    background-image: none;
+    border-radius: 4px;
+    border: 1px solid var(--theme-border-color-input);
+    box-sizing: border-box;
+    color: var(--theme-text-color);
+    display: inline-block;
+    font-size: inherit;
+    height: 40px;
+    line-height: 40px;
+    outline: none;
+    padding: 0 15px;
+    transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+    width: 100%;
+    cursor: pointer;
+}
+
+.h-input__inner:focus {
+    outline: none;
+    border-color: var(--theme-border-color-focus);
+}

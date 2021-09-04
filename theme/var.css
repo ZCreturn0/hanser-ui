@@ -22,6 +22,7 @@
     --theme-text-color-link: #456199;
     --theme-text-color-reverse: #fff;
     --theme-border-color: #f5f6f7;
+    --theme-border-color-focus: #7cb043;
     --theme-border-color-dark: #e6e6e6;
     --theme-border-color-divider: #ebebeb;
     --theme-border-color-input: #ccc;
@@ -53,6 +54,7 @@
     --theme-text-color-link: #ff7241;
     --theme-text-color-reverse: #fff;
     --theme-border-color: #ebebeb;
+    --theme-border-color-focus: #f7835c;
     --theme-border-color-dark: #e6e6e6;
     --theme-border-color-divider: #e6e6e6;
     --theme-border-color-input: #ccc;

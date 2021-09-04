@@ -1,7 +1,7 @@
 <template>
     <!-- 输入框 -->
     <div class="h-input">
-
+        <input class="h-input__inner" :type="type" />
     </div>
 </template>
 
@@ -12,6 +12,11 @@ export default {
         return {
 
         }
+    },
+    props: {
+        type: {
+            default: 'text'
+        }
     }
 }
 </script>
@@ -20,7 +25,4 @@ export default {
 
 @import './index.css';
 
-.h-input {
-    display: inline-block;
-}
 </style>
