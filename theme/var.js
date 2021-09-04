@@ -113,6 +113,11 @@ export const TEXT_COLOR_REVERSE = 'var(--theme-text-color-reverse)';
 export const BORDER_COLOR = 'var(--theme-border-color)';
 
 /**
+ * @description focus时边框色
+ */
+export const BORDER_COLOR_FOCUS = 'var(--theme-border-color-focus)';
+
+/**
  * @description 深色边框颜色
  */
 export const BORDER_COLOR_DARK = 'var(--theme-border-color-dark)';
@@ -141,4 +146,3 @@ export const HOVER_COLOR_PRIMARY = 'var(--theme-hover-color-primary)';
  * @description 激活色
  */
 export const ACTIVE_COLOR = 'var(--theme-active-color)';
-

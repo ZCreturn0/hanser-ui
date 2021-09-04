@@ -21,6 +21,7 @@ module.exports = {
     TEXT_COLOR_LINK: '链接字体颜色',
     TEXT_COLOR_REVERSE: '字体反色',
     BORDER_COLOR: '边框颜色',
+    BORDER_COLOR_FOCUS: 'focus时边框色',
     BORDER_COLOR_DARK: '深色边框颜色',
     BORDER_COLOR_DIVIDER: '分割线颜色',
     BORDER_COLOR_INPUT: '输入框边框颜色',
