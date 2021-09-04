@@ -1,7 +1,12 @@
 <template>
     <!-- 输入框 -->
     <div class="h-input">
-        <input class="h-input__inner" :type="type" :value="value" @input="input" />
+        <input
+            class="h-input__inner"
+            :type="type"
+            :value="value"
+            :style="style"
+            @input="input" />
     </div>
 </template>
 
@@ -20,10 +25,20 @@ export default {
         value: {
             type: String,
             default: ''
+        },
+        bgColor: {
+            type: string,
+            default: 'transparent'
+        },
+        color: {
+            type: string,
+            default: '#333'
         }
     },
-    mounted() {
-        console.log('aaaa', this.value);
+    computed: {
+        style() {
+            return `background-color: ${this.bgColor}; color: ${this.color}`;
+        }
     },
     methods: {
         input($event) {
