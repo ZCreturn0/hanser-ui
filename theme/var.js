@@ -113,11 +113,6 @@ export const TEXT_COLOR_REVERSE = 'var(--theme-text-color-reverse)';
 export const BORDER_COLOR = 'var(--theme-border-color)';
 
 /**
- * @description focus时边框色
- */
-export const BORDER_COLOR_FOCUS = 'var(--theme-border-color-focus)';
-
-/**
  * @description 深色边框颜色
  */
 export const BORDER_COLOR_DARK = 'var(--theme-border-color-dark)';
@@ -131,6 +126,11 @@ export const BORDER_COLOR_DIVIDER = 'var(--theme-border-color-divider)';
  * @description 输入框边框颜色
  */
 export const BORDER_COLOR_INPUT = 'var(--theme-border-color-input)';
+
+/**
+ * @description focus时边框色
+ */
+export const BORDER_COLOR_INPUT_FOCUS = 'var(--theme-border-color-focus)';
 
 /**
  * @description 全局默认悬浮色

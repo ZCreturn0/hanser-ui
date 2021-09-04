@@ -27,5 +27,5 @@
 
 .h-input__inner:focus {
     outline: none;
-    border-color: var(--theme-border-color-focus);
+    border-color: var(--theme-border-color-input-focus);
 }
