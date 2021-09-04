@@ -5,6 +5,7 @@
             class="h-input__inner"
             :type="type"
             :value="value"
+            :placeholder="placeholder"
             :style="style"
             @input="input" />
     </div>
@@ -33,6 +34,10 @@ export default {
         color: {
             type: String,
             default: '#333'
+        },
+        placeholder: {
+            type: String,
+            default: ''
         }
     },
     computed: {
