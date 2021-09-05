@@ -6,7 +6,6 @@
             :type="type"
             :value="value"
             :placeholder="placeholder"
-            :style="style"
             @input="input" />
     </div>
 </template>
@@ -38,11 +37,6 @@ export default {
         placeholder: {
             type: String,
             default: ''
-        }
-    },
-    computed: {
-        style() {
-            return `background-color: ${this.bgColor}; color: ${this.color}`;
         }
     },
     methods: {
