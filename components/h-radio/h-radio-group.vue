@@ -17,14 +17,8 @@ export default {
     computed: {
 
     },
-    methods: {
-        handleInput (value) {
-            this.$emit('input', value);
-        }
-    },
     mounted () {
         this.currentValue = this.value;
-        this.$on('input', this.handleInput);
     }
 }
 </script>

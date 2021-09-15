@@ -21,7 +21,7 @@ export default {
         async selectCurrent () {
             if (this.disabled) return;
             await this.$nextTick();
-            this.$emit('input', this.value);
+            this.$parent.$emit('input', this.value);
         }
     }
 }
