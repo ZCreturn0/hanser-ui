@@ -12,7 +12,9 @@
     color: var(--theme-color-primary);
 }
 .radio--is-selected .h-radio__input--inner {
-    color: var(--theme-text-color);
     background-color: var(--theme-color-primary);
     border: 1px solid var(--theme-color-primary);
+}
+.radio--is-selected .h-radio__input {
+    color: var(--theme-text-color);
 }
