@@ -1,7 +1,9 @@
 <template>
     <!-- 单选框 -->
-    <div class="h-radio">
-        <div class="h-radio__input"></div>
+    <div class="h-radio" :class="{ 'radio--is-selected': selected === value }" @click="selectCurrent">
+        <div class="h-radio__input">
+            <div class="h-radio__input--inner"></div>
+        </div>
         {{ label }}
     </div>
 </template>
@@ -14,7 +16,14 @@ export default {
 
         }
     },
-    props: ['value', 'label']
+    props: ['value', 'label', 'disabled', 'selected'],
+    methods: {
+        async selectCurrent () {
+            if (this.disabled) return;
+            await this.$nextTick();
+            this.$emit('input', this.value);
+        }
+    }
 }
 </script>
 

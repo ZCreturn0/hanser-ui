@@ -1,10 +1,18 @@
 @import '../../theme/var.css';
 
-.h-radio {}
+.h-radio {
+    cursor: pointer;
+}
 .h-radio__input {
     display: inline-block;
     width: 14px;
     height: 14px;
     border: 1px solid var(--theme-border-color);
     border-radius: 100%;
+    color: var(--theme-color-primary);
+}
+.radio--is-selected .h-radio__input--inner {
+    color: var(--theme-text-color);
+    background-color: var(--theme-color-primary);
+    border: 1px solid var(--theme-color-primary);
 }
