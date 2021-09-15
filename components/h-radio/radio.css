@@ -1,0 +1,10 @@
+@import '../../theme/var.css';
+
+.h-radio {}
+.h-radio__input {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid var(--theme-border-color);
+    border-radius: 100%;
+}
