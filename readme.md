@@ -33,8 +33,4 @@
 
     运行 **`npm run component 组件名 注释`** 创建组件
 
-4. 使用 `npm link` 进行调试
-
-    注： 需要全局安装 eslint
-
-5. [使用文档](doc.md)
+4. [使用文档](doc.md)
