@@ -17,8 +17,14 @@ export default {
     computed: {
 
     },
+    methods: {
+        handleCurrentChange (value) {
+            this.currentValue = value;
+        }
+    },
     mounted () {
         this.currentValue = this.value;
+        this.$on('current-change', this.handleCurrentChange);
     }
 }
 </script>
