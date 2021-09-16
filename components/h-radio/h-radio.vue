@@ -19,7 +19,8 @@ export default {
     props: ['value', 'label', 'disabled', 'selected'],
     methods: {
         async selectCurrent () {
-            if (this.disabled) return;
+            // 禁用或已选中的情况不触发事件
+            if (this.disabled || this.selected === this.value) return;
             await this.$nextTick();
             this.$parent.$emit('input', this.value);
             this.$emit('current-change', this.value);
