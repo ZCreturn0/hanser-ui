@@ -1,7 +1,7 @@
 <template>
     <!-- 单选框组 -->
     <div class="h-radio-group">
-        <slot :selected="value" />
+        <slot />
     </div>
 </template>
 
