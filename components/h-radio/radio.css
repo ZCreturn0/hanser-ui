@@ -6,6 +6,12 @@
     cursor: pointer;
 }
 
+.h-radio[border] {
+    border: 1px solid #ccc;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
 .h-radio__input {
     display: inline-block;
     position: relative;
@@ -33,6 +39,10 @@
 
 .radio--is-selected {
     color: var(--theme-color-primary);
+}
+
+.radio--is-selected .h-radio[border] {
+    border-color: var(--theme-color-primary);
 }
 
 .radio--is-selected .h-radio__input {
