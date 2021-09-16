@@ -50,5 +50,10 @@
 }
 
 .radio--is-disabled .h-radio__input {
+    border-color: var(--theme-border-color-disabled);
     background-color: var(--theme-bg-block-disabled);
+}
+
+.radio--is-disabled .h-radio__input--inner {
+    background-color: var(--theme-text-color-disabled);
 }

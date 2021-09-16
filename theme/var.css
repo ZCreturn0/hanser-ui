@@ -25,6 +25,7 @@
     --theme-border-color: #f5f6f7;
     --theme-border-color-dark: #e6e6e6;
     --theme-border-color-divider: #ebebeb;
+    --theme-border-color-disabled: #e4e7ed;
     --theme-border-color-input: #ccc;
     --theme-border-color-input-focus: #7cb043;
     --theme-input-bg-color: #fdedd3;
@@ -61,6 +62,7 @@
     --theme-border-color: #ebebeb;
     --theme-border-color-dark: #e6e6e6;
     --theme-border-color-divider: #e6e6e6;
+    --theme-border-color-disabled: #e4e7ed;
     --theme-border-color-input: #ccc;
     --theme-border-color-input-focus: #f7835c;
     --theme-input-bg-color: #fdedd3;

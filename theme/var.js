@@ -128,6 +128,11 @@ export const BORDER_COLOR_DARK = 'var(--theme-border-color-dark)';
 export const BORDER_COLOR_DIVIDER = 'var(--theme-border-color-divider)';
 
 /**
+ * @description 禁用边框颜色
+ */
+export const BORDER_COLOR_DISABLED = 'var(--theme-border-color-disabled)';
+
+/**
  * @description 输入框边框颜色
  */
 export const BORDER_COLOR_INPUT = 'var(--theme-border-color-input)';

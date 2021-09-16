@@ -24,6 +24,7 @@ module.exports = {
     BORDER_COLOR: '边框颜色',
     BORDER_COLOR_DARK: '深色边框颜色',
     BORDER_COLOR_DIVIDER: '分割线颜色',
+    BORDER_COLOR_DISABLED: '禁用边框颜色',
     BORDER_COLOR_INPUT: '输入框边框颜色',
     BORDER_COLOR_INPUT_FOCUS: '输入框focus时边框色',
     INPUT_BG_COLOR: '输入框背景色',
