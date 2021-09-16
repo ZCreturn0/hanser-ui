@@ -1,6 +1,8 @@
 @import '../../theme/var.css';
 
 .h-radio {
+    display: flex;
+    align-items: center;
     cursor: pointer;
 }
 
@@ -9,6 +11,7 @@
     position: relative;
     width: 14px;
     height: 14px;
+    margin-right: 10px;
     border: 1px solid var(--theme-border-color);
     border-radius: 100%;
     color: var(--theme-color-primary);

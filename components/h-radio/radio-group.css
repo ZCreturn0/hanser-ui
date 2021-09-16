@@ -1,3 +1,13 @@
 @import '../../theme/var.css';
 
-.h-radio-group {}
+.h-radio-group {
+    display: flex;
+}
+
+.h-radio-group>* {
+    margin-right: 20px;
+}
+
+.h-radio-group>*:last-child {
+    margin-right: 0;
+}
