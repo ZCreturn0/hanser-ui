@@ -11,6 +11,7 @@ module.exports = {
     BG_DANGER: '危险，错误背景色',
     BG_SECONDARY: '次要背景色',
     BG_BLOCK: '模块背景色',
+    BG_BLOCK_DISABLED: '禁用模块背景色',
     BG_BLOCK_DARK: '模块深色背景',
     BG_REVERSE: '全局背景反色',
     TEXT_COLOR: '字体颜色',

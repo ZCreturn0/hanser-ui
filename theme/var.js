@@ -63,6 +63,11 @@ export const BG_SECONDARY = 'var(--theme-bg-secondary)';
 export const BG_BLOCK = 'var(--theme-bg-block)';
 
 /**
+ * @description 禁用模块背景色
+ */
+export const BG_BLOCK_DISABLED = 'var(--theme-bg-block-disabled)';
+
+/**
  * @description 模块深色背景
  */
 export const BG_BLOCK_DARK = 'var(--theme-bg-block-dark)';
@@ -128,9 +133,24 @@ export const BORDER_COLOR_DIVIDER = 'var(--theme-border-color-divider)';
 export const BORDER_COLOR_INPUT = 'var(--theme-border-color-input)';
 
 /**
- * @description focus时边框色
+ * @description 输入框focus时边框色
  */
-export const BORDER_COLOR_INPUT_FOCUS = 'var(--theme-border-color-focus)';
+export const BORDER_COLOR_INPUT_FOCUS = 'var(--theme-border-color-input-focus)';
+
+/**
+ * @description 输入框背景色
+ */
+export const INPUT_BG_COLOR = 'var(--theme-input-bg-color)';
+
+/**
+ * @description 输入框字体色
+ */
+export const INPUT_TEXT_COLOR = 'var(--theme-input-text-color)';
+
+/**
+ * @description 输入框placeholder色
+ */
+export const INPUT_PLACEHOLDER_COLOR = 'var(--theme-input-placeholder-color)';
 
 /**
  * @description 全局默认悬浮色
@@ -146,3 +166,4 @@ export const HOVER_COLOR_PRIMARY = 'var(--theme-hover-color-primary)';
  * @description 激活色
  */
 export const ACTIVE_COLOR = 'var(--theme-active-color)';
+

@@ -12,6 +12,7 @@
     --theme-bg-danger: rgba(220, 58, 72, 0.1);
     --theme-bg-secondary: rgba(51, 51, 51, 0.1);
     --theme-bg-block: #fff;
+    --theme-bg-block-disabled: #aaa;
     --theme-bg-block-dark: #f5f6f7;
     --theme-bg-reverse: #333;
     --theme-text-color: #333;
@@ -47,6 +48,7 @@
     --theme-bg-danger: rgba(220, 58, 72, 0.1);
     --theme-bg-secondary: rgba(51, 51, 51, 0.1);
     --theme-bg-block: #ffffff;
+    --theme-bg-block-disabled: #aaa;
     --theme-bg-block-dark: #f5f6f7;
     --theme-bg-reverse: #333;
     --theme-text-color: #333333;

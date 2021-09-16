@@ -1,6 +1,11 @@
 <template>
     <!-- 单选框 -->
-    <div class="h-radio" :class="{ 'radio--is-selected': parentValue === value }" @click="selectCurrent">
+    <div class="h-radio"
+        :class="{
+            'radio--is-selected': parentValue === value,
+            'radio--is-disabled': disabled
+        }"
+        @click="selectCurrent">
         <div class="h-radio__input">
             <div class="h-radio__input--inner"></div>
         </div>
