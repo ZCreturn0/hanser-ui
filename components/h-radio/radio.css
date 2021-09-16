@@ -41,7 +41,7 @@
     color: var(--theme-color-primary);
 }
 
-.radio--is-selected .h-radio[border] {
+.radio--is-selected.h-radio[border]:not(.radio--is-disabled) {
     border-color: var(--theme-color-primary);
 }
 
