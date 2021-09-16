@@ -7,7 +7,9 @@
     <h-radio v-for="item in radioList" :key="item" :value="item" :label="item" :disabled="item === 1"></h-radio>
 </h-radio-group>
 ````
-说明: `h-radio-group` 和 `h-radio` 必须一起使用，且 `h-radio` 必须为 `h-radio-group` 的子元素
+说明:
+1. `h-radio-group` 和 `h-radio` 必须一起使用，且 `h-radio` 必须为 `h-radio-group` 的子元素
+2. `radioSelected` 只能为基础数据类型，不支持对象
 
 | 属性 | 说明 |
 | -- | -- |
