@@ -45,6 +45,7 @@
 }
 
 .radio--is-disabled {
+    cursor: not-allowed;
     color: var(--theme-text-color-disabled);
 }
 
