@@ -35,14 +35,6 @@
     color: var(--theme-color-primary);
 }
 
-.radio--is-disabled {
-    color: var(--theme-text-color-disabled);
-}
-
-.radio--is-disabled .h-radio__input {
-    background-color: var(--theme-bg-block-disabled);
-}
-
 .radio--is-selected .h-radio__input {
     background-color: var(--theme-color-primary);
     border: 1px solid var(--theme-color-primary);
@@ -50,4 +42,12 @@
 
 .radio--is-selected .h-radio__input--inner {
     transform: translate(-50%, -50%) scale(1);
+}
+
+.radio--is-disabled {
+    color: var(--theme-text-color-disabled);
+}
+
+.radio--is-disabled .h-radio__input {
+    background-color: var(--theme-bg-block-disabled);
 }
