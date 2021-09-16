@@ -20,6 +20,7 @@ export default {
     methods: {
         handleCurrentChange (value) {
             this.currentValue = value;
+            this.$emit('change', value);
         }
     },
     mounted () {
