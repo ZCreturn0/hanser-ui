@@ -3,18 +3,40 @@
 .h-radio {
     cursor: pointer;
 }
+
 .h-radio__input {
     display: inline-block;
+    position: relative;
     width: 14px;
     height: 14px;
     border: 1px solid var(--theme-border-color);
     border-radius: 100%;
     color: var(--theme-color-primary);
 }
+
+.h-radio__input--inner {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    line-height: 14px;
+    border-radius: 100%;
+    margin: 0 auto;
+    background-color: var(--theme-bg-global);
+    transition: transform .15s ease-in;
+}
+
 .radio--is-selected .h-radio__input--inner {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.radio--is-selected {
+    color: var(--theme-color-primary);
+}
+
+.radio--is-selected .h-radio__input {
     background-color: var(--theme-color-primary);
     border: 1px solid var(--theme-color-primary);
-}
-.radio--is-selected .h-radio__input {
-    color: var(--theme-text-color);
 }
