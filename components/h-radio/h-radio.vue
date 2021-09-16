@@ -23,7 +23,7 @@ export default {
             if (this.disabled || this.selected === this.value) return;
             await this.$nextTick();
             this.$parent.$emit('input', this.value);
-            this.$emit('current-change', this.value);
+            this.$parent.$emit('change', this.value);
         }
     }
 }
