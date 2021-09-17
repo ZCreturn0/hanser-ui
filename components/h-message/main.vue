@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import destroy from '../../mixins/destroy';
 export default {
     name: 'h-message',
     data () {
@@ -16,15 +17,10 @@ export default {
             showClose: false
         }
     },
+    mixins: ['destroy'],
     computed: {
         messageTypeClass() {
             return `message-type--${this.type}`;
-        }
-    },
-    methods: {
-        uninstall() {
-            this.$destroy(true);
-            document.body.removeChild(this.$el);
         }
     },
     mounted() {
