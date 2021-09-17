@@ -1,6 +1,6 @@
 <template>
     <!-- 消息弹窗 -->
-    <div class="h-message">
+    <div class="h-message" :class="messageTypeClass">
         test
     </div>
 </template>
@@ -14,6 +14,11 @@ export default {
             mesaage: '',
             duration: 3000,
             showClose: false
+        }
+    },
+    computed: {
+        messageTypeClass() {
+            return `message-type--${this.type}`;
         }
     }
 }

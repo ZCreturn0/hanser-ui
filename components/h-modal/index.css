@@ -7,5 +7,5 @@
     top: 0;
     left: 0;
     background-color: var(--theme-modal-bg-color);
-    z-index: 9999;
+    z-index: 1000;
 }
