@@ -27,9 +27,7 @@
     },
     "homepage": "https://github.com/ZCreturn0/hanser-ui#readme",
     "devDependencies": {
-        "babel-plugin-transform-object-rest-spread": "^6.26.0"
-    },
-    "dependencies": {
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
         "babel-eslint": "^10.1.0"
     }
 }

@@ -34,3 +34,5 @@
     运行 **`npm run component 组件名 注释`** 创建组件
 
 4. [使用文档](doc.md)
+
+5. [主题色增加文档](./theme/readme.md)
