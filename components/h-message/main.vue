@@ -15,7 +15,7 @@ export default {
         }
     },
     mixins: [destroy],
-    props: ['type', 'mesaage', 'duration', 'showClose'],
+    props: ['type', 'message', 'duration', 'showClose'],
     computed: {
         messageTypeClass() {
             const type = this.type || 'info';

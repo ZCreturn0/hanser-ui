@@ -15,7 +15,7 @@ export const Message = {
             } else if (typeof options === 'object') {
                 messageOptions = {
                     propsData: Object.assign(messageOptions, {
-                        type: options.type || 'info',
+                        type: options.type || 'message',
                         message: options.message || '',
                         duration: options.duration || 3000,
                         showClose: options.showClose || false
