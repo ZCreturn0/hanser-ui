@@ -1,7 +1,7 @@
 <template>
     <!-- 消息弹窗 -->
     <div class="h-message" :class="messageTypeClass">
-        test
+        {{ message }}
     </div>
 </template>
 
@@ -11,22 +11,22 @@ export default {
     name: 'h-message',
     data () {
         return {
-            type: 'message',
-            mesaage: '',
-            duration: 3000,
-            showClose: false
+
         }
     },
     mixins: [destroy],
+    props: ['type', 'mesaage', 'duration', 'showClose'],
     computed: {
         messageTypeClass() {
-            return `message-type--${this.type}`;
+            const type = this.type || 'info';
+            return `message-type--${type}`;
         }
     },
     mounted() {
+        const duration = this.duration || 3000;
         setTimeout(() => {
             this.uninstall();
-        }, this.duration);
+        }, duration);
     }
 }
 </script>
