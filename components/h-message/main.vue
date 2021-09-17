@@ -1,23 +1,20 @@
 <template>
     <!-- 消息弹窗 -->
-    <h-modal class="h-message">
-        <div>
-            test
-        </div>
-    </h-modal>
+    <div class="h-message">
+        test
+    </div>
 </template>
 
 <script>
-import HModal from '../h-modal';
 export default {
     name: 'h-message',
     data () {
         return {
-
+            type: 'info',
+            mesaage: '',
+            duration: 3000,
+            showClose: false
         }
-    },
-    components: {
-        HModal
     }
 }
 </script>

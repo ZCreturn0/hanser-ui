@@ -1,6 +1,7 @@
 module.exports = {
     COLOR_PRIMARY: '主色',
     COLOR_SUCCESS: '成功色',
+    COLOR_MESSAGE: '消息色',
     COLOR_WARNING: '警告色',
     COLOR_DANGER: '危险，错误色',
     COLOR_SECONDARY: '次要色',

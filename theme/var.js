@@ -13,6 +13,11 @@ export const COLOR_PRIMARY = 'var(--theme-color-primary)';
 export const COLOR_SUCCESS = 'var(--theme-color-success)';
 
 /**
+ * @description 消息色
+ */
+export const COLOR_MESSAGE = 'var(--theme-color-message)';
+
+/**
  * @description 警告色
  */
 export const COLOR_WARNING = 'var(--theme-color-warning)';

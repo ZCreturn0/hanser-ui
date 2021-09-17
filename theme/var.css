@@ -3,6 +3,7 @@
     --theme-color-primary: #6ea82f;
     --theme-color-success: #6ea82f;
     --theme-color-warning: #e09d16;
+    --theme-color-message: #909399;
     --theme-color-danger: #dc3a48;
     --theme-color-secondary: #333;
     --theme-bg-global: #fff;
@@ -40,6 +41,7 @@
 [data-theme="dark"] {
     --theme-color-primary: #ff7241;
     --theme-color-success: #6ea82f;
+    --theme-color-message: #909399;
     --theme-color-warning: #e09d16;
     --theme-color-danger: #dc3a48;
     --theme-color-secondary: #333333;
