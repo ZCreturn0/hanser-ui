@@ -2,7 +2,9 @@
     <!-- 悬浮层 -->
     <div class="h-modal">
         <div class="content">
-            <slot />
+            <template v-if="content">
+                <component :is="content" />
+            </template>
         </div>
     </div>
 </template>
@@ -12,7 +14,17 @@ export default {
     name: 'h-modal',
     data () {
         return {
-
+            resolve: null,
+            reject: null,
+            content: null
+        }
+    },
+    methods: {
+        show() {
+            return new Promise((resolve, reject) => {
+                this.resolve = resolve;
+                this.reject = reject;
+            });
         }
     }
 }
