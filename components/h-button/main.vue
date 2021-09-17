@@ -25,9 +25,9 @@ export default {
         }
     },
     methods: {
-        handleClick () {
+        handleClick (event) {
             // 事件名使用 '-' 连接
-            this.$emit('self-made-event');
+            this.$emit('click', event);
         }
     }
 }
