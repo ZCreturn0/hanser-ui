@@ -172,3 +172,8 @@ export const HOVER_COLOR_PRIMARY = 'var(--theme-hover-color-primary)';
  */
 export const ACTIVE_COLOR = 'var(--theme-active-color)';
 
+/**
+ * @description modal背景色
+ */
+export const MODAL_BG_COLOR = 'var(--theme-modal-bg-color)';
+

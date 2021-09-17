@@ -1,7 +1,7 @@
 <template>
     <!-- 消息弹窗 -->
-    <h-modal>
-        <div class="h-message">
+    <h-modal class="h-message">
+        <div>
             test
         </div>
     </h-modal>
