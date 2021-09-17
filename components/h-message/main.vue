@@ -1,7 +1,7 @@
 <template>
     <!-- 消息弹窗 -->
     <div class="h-message">
-        
+        test
     </div>
 </template>
 
@@ -10,7 +10,7 @@ export default {
     name: 'h-message',
     data () {
         return {
-            
+
         }
     }
 }
