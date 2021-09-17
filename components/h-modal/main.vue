@@ -1,11 +1,7 @@
 <template>
     <!-- 悬浮层 -->
     <div class="h-modal">
-        <div class="content">
-            <template v-if="content">
-                <component :is="content" />
-            </template>
-        </div>
+        <slot />
     </div>
 </template>
 
@@ -15,8 +11,7 @@ export default {
     data () {
         return {
             resolve: null,
-            reject: null,
-            content: null
+            reject: null
         }
     },
     methods: {

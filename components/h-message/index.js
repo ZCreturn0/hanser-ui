@@ -1,9 +1,12 @@
 import HMessage from './main.vue';
-import HModal from '../h-modal';
 
-export default (Vue) => {
-    const instance = new HModal(Vue, HMessage);
-    Vue.prototype.$message = () => {
-        instance.show();
-    };
-};
+export const Message = {
+    install(Vue) {
+        const Constructor = Vue.extend(HMessage);
+        this.instance = new Constructor();
+        Vue.prototype.$message = () => {
+            this.instance.$mount();
+            document.body.appendChild(this.instance.$el);
+        };
+    }
+}

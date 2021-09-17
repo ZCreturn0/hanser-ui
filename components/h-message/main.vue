@@ -1,17 +1,23 @@
 <template>
     <!-- 消息弹窗 -->
-    <div class="h-message">
-        test
-    </div>
+    <h-modal>
+        <div class="h-message">
+            test
+        </div>
+    </h-modal>
 </template>
 
 <script>
+import HModal from '../h-modal';
 export default {
     name: 'h-message',
     data () {
         return {
 
         }
+    },
+    components: {
+        HModal
     }
 }
 </script>
