@@ -16,7 +16,7 @@ export const Message = {
                 messageOptions = {
                     propsData: Object.assign(messageOptions, {
                         type: options.type || 'info',
-                        mesaage: options.mesaage || '',
+                        message: options.message || '',
                         duration: options.duration || 3000,
                         showClose: options.showClose || false
                     })
