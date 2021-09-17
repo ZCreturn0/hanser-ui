@@ -1,0 +1,13 @@
+@import '../../theme/var.css';
+
+.h-modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    z-index: 9999;
+}
+
+.content {
+
+}
