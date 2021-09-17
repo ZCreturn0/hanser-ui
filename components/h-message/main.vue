@@ -10,7 +10,7 @@ export default {
     name: 'h-message',
     data () {
         return {
-            type: 'info',
+            type: 'message',
             mesaage: '',
             duration: 3000,
             showClose: false
@@ -20,6 +20,17 @@ export default {
         messageTypeClass() {
             return `message-type--${this.type}`;
         }
+    },
+    methods: {
+        uninstall() {
+            this.$destroy(true);
+            document.body.removeChild(this.$el);
+        }
+    },
+    mounted() {
+        setTimeout(() => {
+            this.uninstall();
+        }, this.duration);
     }
 }
 </script>
