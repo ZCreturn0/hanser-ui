@@ -17,7 +17,7 @@ export default {
             showClose: false
         }
     },
-    mixins: ['destroy'],
+    mixins: [destroy],
     computed: {
         messageTypeClass() {
             return `message-type--${this.type}`;
