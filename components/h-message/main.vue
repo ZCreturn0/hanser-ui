@@ -26,7 +26,7 @@ export default {
         const duration = this.duration || 3000;
         setTimeout(() => {
             this.uninstall();
-            this.messageCount -= 1;
+            this.ui.messageCount -= 1;
         }, duration);
     }
 }

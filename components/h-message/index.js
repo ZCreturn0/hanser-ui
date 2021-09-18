@@ -27,10 +27,11 @@ export const Message = {
             this.instance = new Constructor(messageOptions);
             this.instance.$mount();
             document.body.appendChild(this.instance.$el);
-            if (Vue.prototype.messageCount) {
-                Vue.prototype.messageCount += 1;
+            let ui = Vue.prototype.ui || {};
+            if (ui.messageCount) {
+                ui.messageCount += 1;
             } else {
-                Vue.prototype.messageCount = 1;
+                ui.messageCount = 1;
             }
         };
     }
