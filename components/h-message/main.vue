@@ -6,7 +6,6 @@
 </template>
 
 <script>
-import destroy from '../../mixins/destroy';
 export default {
     name: 'h-message',
     data () {
@@ -14,7 +13,6 @@ export default {
 
         }
     },
-    mixins: [destroy],
     props: ['type', 'message', 'duration', 'showClose'],
     computed: {
         messageTypeClass() {
@@ -25,8 +23,8 @@ export default {
     mounted() {
         const duration = this.duration || 3000;
         setTimeout(() => {
-            this.uninstall();
-            this.ui.messageCount -= 1;
+            this.$destroy(true);
+            this.$messageClose();
         }, duration);
     }
 }
