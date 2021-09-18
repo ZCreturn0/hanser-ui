@@ -26,9 +26,9 @@ export const Message = {
             } else {
                 throw Error('$message params ERROR');
             }
-            this.instance = new Constructor(messageOptions);
-            this.instance.$mount();
-            document.body.appendChild(this.instance.$el);
+            const instance = new Constructor(messageOptions);
+            instance.$mount();
+            document.body.appendChild(instance.$el);
             instances.push(instance);
             if (!Vue.prototype.ui) {
                 Vue.prototype.ui = {
@@ -40,9 +40,9 @@ export const Message = {
         };
 
         Vue.prototype.$messageClose = () => {
-            document.body.removeChild(this.$el);
-            const index = instances.indexOf(this);
-            instances.splice(index, 1);
+            const index = instances.find((instance) => instance === this);
+            const [instance] = instances.splice(index, 1);
+            document.body.removeChild(instance.$el);
             Vue.prototype.ui.messageCount = instances.length;
         };
 
