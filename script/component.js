@@ -47,7 +47,7 @@ const makeComponent = () => {
     const styleContent = `<style scoped>\n\n@import './index.css';\n\n</style>`;
     const vueContent = `${htmlContent}\n\n${scriptContent}\n\n${styleContent}`;
     const jsContent = `import ${componentName} from './main.vue';\n\nexport default ${componentName};\n`;
-    const cssContent = `@import '../../theme/var.css';\n\n.${arr[0]} {}`;
+    const cssContent = `.${arr[0]} {}`;
 
     // 开始建文件夹 -> 写文件
     fs.mkdir(workPath, (err) => {

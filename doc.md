@@ -1,5 +1,10 @@
 # hanser弹幕组UI库使用文档
 
+## 引入
+````javascript
+import 'normalize.css';
+import 'hanser-ui/theme/var.css';
+````
 ## 单选
 
 ````html
