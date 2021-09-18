@@ -45,5 +45,11 @@ export const Message = {
             instances.splice(index, 1);
             Vue.prototype.ui.messageCount = instances.length;
         };
+
+        Vue.prototype.$messageCloseAll = () => {
+            for (let instance of instances) {
+                instance.$messageClose();
+            }
+        };
     }
 }
