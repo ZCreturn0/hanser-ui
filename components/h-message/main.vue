@@ -18,7 +18,7 @@ export default {
     props: ['type', 'message', 'duration', 'showClose'],
     computed: {
         messageTypeClass() {
-            const type = this.type || 'info';
+            const type = this.type || 'message';
             return `message-type--${type}`;
         }
     },
