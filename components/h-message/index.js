@@ -43,8 +43,11 @@ export const Message = {
         Vue.prototype.$messageClose = () => {
             const index = instances.find((instance) => instance === this);
             const [instance] = instances.splice(index, 1);
-            document.body.removeChild(instance.$el);
-            Vue.prototype.ui.messageCount = instances.length;
+            instance.$el.classList.add('h-message-disappear');
+            setTimeout(() => {
+                document.body.removeChild(instance.$el);
+                Vue.prototype.ui.messageCount = instances.length;
+            }, 500);
         };
 
         Vue.prototype.$messageCloseAll = () => {

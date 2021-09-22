@@ -15,6 +15,10 @@
     animation: messageAppear 0.5s ease-in-out;
 }
 
+.h-message-disappear {
+    animation: messageDisappear 0.5s ease-in-out;
+}
+
 .message-type--success {
     color: var(--theme-color-success);
     background-color: var(--theme-bg-success);
