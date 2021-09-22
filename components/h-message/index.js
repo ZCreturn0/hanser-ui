@@ -60,7 +60,7 @@ export const Message = {
 
         Vue.prototype.$messageCloseAll = () => {
             for (let instance of instances) {
-                this.$messageClose(instance);
+                this.$messageClose(instance.hanserMessageId);
             }
         };
     }
