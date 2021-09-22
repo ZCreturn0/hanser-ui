@@ -24,7 +24,7 @@ export default {
         const duration = this.duration || 3000;
         setTimeout(() => {
             this.$destroy(true);
-            this.$messageClose();
+            this.$messageClose(this.hanserMessageId);
         }, duration);
     }
 }

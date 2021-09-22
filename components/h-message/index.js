@@ -4,6 +4,7 @@ export const Message = {
     install(Vue) {
         const Constructor = Vue.extend(HMessage);
         const instances = [];
+        let hanserMessageId = 0;
 
         Vue.prototype.$message = (options) => {
             let messageOptions = {};
@@ -27,8 +28,9 @@ export const Message = {
                 throw Error('$message params ERROR');
             }
             const instance = new Constructor(messageOptions);
+            instance.hanserMessageId = hanserMessageId++;
             instance.$mount();
-            instance.$el.style = `top: ${20 + instances.length * 50}px`;
+            instance.$el.style = `top: ${20 + instances.length * 80}px`;
             document.body.appendChild(instance.$el);
             instances.push(instance);
             if (!Vue.prototype.ui) {
@@ -40,10 +42,16 @@ export const Message = {
             }
         };
 
-        Vue.prototype.$messageClose = () => {
-            const index = instances.find((instance) => instance === this);
+        Vue.prototype.$messageClose = (hanserMessageId) => {
+            const index = instances.findIndex((instance) => instance.hanserMessageId === hanserMessageId);
             const [instance] = instances.splice(index, 1);
             instance.$el.classList.add('h-message-disappear');
+            instances.forEach((instance, instanceIndex) => {
+                if (instanceIndex >= index) {
+                    const top = instance.$el.style.top;
+                    instance.$el.style.top = parseInt(top) - 80 + 'px';
+                }
+            });
             setTimeout(() => {
                 document.body.removeChild(instance.$el);
                 Vue.prototype.ui.messageCount = instances.length;
@@ -52,8 +60,8 @@ export const Message = {
 
         Vue.prototype.$messageCloseAll = () => {
             for (let instance of instances) {
-                instance.$messageClose();
+                this.$messageClose(instance);
             }
         };
     }
-}
+};
