@@ -28,6 +28,7 @@ export const Message = {
             }
             const instance = new Constructor(messageOptions);
             instance.$mount();
+            instance.$el.style = `top: ${20 + instances.length * 50}px`;
             document.body.appendChild(instance.$el);
             instances.push(instance);
             if (!Vue.prototype.ui) {
