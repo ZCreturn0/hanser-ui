@@ -30,7 +30,9 @@ export const Message = {
             const instance = new Constructor(messageOptions);
             instance.hanserMessageId = hanserMessageId++;
             instance.$mount();
-            instance.$el.style = `top: ${20 + instances.length * 80}px`;
+            // 正在关闭的 message 不计入高度
+            const exsistInstance = instances.filter((instance) => instance.status !== 'closing');
+            instance.$el.style = `top: ${20 + exsistInstance.length * 80}px`;
             document.body.appendChild(instance.$el);
             instances.push(instance);
             if (!Vue.prototype.ui) {
@@ -44,7 +46,7 @@ export const Message = {
 
         Vue.prototype.$messageClose = (hanserMessageId) => {
             const index = instances.findIndex((instance) => instance.hanserMessageId === hanserMessageId);
-            const [instance] = instances.slice(index, 1);
+            const [instance] = instances.slice(index, index + 1);
             // 正在关闭的实例不往下执行
             if (!instance || (instance && instance.status === 'closing')) return;
             instance.$el.classList.add('h-message-disappear');
@@ -56,6 +58,8 @@ export const Message = {
                 }
             });
             setTimeout(() => {
+                // 由于 instances 可能发生了变化，上面获取的 index 在 setTimeout 里失效，需要重新获取
+                const index = instances.findIndex((instance) => instance.hanserMessageId === hanserMessageId);
                 document.body.removeChild(instance.$el);
                 instances.splice(index, 1);
                 Vue.prototype.ui.messageCount = instances.length;
