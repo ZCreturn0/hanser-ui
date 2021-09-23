@@ -3,7 +3,7 @@ import HMessage from './main.vue';
 export const Message = {
     install(Vue) {
         const Constructor = Vue.extend(HMessage);
-        const instances = [];
+        let instances = [];
         let hanserMessageId = 0;
 
         Vue.prototype.$message = (options) => {
@@ -44,33 +44,39 @@ export const Message = {
 
         Vue.prototype.$messageClose = (hanserMessageId) => {
             const index = instances.findIndex((instance) => instance.hanserMessageId === hanserMessageId);
-            const [instance] = instances.splice(index, 1);
-            // 被 $messageCloseAll 关闭后实例不存在,不需要继续往下执行
-            if (!instance) return;
+            const [instance] = instances.slice(index, 1);
+            // 正在关闭的实例不往下执行
+            if (!instance || (instance && instance.status === 'closing')) return;
             instance.$el.classList.add('h-message-disappear');
+            instance.status = 'closing';
             instances.forEach((instance, instanceIndex) => {
-                if (instanceIndex >= index) {
+                if (instanceIndex >= index && instance.status !== 'closing') {
                     const top = instance.$el.style.top;
                     instance.$el.style.top = parseInt(top) - 80 + 'px';
                 }
             });
             setTimeout(() => {
                 document.body.removeChild(instance.$el);
+                instances.splice(index, 1);
                 Vue.prototype.ui.messageCount = instances.length;
             }, 500);
         };
 
         Vue.prototype.$messageCloseAll = () => {
             for (let instance of instances) {
-                instance.$el.classList.add('h-message-disappear');
-                const top = instance.$el.style.top;
-                instance.$el.style.top = parseInt(top) - 80 + 'px';
+                if (instance.status !== 'closing') {
+                    instance.$el.classList.add('h-message-disappear');
+                    instance.status = 'closing';
+                    const top = instance.$el.style.top;
+                    instance.$el.style.top = parseInt(top) - 80 + 'px';
+                }
             }
             setTimeout(() => {
                 instances.forEach((instance) => {
-                    document.body.removeChild(instance.$el);
+                    // 调用 messageCloseAll 后再次弹出 message，这时的 message status 不为 closing
+                    if (instance.status === 'closing') document.body.removeChild(instance.$el);
                 });
-                instances.splice(0);
+                instances = instances.filter((instance) => instance.status !== 'closing');
                 Vue.prototype.ui.messageCount = instances.length;
             }, 500);
         };
