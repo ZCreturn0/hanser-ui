@@ -45,6 +45,8 @@ export const Message = {
         Vue.prototype.$messageClose = (hanserMessageId) => {
             const index = instances.findIndex((instance) => instance.hanserMessageId === hanserMessageId);
             const [instance] = instances.splice(index, 1);
+            // 被 $messageCloseAll 关闭后实例不存在,不需要继续往下执行
+            if (!instance) return;
             instance.$el.classList.add('h-message-disappear');
             instances.forEach((instance, instanceIndex) => {
                 if (instanceIndex >= index) {
@@ -60,8 +62,17 @@ export const Message = {
 
         Vue.prototype.$messageCloseAll = () => {
             for (let instance of instances) {
-                this.$messageClose(instance.hanserMessageId);
+                instance.$el.classList.add('h-message-disappear');
+                const top = instance.$el.style.top;
+                instance.$el.style.top = parseInt(top) - 80 + 'px';
             }
+            setTimeout(() => {
+                instances.forEach((instance) => {
+                    document.body.removeChild(instance.$el);
+                });
+                instances.splice(0);
+                Vue.prototype.ui.messageCount = instances.length;
+            }, 500);
         };
     }
 };
