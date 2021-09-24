@@ -1,7 +1,7 @@
 <template>
     <!-- 按钮 -->
     <button class="h-button" @click="handleClick" :class="buttonClass">
-        <slot name="text" />
+        <slot />
     </button>
 </template>
 
