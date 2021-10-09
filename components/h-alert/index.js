@@ -23,6 +23,7 @@ export const Alert ={
             } else {
                 throw Error('$message params ERROR');
             }
+            const instance = new Constructor(messageOptions);
             instance.$mount();
         };
     }
