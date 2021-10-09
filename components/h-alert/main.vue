@@ -1,7 +1,7 @@
 <template>
     <!-- alert -->
     <h-modal class="h-alert">
-        aaaaaaa
+        {{ message }}
     </h-modal>
 </template>
 
@@ -12,7 +12,8 @@ export default {
         return {
 
         }
-    }
+    },
+    props: ['type', 'message']
 }
 </script>
 
