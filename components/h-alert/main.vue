@@ -6,12 +6,16 @@
 </template>
 
 <script>
+import HModal from '../h-modal';
 export default {
     name: 'h-alert',
     data () {
         return {
 
         }
+    },
+    components: {
+        HModal
     },
     props: ['type', 'message']
 }

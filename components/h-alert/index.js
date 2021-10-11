@@ -23,8 +23,9 @@ export const Alert ={
             } else {
                 throw Error('$message params ERROR');
             }
-            const instance = new Constructor(messageOptions);
+            const instance = new Constructor(alertOptions);
             instance.$mount();
+            document.body.appendChild(instance.$el);
         };
     }
 };
