@@ -15,6 +15,7 @@ module.exports = {
     BG_BLOCK_DISABLED: '禁用模块背景色',
     BG_BLOCK_DARK: '模块深色背景',
     BG_REVERSE: '全局背景反色',
+    BG_TAG: 'tag背景色',
     TEXT_COLOR: '字体颜色',
     TEXT_COLOR_AUXILIARY: '辅助字体颜色',
     TEXT_COLOR_SECONDARY: '次要字体颜色',

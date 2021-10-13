@@ -83,6 +83,11 @@ export const BG_BLOCK_DARK = 'var(--theme-bg-block-dark)';
 export const BG_REVERSE = 'var(--theme-bg-reverse)';
 
 /**
+ * @description tag背景色
+ */
+export const BG_TAG = 'var(--theme-bg-tag)';
+
+/**
  * @description 字体颜色
  */
 export const TEXT_COLOR = 'var(--theme-text-color)';
