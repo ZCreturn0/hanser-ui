@@ -108,6 +108,11 @@ export const TEXT_COLOR_SECONDARY = 'var(--theme-text-color-secondary)';
 export const TEXT_COLOR_WHITE = 'var(--theme-text-color-white)';
 
 /**
+ * @description 背景白色
+ */
+export const BG_COLOR_WHITE = 'var(--theme-bg-color-white)';
+
+/**
  * @description 禁用字体颜色
  */
 export const TEXT_COLOR_DISABLED = 'var(--theme-text-color-disabled)';

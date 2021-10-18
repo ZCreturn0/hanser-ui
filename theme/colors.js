@@ -20,6 +20,7 @@ module.exports = {
     TEXT_COLOR_AUXILIARY: '辅助字体颜色',
     TEXT_COLOR_SECONDARY: '次要字体颜色',
     TEXT_COLOR_WHITE: '字体白色',
+    BG_COLOR_WHITE: '背景白色',
     TEXT_COLOR_DISABLED: '禁用字体颜色',
     TEXT_COLOR_LINK: '链接字体颜色',
     TEXT_COLOR_REVERSE: '字体反色',

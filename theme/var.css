@@ -22,6 +22,7 @@
     --theme-text-color-auxiliary: #666;
     --theme-text-color-secondary: #999;
     --theme-text-color-white: #fff;
+    --theme-bg-color-white: #fff;
     --theme-text-color-disabled: #aaa;
     --theme-text-color-link: #456199;
     --theme-text-color-reverse: #fff;
@@ -60,6 +61,7 @@
     --theme-bg-reverse: #333;
     --theme-text-color: #333333;
     --theme-text-color-white: #fff;
+    --theme-bg-color-white: #fff;
     --theme-text-color-auxiliary: #666666;
     --theme-text-color-secondary: #999999;
     --theme-text-color-disabled: #cccccc;
