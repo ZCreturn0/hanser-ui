@@ -2,18 +2,19 @@
     position: relative;
     font-size: 14px;
     display: inline-block;
-    background-color: var(--theme-input-bg-color);
-    color: var(--theme-input-text-color);
+    overflow: hidden;
+}
+
+.h-input[size="small"] {
+    border-radius: 18px;
 }
 
 .h-input__inner {
     -webkit-appearance: none;
-    background-color: var(--theme-input-bg-color);
     background-image: none;
     border-radius: 4px;
     border: 1px solid var(--theme-border-color-input);
     box-sizing: border-box;
-    color: var(--theme-text-color);
     display: inline-block;
     font-size: inherit;
     height: 40px;
@@ -25,9 +26,19 @@
     cursor: pointer;
 }
 
+.h-input[size="small"] .h-input__inner {
+    height: 34px;
+    line-height: 34px;
+}
+
+.h-input[size="mini"] .h-input__inner {
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+}
+
 .h-input__inner:focus {
     outline: none;
-    border-color: var(--theme-border-color-input-focus);
 }
 
 .h-input__inner::-webkit-input-placeholder {
