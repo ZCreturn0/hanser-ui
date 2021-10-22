@@ -5,17 +5,22 @@
     overflow: hidden;
 }
 
-.h-input[size="small"] {
+.h-input[round] {
+    border-radius: 22px;
+}
+
+.h-input[round][size="small"],
+.h-input[round][size="mini"] {
     border-radius: 18px;
 }
 
 .h-input__inner {
+    display: inline-block;
     -webkit-appearance: none;
     background-image: none;
     border-radius: 4px;
     border: 1px solid var(--theme-border-color-input);
     box-sizing: border-box;
-    display: inline-block;
     font-size: inherit;
     height: 40px;
     line-height: 40px;
@@ -43,4 +48,37 @@
 
 .h-input__inner::-webkit-input-placeholder {
     color: var(--theme-input-placeholder-color);
+}
+
+.show-preffix {
+    padding-left: 30px;
+}
+
+.preffix {
+    position: absolute;
+    left: 8px;
+}
+
+.show-suffix {
+    padding-right: 30px;
+}
+
+.suffix {
+    position: absolute;
+    right: 8px;
+}
+
+.h-input .preffix,
+.h-input .suffix {
+    top: 12px
+}
+
+.h-input[size="small"] .preffix,
+.h-input[size="small"] .suffix {
+    top: 10px
+}
+
+.h-input[size="mini"] .preffix,
+.h-input[size="mini"] .suffix {
+    top: 6px
 }

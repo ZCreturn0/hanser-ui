@@ -1,13 +1,19 @@
 <template>
     <!-- 输入框 -->
-    <div class="h-input" :size="size">
+    <div class="h-input" :size="size" :round="round">
+        <div class="preffix">
+            <slot name="preffix" class="preffix" />
+        </div>
         <input
-            class="h-input__inner"
+            :class="{ 'h-input__inner': true, 'show-suffix': !!$slots.suffix, 'show-preffix': !!$slots.preffix }"
             :style="inputStyle"
             :type="type"
             :value="value"
             :placeholder="placeholder"
             @input="input" />
+        <div class="suffix">
+            <slot name="suffix" />
+        </div>
     </div>
 </template>
 
