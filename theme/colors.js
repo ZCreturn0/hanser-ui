@@ -36,5 +36,6 @@ module.exports = {
     HOVER_COLOR: '全局默认悬浮色',
     HOVER_COLOR_PRIMARY: '主色悬浮',
     ACTIVE_COLOR: '激活色',
+    ICON_COLOR_AUXILIARY: 'ICON辅助色',
     MODAL_BG_COLOR: 'modal背景色'
 };
