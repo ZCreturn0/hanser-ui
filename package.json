@@ -1,6 +1,6 @@
 {
     "name": "hanser-ui",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "hanser弹幕组UI库(Vue版)",
     "main": "index.js",
     "scripts": {
@@ -8,7 +8,8 @@
         "component": "node script/component.js",
         "build-js": "node script/css-to-js.js",
         "build-html": "node script/build-html.js",
-        "build-theme": "node script/css-to-js.js && node script/build-html.js"
+        "build-theme": "node script/css-to-js.js && node script/build-html.js",
+        "release": "standard-version && git push --follow-tags && npm publish"
     },
     "repository": {
         "type": "git",
@@ -27,7 +28,8 @@
     },
     "homepage": "https://github.com/ZCreturn0/hanser-ui#readme",
     "devDependencies": {
+        "babel-eslint": "^10.1.0",
         "babel-plugin-transform-object-rest-spread": "^6.26.0",
-        "babel-eslint": "^10.1.0"
+        "standard-version": "^9.3.2"
     }
 }
