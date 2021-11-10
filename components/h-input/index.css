@@ -50,6 +50,10 @@
     color: var(--theme-input-placeholder-color);
 }
 
+.h-input__inner:disabled {
+    cursor: not-allowed;
+}
+
 .show-preffix {
     padding-left: 30px;
 }

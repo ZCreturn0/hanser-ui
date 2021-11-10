@@ -9,6 +9,7 @@
             :style="inputStyle"
             :type="type"
             :value="value"
+            :disabled="disabled"
             :placeholder="placeholder"
             @input="input" />
         <div class="suffix">
@@ -47,6 +48,10 @@ export default {
             type: String,
             default: BORDER_COLOR
         },
+        disabled: {
+            type: Boolean,
+            default: false
+        },
         placeholder: {
             type: String,
             default: ''
@@ -71,9 +76,15 @@ export default {
             } else {
                 borderStyle = `1px solid ${this.border}`;
             }
+            let bgColor = this.bgColor;
+            let color = this.color;
+            if (this.disabled) {
+                bgColor = '#ccc';
+                color = '#909090';
+            }
             return `
-                background-color: ${this.bgColor};
-                color: ${this.color};
+                background-color: ${bgColor};
+                color: ${color};
                 ${this.borderStyle}
             `;
         }
