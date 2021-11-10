@@ -9,15 +9,6 @@
     color: var(--theme-text-color-white);
 }
 
-.h-button:disabled {
-    cursor: not-allowed;
-    background-color: var(--theme-bg-block-disabled);
-}
-
-.h-button:not(:disabled):hover {
-    background-color: var(--theme-hover-color-primary);
-}
-
 .h-button[plain] {
     background-color: var(--theme-color-primary-plain);
     color: var(--theme-text-color-primary-plain);
@@ -26,6 +17,15 @@
 .h-button[plain]:hover {
     background-color: var(--theme-color-primary-plain-hover);
     color: var(--theme-text-color-primary-plain-hover);
+}
+
+.h-button:disabled {
+    cursor: not-allowed;
+    background-color: var(--theme-bg-block-disabled);
+}
+
+.h-button:not(:disabled):hover {
+    background-color: var(--theme-hover-color-primary);
 }
 
 @keyframes rotate {
