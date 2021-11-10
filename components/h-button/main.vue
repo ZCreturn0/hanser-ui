@@ -1,6 +1,6 @@
 <template>
     <!-- 按钮 -->
-    <button class="h-button" :plain="plain" :disabled="disabled || loading" @click="handleClick" :class="buttonClass">
+    <button class="h-button" :plain="plain" :disabled="btnDisabled || loading" @click="handleClick" :class="buttonClass">
         <slot v-if="!loading" />
         <div v-else class="loading-cover">
             <i class="fa fa-spinner" aria-hidden="true"></i>
@@ -14,14 +14,14 @@ export default {
     data () {
         return {
             loadingStatus: false,
-            disabled: false
+            debonusing: false
         }
     },
     /**
      * debonus 指定每次点击按钮后按钮禁用持续时间
      * loading 由调用指定加载状态
      */
-    props: ['size', 'loading', 'debonus', 'plain'],
+    props: ['size', 'loading', 'debonus', 'plain', 'disabled'],
     computed: {
         buttonClass() {
             const classes = [];
@@ -30,15 +30,18 @@ export default {
                 classes.push(`h-button--${this.size}`);
             }
             return classes;
+        },
+        btnDisabled() {
+            return this.disabled || this.debonusing;
         }
     },
     methods: {
         handleClick (event) {
             if (this.debonus) {
-                this.disabled = true;
+                this.debonusing = true;
             }
             setTimeout(() => {
-                this.disabled = false;
+                this.debonusing = false;
             }, this.debonus);
             // 事件名使用 '-' 连接
             this.$emit('click', event);
