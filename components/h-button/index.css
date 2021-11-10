@@ -23,7 +23,7 @@
     color: var(--theme-text-color-primary-plain);
 }
 
-..h-button[plain]:hover {
+.h-button[plain]:hover {
     background-color: var(--theme-color-primary-plain-hover);
     color: var(--theme-text-color-primary-plain-hover);
 }
