@@ -37,5 +37,9 @@ module.exports = {
     HOVER_COLOR_PRIMARY: '主色悬浮',
     ACTIVE_COLOR: '激活色',
     ICON_COLOR_AUXILIARY: 'ICON辅助色',
-    MODAL_BG_COLOR: 'modal背景色'
+    MODAL_BG_COLOR: 'modal背景色',
+    COLOR_PRIMARY_PLAIN: '主朴素按钮背景色',
+    TEXT_COLOR_PRIMARY_PLAIN: '主朴素按钮字体色',
+    COLOR_PRIMARY_PLAIN_HOVER: '主朴素按钮hover背景色',
+    TEXT_COLOR_PRIMARY_PLAIN_HOVER: '主朴素按钮hover字体色'
 };

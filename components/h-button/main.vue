@@ -1,6 +1,6 @@
 <template>
     <!-- 按钮 -->
-    <button class="h-button" :disabled="disabled || loading" @click="handleClick" :class="buttonClass">
+    <button class="h-button" :plain="plain" :disabled="disabled || loading" @click="handleClick" :class="buttonClass">
         <slot v-if="!loading" />
         <div v-else class="loading-cover">
             <i class="fa fa-spinner" aria-hidden="true"></i>
@@ -21,7 +21,7 @@ export default {
      * debonus 指定每次点击按钮后按钮禁用持续时间
      * loading 由调用指定加载状态
      */
-    props: ['size', 'loading', 'debonus'],
+    props: ['size', 'loading', 'debonus', 'plain'],
     computed: {
         buttonClass() {
             const classes = [];

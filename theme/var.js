@@ -197,3 +197,23 @@ export const ICON_COLOR_AUXILIARY = 'var(--theme-icon-color-auxiliary)';
  */
 export const MODAL_BG_COLOR = 'var(--theme-modal-bg-color)';
 
+/**
+ * @description 主朴素按钮背景色
+ */
+export const COLOR_PRIMARY_PLAIN = 'var(--theme-color-primary-plain)';
+
+/**
+ * @description 主朴素按钮字体色
+ */
+export const TEXT_COLOR_PRIMARY_PLAIN = 'var(--theme-text-color-primary-plain)';
+
+/**
+ * @description 主朴素按钮hover背景色
+ */
+export const COLOR_PRIMARY_PLAIN_HOVER = 'var(--theme-color-primary-plain-hover)';
+
+/**
+ * @description 主朴素按钮hover字体色
+ */
+export const TEXT_COLOR_PRIMARY_PLAIN_HOVER = 'var(--theme-text-color-primary-plain-hover)';
+

@@ -40,6 +40,10 @@
     --theme-active-color: #f99326;
     --theme-icon-color-auxiliary: #808080;
     --theme-modal-bg-color: rgba(37, 37, 37, 0.35);
+    --theme-color-primary-plain: #ffe0bf;
+    --theme-text-color-primary-plain: #f99326;
+    --theme-color-primary-plain-hover: #f99326;
+    --theme-text-color-primary-plain-hover: #fff;
 }
 
 [data-theme="dark"] {

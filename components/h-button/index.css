@@ -18,6 +18,16 @@
     background-color: var(--theme-hover-color-primary);
 }
 
+.h-button[plain] {
+    background-color: var(--theme-color-primary-plain);
+    color: var(--theme-text-color-primary-plain);
+}
+
+..h-button[plain]:hover {
+    background-color: var(--theme-color-primary-plain-hover);
+    color: var(--theme-text-color-primary-plain-hover);
+}
+
 @keyframes rotate {
     0% {
         transform: rotate(0);
