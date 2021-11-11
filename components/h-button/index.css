@@ -43,9 +43,17 @@
     animation: rotate 1s infinite;
 }
 
+.h-button[round] {
+    border-radius: 20px;
+}
+
 .h-button--medium {
     padding: 10px 20px;
     border-radius: 4px;
+}
+
+.h-button--medium[round] {
+    border-radius: 18px;
 }
 
 .h-button--small {
@@ -53,7 +61,15 @@
     font-size: 12px;
 }
 
+.h-button--small[round] {
+    border-radius: 16px;
+}
+
 .h-button--mini {
     padding: 7px 15px;
     font-size: 12px;
+}
+
+.h-button--mini[round] {
+    border-radius: 14px;
 }

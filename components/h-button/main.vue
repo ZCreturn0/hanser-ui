@@ -21,7 +21,7 @@ export default {
      * debonus 指定每次点击按钮后按钮禁用持续时间
      * loading 由调用指定加载状态
      */
-    props: ['size', 'loading', 'debonus', 'plain', 'disabled'],
+    props: ['size', 'loading', 'round', 'debonus', 'plain', 'disabled'],
     computed: {
         buttonClass() {
             const classes = [];
