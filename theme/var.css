@@ -44,6 +44,8 @@
     --theme-text-color-primary-plain: #f99326;
     --theme-color-primary-plain-hover: #f99326;
     --theme-text-color-primary-plain-hover: #fff;
+    --theme-bg-color-badge: #f85726;
+    --theme-text-color-badge: #fff;
 }
 
 [data-theme="dark"] {

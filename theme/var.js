@@ -217,3 +217,13 @@ export const COLOR_PRIMARY_PLAIN_HOVER = 'var(--theme-color-primary-plain-hover)
  */
 export const TEXT_COLOR_PRIMARY_PLAIN_HOVER = 'var(--theme-text-color-primary-plain-hover)';
 
+/**
+ * @description badge背景色
+ */
+export const BG_COLOR_BADGE = 'var(--theme-bg-color-badge)';
+
+/**
+ * @description badge字体色
+ */
+export const TEXT_COLOR_BADGE = 'var(--theme-text-color-badge)';
+
