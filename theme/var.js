@@ -227,3 +227,8 @@ export const BG_COLOR_BADGE = 'var(--theme-bg-color-badge)';
  */
 export const TEXT_COLOR_BADGE = 'var(--theme-text-color-badge)';
 
+/**
+ * @description 投影颜色
+ */
+export const SHADOW_COLOR = 'var(--theme-shadow-color)';
+

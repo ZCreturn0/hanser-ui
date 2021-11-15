@@ -46,6 +46,7 @@
     --theme-text-color-primary-plain-hover: #fff;
     --theme-bg-color-badge: #f85726;
     --theme-text-color-badge: #fff;
+    --theme-shadow-color: #deab8a;
 }
 
 [data-theme="dark"] {

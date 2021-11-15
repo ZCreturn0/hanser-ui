@@ -43,5 +43,6 @@ module.exports = {
     COLOR_PRIMARY_PLAIN_HOVER: '主朴素按钮hover背景色',
     TEXT_COLOR_PRIMARY_PLAIN_HOVER: '主朴素按钮hover字体色',
     BG_COLOR_BADGE: 'badge背景色',
-    TEXT_COLOR_BADGE: 'badge字体色'
+    TEXT_COLOR_BADGE: 'badge字体色',
+    SHADOW_COLOR: '投影颜色'
 };
