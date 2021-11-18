@@ -84,13 +84,19 @@
 }
 
 .h-input[size="small"] .preffix,
-.h-input[size="small"] .suffix,
-.h-input[size="small"] .words-counter {
+.h-input[size="small"] .suffix {
     top: 10px
 }
 
-.h-input[size="mini"] .preffix,
-.h-input[size="mini"] .suffix,
-.h-input[size="mini"] .words-counter {
+.h-input[size="small"] .words-counter {
     top: 6px
+}
+
+.h-input[size="mini"] .preffix,
+.h-input[size="mini"] .suffix {
+    top: 6px
+}
+
+.h-input[size="mini"] .words-counter {
+    top: 2px
 }
