@@ -67,13 +67,19 @@
     padding-right: 30px;
 }
 
-.suffix {
+.show-maxlength {
+    padding-right: 70px;
+}
+
+.suffix,
+.words-counter {
     position: absolute;
     right: 8px;
 }
 
 .h-input .preffix,
-.h-input .suffix {
+.h-input .suffix,
+.h-input .words-counter {
     top: 12px
 }
 
@@ -82,7 +88,15 @@
     top: 10px
 }
 
+.h-input[size="small"] .words-counter {
+    top: 6px
+}
+
 .h-input[size="mini"] .preffix,
 .h-input[size="mini"] .suffix {
     top: 6px
+}
+
+.h-input[size="mini"] .words-counter {
+    top: 2px
 }

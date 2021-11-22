@@ -5,15 +5,20 @@
             <slot name="preffix" class="preffix" />
         </div>
         <input
-            :class="{ 'h-input__inner': true, 'show-suffix': !!$slots.suffix, 'show-preffix': !!$slots.preffix }"
+            :class="{ 'h-input__inner': true, 'show-suffix': !!$slots.suffix, 'show-preffix': !!$slots.preffix, 'show-maxlength': maxlength }"
             :style="inputStyle"
             :type="type"
             :value="value"
             :disabled="disabled"
+            :maxlength="maxlength"
             :placeholder="placeholder"
             @input="input" />
-        <div class="suffix">
+        <!-- maxlength 与 suffix 不能共存，maxlength 优先级高 -->
+        <div class="suffix" v-if="!maxlength">
             <slot name="suffix" />
+        </div>
+        <div v-if="maxlength" class="words-counter">
+            {{ words }}/{{ maxlength }}
         </div>
     </div>
 </template>
@@ -64,6 +69,10 @@ export default {
             type: String,
             // ''   'small'   'mini'
             default: ''
+        },
+        maxlength: {
+            type: Number | '',
+            default: ''
         }
     },
     computed: {
@@ -87,6 +96,9 @@ export default {
                 color: ${color};
                 ${this.borderStyle}
             `;
+        },
+        words() {
+            return this.value.length;
         }
     },
     methods: {
