@@ -232,3 +232,23 @@ export const TEXT_COLOR_BADGE = 'var(--theme-text-color-badge)';
  */
 export const SHADOW_COLOR = 'var(--theme-shadow-color)';
 
+/**
+ * @description 斗鱼未绑定字体色
+ */
+export const DOUYU_UNBIND_COLOR = 'var(--theme-douyu-unbind-color)';
+
+/**
+ * @description 斗鱼未绑定hover字体色
+ */
+export const DOUYU_UNBIND_HOVER_COLOR = 'var(--theme-douyu-unbind-hover-color)';
+
+/**
+ * @description bilibili未绑定字体色
+ */
+export const BILIBILI_UNBIND_COLOR = 'var(--theme-bilibili-unbind-color)';
+
+/**
+ * @description bilibili未绑定hover字体色
+ */
+export const BILIBILI_UNBIND_HOVER_COLOR = 'var(--theme-bilibili-unbind-hover-color)';
+

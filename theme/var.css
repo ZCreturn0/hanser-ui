@@ -46,7 +46,11 @@
     --theme-text-color-primary-plain-hover: #fff;
     --theme-bg-color-badge: #f85726;
     --theme-text-color-badge: #fff;
-    --theme-shadow-color: #f1ddd0;;
+    --theme-shadow-color: #f1ddd0;
+    --theme-douyu-unbind-color: #b3704d;
+    --theme-douyu-unbind-hover-color: #ff813c;
+    --theme-bilibili-unbind-color: #4a6dc7;
+    --theme-bilibili-unbind-hover-color: #5f84e3;
 }
 
 [data-theme="dark"] {
@@ -88,4 +92,9 @@
     --theme-hover-color-primary: #f7835c;
     --theme-active-color: #f0f0f0;
     --theme-modal-bg-color: rgba(37, 37, 37, 0.35);
+    --theme-shadow-color: #f1ddd0;
+    --theme-douyu-unbind-color: #b3704d;
+    --theme-douyu-unbind-hover-color: #ff813c;
+    --theme-bilibili-unbind-color: #4a6dc7;
+    --theme-bilibili-unbind-hover-color: #5f84e3;
 }
