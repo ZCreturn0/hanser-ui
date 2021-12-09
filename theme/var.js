@@ -252,3 +252,8 @@ export const BILIBILI_UNBIND_COLOR = 'var(--theme-bilibili-unbind-color)';
  */
 export const BILIBILI_UNBIND_HOVER_COLOR = 'var(--theme-bilibili-unbind-hover-color)';
 
+/**
+ * @description 字数限制字体颜色
+ */
+export const WORDS_LIMITATION_COLOR = 'var(--theme-words-limitation-color)';
+
