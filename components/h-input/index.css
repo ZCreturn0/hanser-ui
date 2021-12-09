@@ -75,28 +75,29 @@
 .words-counter {
     position: absolute;
     right: 8px;
+    color: var(--theme-words-limitation-color);
 }
 
 .h-input .preffix,
 .h-input .suffix,
 .h-input .words-counter {
-    top: 12px
+    top: 12px;
 }
 
 .h-input[size="small"] .preffix,
 .h-input[size="small"] .suffix {
-    top: 10px
+    top: 10px;
 }
 
 .h-input[size="small"] .words-counter {
-    top: 6px
+    top: 6px;
 }
 
 .h-input[size="mini"] .preffix,
 .h-input[size="mini"] .suffix {
-    top: 6px
+    top: 6px;
 }
 
 .h-input[size="mini"] .words-counter {
-    top: 2px
+    top: 2px;
 }
