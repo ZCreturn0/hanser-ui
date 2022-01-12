@@ -26,7 +26,7 @@
 }
 
 .h-button:not(:disabled):hover {
-    background-color: var(--theme-bg-block-disabled);
+    background-color: var(--theme-color-primary-plain-hover);
 }
 
 @keyframes rotate {
