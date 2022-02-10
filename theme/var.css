@@ -52,6 +52,7 @@
     --theme-bilibili-unbind-color: #4a6dc7;
     --theme-bilibili-unbind-hover-color: #5f84e3;
     --theme-words-limitation-color: #868e96;
+    --theme-signed-days-bg-color: #ffb245;
 }
 
 [data-theme="dark"] {
@@ -98,4 +99,5 @@
     --theme-douyu-unbind-hover-color: #ff813c;
     --theme-bilibili-unbind-color: #4a6dc7;
     --theme-bilibili-unbind-hover-color: #5f84e3;
+    --theme-signed-days-bg-color: #ffb245;
 }

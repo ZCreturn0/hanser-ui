@@ -257,3 +257,8 @@ export const BILIBILI_UNBIND_HOVER_COLOR = 'var(--theme-bilibili-unbind-hover-co
  */
 export const WORDS_LIMITATION_COLOR = 'var(--theme-words-limitation-color)';
 
+/**
+ * @description 签到日背景色
+ */
+export const SIGNED_DAYS_BG_COLOR = 'var(--theme-signed-days-bg-color)';
+
