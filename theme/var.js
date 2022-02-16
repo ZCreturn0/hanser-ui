@@ -262,3 +262,8 @@ export const WORDS_LIMITATION_COLOR = 'var(--theme-words-limitation-color)';
  */
 export const SIGNED_DAYS_BG_COLOR = 'var(--theme-signed-days-bg-color)';
 
+/**
+ * @description 签到日历今日字体色
+ */
+export const SIGN_TODAY_TEXT_COLOR = 'var(--theme-sign-today-text-color)';
+
