@@ -267,3 +267,13 @@ export const SIGNED_DAYS_BG_COLOR = 'var(--theme-signed-days-bg-color)';
  */
 export const SIGN_TODAY_TEXT_COLOR = 'var(--theme-sign-today-text-color)';
 
+/**
+ * @description 管理员展示区头部字体颜色
+ */
+export const MANAGER_CAPTAIN_COLOR = 'var(--theme-manager-captain-color)';
+
+/**
+ * @description 管理员展示区管理员字体颜色
+ */
+export const MANAGER_TEXT_COLOR = 'var(--theme-manager-text-color)';
+

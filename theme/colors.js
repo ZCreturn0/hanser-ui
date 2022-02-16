@@ -51,5 +51,7 @@ module.exports = {
     BILIBILI_UNBIND_HOVER_COLOR: 'bilibili未绑定hover字体色',
     WORDS_LIMITATION_COLOR: '字数限制字体颜色',
     SIGNED_DAYS_BG_COLOR: '签到日背景色',
-    SIGN_TODAY_TEXT_COLOR: '签到日历今日字体色'
+    SIGN_TODAY_TEXT_COLOR: '签到日历今日字体色',
+    MANAGER_CAPTAIN_COLOR: '管理员展示区头部字体颜色',
+    MANAGER_TEXT_COLOR: '管理员展示区管理员字体颜色'
 };
