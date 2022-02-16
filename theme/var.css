@@ -52,6 +52,65 @@
     --theme-bilibili-unbind-color: #4a6dc7;
     --theme-bilibili-unbind-hover-color: #5f84e3;
     --theme-words-limitation-color: #868e96;
+    --theme-signed-days-bg-color: #ffb245;
+    --theme-sign-today-text-color: #fa8f22;
+}
+
+[data-theme="dark"] {
+    --theme-color-primary: #ffb769;
+    --theme-color-success: #fff;
+    --theme-color-warning: #fff;
+    --theme-color-message: #fff;
+    --theme-color-danger: #fff;
+    --theme-color-secondary: #333;
+    --theme-bg-global: #f6f2ef;
+    --theme-bg-primary: rgba(110, 168, 47, 0.1);
+    --theme-bg-success: #6ea82f;
+    --theme-bg-warning: #e09d16;
+    --theme-bg-message: #909399;
+    --theme-bg-danger: #dc3a48;
+    --theme-bg-secondary: rgba(51, 51, 51, 0.1);
+    --theme-bg-block: #eee;
+    --theme-bg-block-disabled: #bdc5cf;
+    --theme-bg-block-dark: #f5f6f7;
+    --theme-bg-reverse: #333;
+    --theme-bg-tag: #f5b976;
+    --theme-text-color: #571A10;
+    --theme-text-color-auxiliary: #666;
+    --theme-text-color-secondary: #999;
+    --theme-text-color-white: #fff;
+    --theme-bg-color-white: #ffffff80;
+    --theme-text-color-disabled: #aaa;
+    --theme-text-color-link: #ff7241;
+    --theme-text-color-reverse: #fff;
+    --theme-border-color: #f99326;
+    --theme-border-color-dark: #e6e6e6;
+    --theme-border-color-divider: #9B2F2F;
+    --theme-border-color-disabled: #e4e7ed;
+    --theme-border-color-input: #ccc;
+    --theme-border-color-input-focus: #7cb043;
+    --theme-input-bg-color: #fdedd3;
+    --theme-input-text-color: #333;
+    --theme-input-placeholder-color: #f9b278;
+    --theme-hover-color: #f5b976;
+    --theme-hover-color-primary: #7cb043;
+    --theme-active-color: #f99326;
+    --theme-icon-color-auxiliary: #808080;
+    --theme-modal-bg-color: rgba(37, 37, 37, 0.35);
+    --theme-color-primary-plain: #ffe0bf;
+    --theme-text-color-primary-plain: #f99326;
+    --theme-color-primary-plain-hover: #f99326;
+    --theme-text-color-primary-plain-hover: #fff;
+    --theme-bg-color-badge: #f85726;
+    --theme-text-color-badge: #571A10;
+    --theme-shadow-color: #000;
+    --theme-douyu-unbind-color: #b3704d;
+    --theme-douyu-unbind-hover-color: #ff813c;
+    --theme-bilibili-unbind-color: #4a6dc7;
+    --theme-bilibili-unbind-hover-color: #5f84e3;
+    --theme-words-limitation-color: #868e96;
+    --theme-signed-days-bg-color: #ffb245;
+    --theme-sign-today-text-color: #fa8f22;
 }
 
 [data-theme="new-year"] {
@@ -107,4 +166,6 @@
     --theme-bilibili-unbind-color: #4a6dc7;
     --theme-bilibili-unbind-hover-color: #5f84e3;
     --theme-words-limitation-color: #868e96;
+    --theme-signed-days-bg-color: #ffb245;
+    --theme-sign-today-text-color: #fa8f22;
 }

@@ -49,5 +49,6 @@ module.exports = {
     DOUYU_UNBIND_HOVER_COLOR: '斗鱼未绑定hover字体色',
     BILIBILI_UNBIND_COLOR: 'bilibili未绑定字体色',
     BILIBILI_UNBIND_HOVER_COLOR: 'bilibili未绑定hover字体色',
-    WORDS_LIMITATION_COLOR: '字数限制字体颜色'
+    WORDS_LIMITATION_COLOR: '字数限制字体颜色',
+    SIGNED_DAYS_BG_COLOR: '签到日背景色'
 };
