@@ -1,9 +1,9 @@
 /* 颜色待确认 */
 [data-theme="light"] {
     --theme-color-primary: #ffb769;
-    --theme-color-success: #fff;
-    --theme-color-warning: #fff;
-    --theme-color-message: #fff;
+    --theme-color-success: #6ea82f;
+    --theme-color-warning: #e09d16;
+    --theme-color-message: #909399;
     --theme-color-danger: #dc3a48;
     --theme-color-secondary: #333;
     --theme-bg-global: #f6f2ef;
