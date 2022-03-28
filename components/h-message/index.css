@@ -19,21 +19,21 @@
 }
 
 .message-type--success {
-    color: var(--theme-color-success);
+    color: var(--theme-text-color-white);
     background-color: var(--theme-bg-success);
 }
 
 .message-type--warning {
-    color: var(--theme-color-warning);
+    color: var(--theme-text-color-white);
     background-color: var(--theme-bg-warning);
 }
 
 .message-type--message {
-    color: var(--theme-color-message);
+    color: var(--theme-text-color-white);
     background-color: var(--theme-bg-message);
 }
 
 .message-type--danger {
-    color: var(--theme-color-danger);
+    color: var(--theme-text-color-white);
     background-color: var(--theme-bg-danger);
 }
