@@ -18,6 +18,7 @@
     --theme-bg-block-dark: #f5f6f7;
     --theme-bg-reverse: #333;
     --theme-bg-tag: #f5b976;
+    --theme-bg-active: #cccccc61;
     --theme-text-color: #333;
     --theme-text-color-auxiliary: #666;
     --theme-text-color-secondary: #999;
@@ -78,6 +79,7 @@
     --theme-bg-block-dark: #f5f6f7;
     --theme-bg-reverse: #333;
     --theme-bg-tag: #f5b976;
+    --theme-bg-active: #cccccc61;
     --theme-text-color: #571A10;
     --theme-text-color-auxiliary: #666;
     --theme-text-color-secondary: #999;
@@ -138,6 +140,7 @@
     --theme-bg-block-dark: #f5f6f7;
     --theme-bg-reverse: #333;
     --theme-bg-tag: #f5b976;
+    --theme-bg-active: #cccccc61;
     --theme-text-color: #571A10;
     --theme-text-color-auxiliary: #666;
     --theme-text-color-secondary: #999;
