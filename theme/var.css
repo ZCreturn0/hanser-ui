@@ -50,8 +50,10 @@
     --theme-shadow-color: #f1ddd0;
     --theme-douyu-unbind-color: #b3704d;
     --theme-douyu-unbind-hover-color: #ff813c;
+    --theme-douyu-color: #ff813c;
     --theme-bilibili-unbind-color: #4a6dc7;
     --theme-bilibili-unbind-hover-color: #5f84e3;
+    --theme-bilibili-color: #5f84e3;
     --theme-words-limitation-color: #868e96;
     --theme-signed-days-bg-color: #ffb245;
     --theme-sign-today-text-color: #fa8f22;
@@ -111,8 +113,10 @@
     --theme-shadow-color: #000;
     --theme-douyu-unbind-color: #b3704d;
     --theme-douyu-unbind-hover-color: #ff813c;
+    --theme-douyu-color: #ff813c;
     --theme-bilibili-unbind-color: #4a6dc7;
     --theme-bilibili-unbind-hover-color: #5f84e3;
+    --theme-bilibili-color: #5f84e3;
     --theme-words-limitation-color: #868e96;
     --theme-signed-days-bg-color: #ffb245;
     --theme-sign-today-text-color: #fa8f22;
@@ -172,8 +176,10 @@
     --theme-shadow-color: #000;
     --theme-douyu-unbind-color: #b3704d;
     --theme-douyu-unbind-hover-color: #ff813c;
+    --theme-douyu-color: #ff813c;
     --theme-bilibili-unbind-color: #4a6dc7;
     --theme-bilibili-unbind-hover-color: #5f84e3;
+    --theme-bilibili-color: #5f84e3;
     --theme-words-limitation-color: #868e96;
     --theme-signed-days-bg-color: #ffb245;
     --theme-sign-today-text-color: #fa8f22;

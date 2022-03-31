@@ -88,6 +88,11 @@ export const BG_REVERSE = 'var(--theme-bg-reverse)';
 export const BG_TAG = 'var(--theme-bg-tag)';
 
 /**
+ * @description 选中菜单背景色
+ */
+export const BG_ACTIVE = 'var(--theme-bg-active)';
+
+/**
  * @description 字体颜色
  */
 export const TEXT_COLOR = 'var(--theme-text-color)';
@@ -238,6 +243,11 @@ export const SHADOW_COLOR = 'var(--theme-shadow-color)';
 export const DOUYU_UNBIND_COLOR = 'var(--theme-douyu-unbind-color)';
 
 /**
+ * @description 斗鱼主题色
+ */
+export const DOUYU_COLOR = 'var(--theme-douyu-color)';
+
+/**
  * @description 斗鱼未绑定hover字体色
  */
 export const DOUYU_UNBIND_HOVER_COLOR = 'var(--theme-douyu-unbind-hover-color)';
@@ -251,6 +261,11 @@ export const BILIBILI_UNBIND_COLOR = 'var(--theme-bilibili-unbind-color)';
  * @description bilibili未绑定hover字体色
  */
 export const BILIBILI_UNBIND_HOVER_COLOR = 'var(--theme-bilibili-unbind-hover-color)';
+
+/**
+ * @description bilibili主题色
+ */
+export const BILIBILI_COLOR = 'var(--theme-bilibili-color)';
 
 /**
  * @description 字数限制字体颜色
