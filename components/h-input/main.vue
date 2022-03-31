@@ -12,6 +12,10 @@
             :disabled="disabled"
             :maxlength="maxlength"
             :placeholder="placeholder"
+            @keydown="keydown"
+            @keyup="keyup"
+            @keypress="keypress"
+            @keypress.enter="enterPress"
             @input="input" />
         <!-- maxlength 与 suffix 不能共存，maxlength 优先级高 -->
         <div class="suffix" v-if="!maxlength">
@@ -104,6 +108,18 @@ export default {
     methods: {
         input($event) {
             this.$emit('input', $event.target.value);
+        },
+        keydown($event) {
+            this.$emit('keydown', $event.target.value);
+        },
+        keyup($event) {
+            this.$emit('keyup', $event.target.value);
+        },
+        keypress($event) {
+            this.$emit('keypress', $event.target.value);
+        },
+        enterPress($event) {
+            this.$emit('enter-press', $event.target.value);
         }
     }
 }
