@@ -57,5 +57,7 @@ module.exports = {
     SIGN_TODAY_TEXT_COLOR: '签到日历今日字体色',
     MANAGER_TEXT_COLOR: '管理员展示区管理员字体颜色',
     SWITCH_DISABLED_BG_COLOR: '切换开关未选中的背景色',
-    SWITCH_DISABLED_TEXT_COLOR: '切换开关未选中的字体色'
+    SWITCH_DISABLED_TEXT_COLOR: '切换开关未选中的字体色',
+    INCREASE_COLOR: '增加色',
+    DECREASE_COLOR: '减少色'
 };

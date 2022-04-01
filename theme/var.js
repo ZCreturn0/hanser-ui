@@ -297,3 +297,13 @@ export const SWITCH_DISABLED_BG_COLOR = 'var(--theme-switch-disabled-bg-color)';
  */
 export const SWITCH_DISABLED_TEXT_COLOR = 'var(--theme-switch-disabled-text-color)';
 
+/**
+ * @description 增加色
+ */
+export const INCREASE_COLOR = 'var(--theme-increase-color)';
+
+/**
+ * @description 减少色
+ */
+export const DECREASE_COLOR = 'var(--theme-decrease-color)';
+

@@ -60,6 +60,8 @@
     --theme-manager-text-color: #808080;
     --theme-switch-disabled-bg-color: #cdcdcd;
     --theme-switch-disabled-text-color: #808080;
+    --theme-increase-color: #0ebe98;
+    --theme-decrease-color: #f73131;
 }
 
 [data-theme="dark"] {
@@ -123,6 +125,8 @@
     --theme-manager-text-color: #808080;
     --theme-switch-disabled-bg-color: #cdcdcd;
     --theme-switch-disabled-text-color: #808080;
+    --theme-increase-color: #0ebe98;
+    --theme-decrease-color: #f73131;
 }
 
 [data-theme="new-year"] {
@@ -186,4 +190,6 @@
     --theme-manager-text-color: #808080;
     --theme-switch-disabled-bg-color: #cdcdcd;
     --theme-switch-disabled-text-color: #808080;
+    --theme-increase-color: #0ebe98;
+    --theme-decrease-color: #f73131;
 }
