@@ -16,6 +16,7 @@
             @keyup="keyup"
             @keypress="keypress"
             @keypress.enter="enterPress"
+            @blur="blur"
             @input="input" />
         <!-- maxlength 与 suffix 不能共存，maxlength 优先级高 -->
         <div class="suffix" v-if="!maxlength">
@@ -120,6 +121,9 @@ export default {
         },
         enterPress($event) {
             this.$emit('enter-press', $event.target.value);
+        },
+        blur($event) {
+            this.$emit('blur', $event.target.value);
         }
     }
 }
