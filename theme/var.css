@@ -21,6 +21,7 @@
     --theme-bg-active: #cccccc61;
     --theme-text-color: #333;
     --theme-text-color-auxiliary: #666;
+    --theme-text-color-auxiliary-light: #7e7e7e;
     --theme-text-color-secondary: #999;
     --theme-text-color-white: #fff;
     --theme-bg-color-white: #fff;
@@ -86,6 +87,7 @@
     --theme-bg-active: #cccccc61;
     --theme-text-color: #571A10;
     --theme-text-color-auxiliary: #666;
+    --theme-text-color-auxiliary-light: #7e7e7e;
     --theme-text-color-secondary: #999;
     --theme-text-color-white: #fff;
     --theme-bg-color-white: #ffffff80;
@@ -151,6 +153,7 @@
     --theme-bg-active: #cccccc61;
     --theme-text-color: #571A10;
     --theme-text-color-auxiliary: #666;
+    --theme-text-color-auxiliary-light: #7e7e7e;
     --theme-text-color-secondary: #999;
     --theme-text-color-white: #fff;
     --theme-bg-color-white: #ffffff80;

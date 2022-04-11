@@ -98,9 +98,14 @@ export const BG_ACTIVE = 'var(--theme-bg-active)';
 export const TEXT_COLOR = 'var(--theme-text-color)';
 
 /**
- * @description 辅助字体颜色
+ * @description 辅助颜色
  */
 export const TEXT_COLOR_AUXILIARY = 'var(--theme-text-color-auxiliary)';
+
+/**
+ * @description 辅助浅色
+ */
+export const TEXT_COLOR_AUXILIARY_LIGHT = 'var(--theme-text-color-auxiliary-light)';
 
 /**
  * @description 次要字体颜色
