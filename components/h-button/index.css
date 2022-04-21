@@ -73,3 +73,23 @@
 .h-button--mini[round] {
     border-radius: 14px;
 }
+
+.h-button--primary {
+    background-color: var(--theme-color-primary);
+}
+
+.h-button--success {
+    background-color: var(--theme-color-success);
+}
+
+.h-button--warning {
+    background-color: var(--theme-color-warning);
+}
+
+.h-button--message {
+    background-color: var(--theme-color-message);
+}
+
+.h-button--danger {
+    background-color: var(--theme-color-danger);
+}

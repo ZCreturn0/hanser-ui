@@ -21,13 +21,17 @@ export default {
      * debonus 指定每次点击按钮后按钮禁用持续时间
      * loading 由调用指定加载状态
      */
-    props: ['size', 'loading', 'round', 'debonus', 'plain', 'disabled'],
+    props: ['size', 'loading', 'round', 'debonus', 'plain', 'disabled', 'type'],
     computed: {
         buttonClass() {
             const classes = [];
             const size = ['medium', 'small', 'mini'];
             if (this.size && size.includes(this.size)) {
                 classes.push(`h-button--${this.size}`);
+            }
+            const type = ['primary', 'success', 'warning', 'message', 'danger'];
+            if (this.type && type.includes(this.type)) {
+                classes.push(`h-button--${this.type}`);
             }
             return classes;
         },
