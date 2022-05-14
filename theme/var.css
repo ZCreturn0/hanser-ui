@@ -228,13 +228,13 @@
     --theme-text-color-auxiliary-light: #7e7e7e;
     --theme-text-color-secondary: #999;
     --theme-text-color-white: #fff;
-    --theme-bg-color-white: #ffffff80;
+    --theme-bg-color-white: rgba(255, 255, 255, 0.6);
     --theme-text-color-disabled: #aaa;
     --theme-text-color-link: #ff7241;
     --theme-text-color-reverse: #fff;
     --theme-border-color: #f99326;
     --theme-border-color-dark: #e6e6e6;
-    --theme-border-color-divider: #9B2F2F;
+    --theme-border-color-divider: #ff982c;
     --theme-border-color-disabled: #e4e7ed;
     --theme-border-color-input: #ccc;
     --theme-border-color-input-focus: #7cb043;
