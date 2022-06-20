@@ -61,5 +61,8 @@ module.exports = {
     SWITCH_DISABLED_TEXT_COLOR: '切换开关未选中的字体色',
     INCREASE_COLOR: '增加色',
     DECREASE_COLOR: '减少色',
-    DIALOG_BG_COLOR: '对话框背景色'
+    DIALOG_BG_COLOR: '对话框背景色',
+    CHAT_BG_COLOR: '聊天列表背景色',
+    CHAT_TOP_COLOR: '置顶聊天列表背景色',
+    CHAT_ACTIVE_COLOR: '选中聊天列表背景色'
 };

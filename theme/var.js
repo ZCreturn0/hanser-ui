@@ -317,3 +317,18 @@ export const DECREASE_COLOR = 'var(--theme-decrease-color)';
  */
 export const DIALOG_BG_COLOR = 'var(--theme-dialog-bg-color)';
 
+/**
+ * @description 聊天列表背景色
+ */
+export const CHAT_BG_COLOR = 'var(--theme-chat-bg-color)';
+
+/**
+ * @description 置顶聊天列表背景色
+ */
+export const CHAT_TOP_COLOR = 'var(--theme-chat-top-color)';
+
+/**
+ * @description 选中聊天列表背景色
+ */
+export const CHAT_ACTIVE_COLOR = 'var(--theme-chat-active-color)';
+
