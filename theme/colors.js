@@ -60,5 +60,6 @@ module.exports = {
     SWITCH_DISABLED_BG_COLOR: '切换开关未选中的背景色',
     SWITCH_DISABLED_TEXT_COLOR: '切换开关未选中的字体色',
     INCREASE_COLOR: '增加色',
-    DECREASE_COLOR: '减少色'
+    DECREASE_COLOR: '减少色',
+    DIALOG_BG_COLOR: '对话框背景色'
 };

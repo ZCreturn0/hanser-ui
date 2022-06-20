@@ -312,3 +312,8 @@ export const INCREASE_COLOR = 'var(--theme-increase-color)';
  */
 export const DECREASE_COLOR = 'var(--theme-decrease-color)';
 
+/**
+ * @description 对话框背景色
+ */
+export const DIALOG_BG_COLOR = 'var(--theme-dialog-bg-color)';
+
