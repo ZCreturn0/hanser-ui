@@ -337,3 +337,8 @@ export const CHAT_ACTIVE_COLOR = 'var(--theme-chat-active-color)';
  */
 export const CHAT_SIDE_MENU_BG_COLOR = 'var(--theme-chat-side-menu-bg-color)';
 
+/**
+ * @description 聊天框边框颜色
+ */
+export const CHAT_BORDER_COLOR = 'var(--theme-chat-border-color)';
+
