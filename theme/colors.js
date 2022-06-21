@@ -64,5 +64,6 @@ module.exports = {
     DIALOG_BG_COLOR: '对话框背景色',
     CHAT_BG_COLOR: '聊天列表背景色',
     CHAT_TOP_COLOR: '置顶聊天列表背景色',
-    CHAT_ACTIVE_COLOR: '选中聊天列表背景色'
+    CHAT_ACTIVE_COLOR: '选中聊天列表背景色',
+    CHAT_SIDE_MENU_BG_COLOR: '聊天框侧边菜单栏背景色'
 };
