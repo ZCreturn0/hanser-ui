@@ -68,5 +68,6 @@ module.exports = {
     CHAT_SIDE_MENU_BG_COLOR: '聊天框侧边菜单栏背景色',
     CHAT_BORDER_COLOR: '聊天框边框颜色',
     CHAT_SELF_BUBBLE_BG_COLOR: '自己聊天框背景色',
-    CHAT_OTHER_BUBBLE_BG_COLOR: '对方聊天框背景色'
+    CHAT_OTHER_BUBBLE_BG_COLOR: '对方聊天框背景色',
+    CHAT_UNREAD_TIP_BG_COLOR: '未读消息提示背景色'
 };

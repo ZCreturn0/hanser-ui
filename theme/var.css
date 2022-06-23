@@ -73,6 +73,7 @@
     --theme-chat-border-color: #e0e0e0;
     --theme-chat-self-bubble-bg-color: #a9e87a;
     --theme-chat-other-bubble-bg-color: #f3f3f3;
+    --theme-chat-unread-tip-bg-color: #88d2f5;
 }
 
 [data-theme="dark"] {
@@ -149,6 +150,7 @@
     --theme-chat-border-color: #e0e0e0;
     --theme-chat-self-bubble-bg-color: #a9e87a;
     --theme-chat-other-bubble-bg-color: #f3f3f3;
+    --theme-chat-unread-tip-bg-color: #88d2f5;
 }
 
 [data-theme="new-year"] {
@@ -225,6 +227,7 @@
     --theme-chat-border-color: #e0e0e0;
     --theme-chat-self-bubble-bg-color: #a9e87a;
     --theme-chat-other-bubble-bg-color: #f3f3f3;
+    --theme-chat-unread-tip-bg-color: #88d2f5;
 }
 
 [data-theme="birthday-2022"] {
@@ -301,4 +304,5 @@
     --theme-chat-border-color: #e0e0e0;
     --theme-chat-self-bubble-bg-color: #a9e87a;
     --theme-chat-other-bubble-bg-color: #f3f3f3;
+    --theme-chat-unread-tip-bg-color: #88d2f5;
 }

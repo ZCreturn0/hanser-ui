@@ -352,3 +352,8 @@ export const CHAT_SELF_BUBBLE_BG_COLOR = 'var(--theme-chat-self-bubble-bg-color)
  */
 export const CHAT_OTHER_BUBBLE_BG_COLOR = 'var(--theme-chat-other-bubble-bg-color)';
 
+/**
+ * @description 未读消息提示背景色
+ */
+export const CHAT_UNREAD_TIP_BG_COLOR = 'var(--theme-chat-unread-tip-bg-color)';
+
