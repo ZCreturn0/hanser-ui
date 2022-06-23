@@ -71,6 +71,8 @@
     --theme-chat-avtive-color: #d2d2d2;
     --theme-chat-side-menu-bg-color: #e3e4e5;
     --theme-chat-border-color: #e0e0e0;
+    --theme-chat-self-bubble-bg-color: #a9e87a;
+    --theme-chat-other-bubble-bg-color: #f3f3f3;
 }
 
 [data-theme="dark"] {
@@ -145,6 +147,8 @@
     --theme-chat-avtive-color: #d2d2d2;
     --theme-chat-side-menu-bg-color: #e3e4e5;
     --theme-chat-border-color: #e0e0e0;
+    --theme-chat-self-bubble-bg-color: #a9e87a;
+    --theme-chat-other-bubble-bg-color: #f3f3f3;
 }
 
 [data-theme="new-year"] {
@@ -219,6 +223,8 @@
     --theme-chat-avtive-color: #d2d2d2;
     --theme-chat-side-menu-bg-color: #e3e4e5;
     --theme-chat-border-color: #e0e0e0;
+    --theme-chat-self-bubble-bg-color: #a9e87a;
+    --theme-chat-other-bubble-bg-color: #f3f3f3;
 }
 
 [data-theme="birthday-2022"] {
@@ -293,4 +299,6 @@
     --theme-chat-avtive-color: #d2d2d2;
     --theme-chat-side-menu-bg-color: #e3e4e5;
     --theme-chat-border-color: #e0e0e0;
+    --theme-chat-self-bubble-bg-color: #a9e87a;
+    --theme-chat-other-bubble-bg-color: #f3f3f3;
 }

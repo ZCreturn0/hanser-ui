@@ -66,5 +66,7 @@ module.exports = {
     CHAT_TOP_COLOR: '置顶聊天列表背景色',
     CHAT_ACTIVE_COLOR: '选中聊天列表背景色',
     CHAT_SIDE_MENU_BG_COLOR: '聊天框侧边菜单栏背景色',
-    CHAT_BORDER_COLOR: '聊天框边框颜色'
+    CHAT_BORDER_COLOR: '聊天框边框颜色',
+    CHAT_SELF_BUBBLE_BG_COLOR: '自己聊天框背景色',
+    CHAT_OTHER_BUBBLE_BG_COLOR: '对方聊天框背景色'
 };

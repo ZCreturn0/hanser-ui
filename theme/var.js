@@ -342,3 +342,13 @@ export const CHAT_SIDE_MENU_BG_COLOR = 'var(--theme-chat-side-menu-bg-color)';
  */
 export const CHAT_BORDER_COLOR = 'var(--theme-chat-border-color)';
 
+/**
+ * @description 自己聊天框背景色
+ */
+export const CHAT_SELF_BUBBLE_BG_COLOR = 'var(--theme-chat-self-bubble-bg-color)';
+
+/**
+ * @description 对方聊天框背景色
+ */
+export const CHAT_OTHER_BUBBLE_BG_COLOR = 'var(--theme-chat-other-bubble-bg-color)';
+
