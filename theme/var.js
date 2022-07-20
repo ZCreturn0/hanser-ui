@@ -357,3 +357,13 @@ export const CHAT_OTHER_BUBBLE_BG_COLOR = 'var(--theme-chat-other-bubble-bg-colo
  */
 export const CHAT_UNREAD_TIP_BG_COLOR = 'var(--theme-chat-unread-tip-bg-color)';
 
+/**
+ * @description 偶数行背景色
+ */
+export const EVEN_BG_COLOR = 'var(--theme-even-bg-color)';
+
+/**
+ * @description 奇数行背景色
+ */
+export const ODD_BG_COLOR = 'var(--theme-odd-bg-color)';
+
