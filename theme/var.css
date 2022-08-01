@@ -76,6 +76,7 @@
     --theme-chat-unread-tip-bg-color: #88d2f5;
     --theme-even-bg-color: #f4f4f4;
     --theme-odd-bg-color: #fff9f9;
+    --theme-top-cart-bg-color: #51b6ef;
 }
 
 [data-theme="dark"] {
@@ -155,6 +156,7 @@
     --theme-chat-unread-tip-bg-color: #88d2f5;
     --theme-even-bg-color: #f4f4f4;
     --theme-odd-bg-color: #fff9f9;
+    --theme-top-cart-bg-color: #51b6ef;
 }
 
 [data-theme="new-year"] {
@@ -234,6 +236,7 @@
     --theme-chat-unread-tip-bg-color: #88d2f5;
     --theme-even-bg-color: #f4f4f4;
     --theme-odd-bg-color: #fff9f9;
+    --theme-top-cart-bg-color: #51b6ef;
 }
 
 [data-theme="birthday-2022"] {
@@ -313,4 +316,5 @@
     --theme-chat-unread-tip-bg-color: #88d2f5;
     --theme-even-bg-color: #f4f4f4;
     --theme-odd-bg-color: #fff9f9;
+    --theme-top-cart-bg-color: #51b6ef;
 }

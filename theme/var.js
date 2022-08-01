@@ -367,3 +367,8 @@ export const EVEN_BG_COLOR = 'var(--theme-even-bg-color)';
  */
 export const ODD_BG_COLOR = 'var(--theme-odd-bg-color)';
 
+/**
+ * @description 置顶角标背景色
+ */
+export const TOP_CART_BG_COLOR = 'var(--theme-top-cart-bg-color)';
+
