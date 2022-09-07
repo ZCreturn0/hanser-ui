@@ -312,3 +312,63 @@ export const INCREASE_COLOR = 'var(--theme-increase-color)';
  */
 export const DECREASE_COLOR = 'var(--theme-decrease-color)';
 
+/**
+ * @description 对话框背景色
+ */
+export const DIALOG_BG_COLOR = 'var(--theme-dialog-bg-color)';
+
+/**
+ * @description 聊天列表背景色
+ */
+export const CHAT_BG_COLOR = 'var(--theme-chat-bg-color)';
+
+/**
+ * @description 置顶聊天列表背景色
+ */
+export const CHAT_TOP_COLOR = 'var(--theme-chat-top-color)';
+
+/**
+ * @description 选中聊天列表背景色
+ */
+export const CHAT_ACTIVE_COLOR = 'var(--theme-chat-active-color)';
+
+/**
+ * @description 聊天框侧边菜单栏背景色
+ */
+export const CHAT_SIDE_MENU_BG_COLOR = 'var(--theme-chat-side-menu-bg-color)';
+
+/**
+ * @description 聊天框边框颜色
+ */
+export const CHAT_BORDER_COLOR = 'var(--theme-chat-border-color)';
+
+/**
+ * @description 自己聊天框背景色
+ */
+export const CHAT_SELF_BUBBLE_BG_COLOR = 'var(--theme-chat-self-bubble-bg-color)';
+
+/**
+ * @description 对方聊天框背景色
+ */
+export const CHAT_OTHER_BUBBLE_BG_COLOR = 'var(--theme-chat-other-bubble-bg-color)';
+
+/**
+ * @description 未读消息提示背景色
+ */
+export const CHAT_UNREAD_TIP_BG_COLOR = 'var(--theme-chat-unread-tip-bg-color)';
+
+/**
+ * @description 偶数行背景色
+ */
+export const EVEN_BG_COLOR = 'var(--theme-even-bg-color)';
+
+/**
+ * @description 奇数行背景色
+ */
+export const ODD_BG_COLOR = 'var(--theme-odd-bg-color)';
+
+/**
+ * @description 置顶角标背景色
+ */
+export const TOP_CART_BG_COLOR = 'var(--theme-top-cart-bg-color)';
+

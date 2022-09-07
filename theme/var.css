@@ -65,6 +65,18 @@
     --theme-decrease-color: #f73131;
     --theme-positive-color: #0ebe98;
     --theme-negative-color: #f73131;
+    --theme-dialog-bg-color: #fff;
+    --theme-chat-bg-color: #f7f7f7;
+    --theme-chat-top-color: #eaeaea;
+    --theme-chat-avtive-color: #d2d2d2;
+    --theme-chat-side-menu-bg-color: #e3e4e5;
+    --theme-chat-border-color: #e0e0e0;
+    --theme-chat-self-bubble-bg-color: #a9e87a;
+    --theme-chat-other-bubble-bg-color: #f3f3f3;
+    --theme-chat-unread-tip-bg-color: #88d2f5;
+    --theme-even-bg-color: #f4f4f4;
+    --theme-odd-bg-color: #fff9f9;
+    --theme-top-cart-bg-color: #51b6ef;
 }
 
 [data-theme="dark"] {
@@ -133,6 +145,18 @@
     --theme-decrease-color: #f73131;
     --theme-positive-color: #0ebe98;
     --theme-negative-color: #f73131;
+    --theme-dialog-bg-color: #fff;
+    --theme-chat-bg-color: #f7f7f7;
+    --theme-chat-top-color: #eaeaea;
+    --theme-chat-avtive-color: #d2d2d2;
+    --theme-chat-side-menu-bg-color: #e3e4e5;
+    --theme-chat-border-color: #e0e0e0;
+    --theme-chat-self-bubble-bg-color: #a9e87a;
+    --theme-chat-other-bubble-bg-color: #f3f3f3;
+    --theme-chat-unread-tip-bg-color: #88d2f5;
+    --theme-even-bg-color: #f4f4f4;
+    --theme-odd-bg-color: #fff9f9;
+    --theme-top-cart-bg-color: #51b6ef;
 }
 
 [data-theme="new-year"] {
@@ -201,6 +225,18 @@
     --theme-decrease-color: #f73131;
     --theme-positive-color: #0ebe98;
     --theme-negative-color: #f73131;
+    --theme-dialog-bg-color: #fff;
+    --theme-chat-bg-color: #f7f7f7;
+    --theme-chat-top-color: #eaeaea;
+    --theme-chat-avtive-color: #d2d2d2;
+    --theme-chat-side-menu-bg-color: #e3e4e5;
+    --theme-chat-border-color: #e0e0e0;
+    --theme-chat-self-bubble-bg-color: #a9e87a;
+    --theme-chat-other-bubble-bg-color: #f3f3f3;
+    --theme-chat-unread-tip-bg-color: #88d2f5;
+    --theme-even-bg-color: #f4f4f4;
+    --theme-odd-bg-color: #fff9f9;
+    --theme-top-cart-bg-color: #51b6ef;
 }
 
 [data-theme="birthday-2022"] {
@@ -269,4 +305,16 @@
     --theme-decrease-color: #f73131;
     --theme-positive-color: #0ebe98;
     --theme-negative-color: #f73131;
+    --theme-dialog-bg-color: #fff;
+    --theme-chat-bg-color: #f7f7f7;
+    --theme-chat-top-color: #eaeaea;
+    --theme-chat-avtive-color: #d2d2d2;
+    --theme-chat-side-menu-bg-color: #e3e4e5;
+    --theme-chat-border-color: #e0e0e0;
+    --theme-chat-self-bubble-bg-color: #a9e87a;
+    --theme-chat-other-bubble-bg-color: #f3f3f3;
+    --theme-chat-unread-tip-bg-color: #88d2f5;
+    --theme-even-bg-color: #f4f4f4;
+    --theme-odd-bg-color: #fff9f9;
+    --theme-top-cart-bg-color: #51b6ef;
 }

@@ -4,7 +4,7 @@
     position: fixed;
     top: 20px;
     left: calc(50% - 190px);
-    z-index: 3001;
+    z-index: 110000;
     width: 380px;
     box-sizing: border-box;
     text-align: left;
