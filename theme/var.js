@@ -372,3 +372,8 @@ export const ODD_BG_COLOR = 'var(--theme-odd-bg-color)';
  */
 export const TOP_CART_BG_COLOR = 'var(--theme-top-cart-bg-color)';
 
+/**
+ * @description 直播状态背景色
+ */
+export const LIVING_BG_COLOR = 'var(--theme-living-bg-color)';
+
