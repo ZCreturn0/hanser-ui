@@ -72,5 +72,6 @@ module.exports = {
     CHAT_UNREAD_TIP_BG_COLOR: '未读消息提示背景色',
     EVEN_BG_COLOR: '偶数行背景色',
     ODD_BG_COLOR: '奇数行背景色',
-    TOP_CART_BG_COLOR: '置顶角标背景色'
+    TOP_CART_BG_COLOR: '置顶角标背景色',
+    LIVING_BG_COLOR: '直播状态背景色'
 };
