@@ -377,3 +377,8 @@ export const TOP_CART_BG_COLOR = 'var(--theme-top-cart-bg-color)';
  */
 export const LIVING_BG_COLOR = 'var(--theme-living-bg-color)';
 
+/**
+ * @description 直播激活背景色
+ */
+export const LIVING_ACTIVE_BG_COLOR = 'var(--theme-living-active-bg-color)';
+
