@@ -7,7 +7,7 @@
     --theme-color-danger: #dc3a48;
     --theme-color-secondary: #333;
     --theme-bg-global: #f6f2ef;
-    --theme-bg-primary: rgba(110, 168, 47, 0.1);
+    --theme-bg-primary: #ffb769;
     --theme-bg-success: #6ea82f;
     --theme-bg-warning: #e09d16;
     --theme-bg-message: #909399;
@@ -19,6 +19,8 @@
     --theme-bg-reverse: #333;
     --theme-bg-tag: #f5b976;
     --theme-bg-active: #cccccc61;
+    --theme-hearder-bg-color: #fff;
+    --theme-popover-bg-color: #fff;
     --theme-text-color: #333;
     --theme-text-color-auxiliary: #666;
     --theme-text-color-auxiliary-light: #7e7e7e;
@@ -37,8 +39,8 @@
     --theme-input-bg-color: #fdedd3;
     --theme-input-text-color: #333;
     --theme-input-placeholder-color: #f9b278;
-    --theme-hover-color: #f5b976;
-    --theme-hover-color-primary: #7cb043;
+    --theme-hover-color: #ffc484;
+    --theme-hover-color-primary: #ffc484;
     --theme-active-color: #f99326;
     --theme-icon-color-auxiliary: #808080;
     --theme-modal-bg-color: rgba(37, 37, 37, 0.7);
@@ -79,17 +81,20 @@
     --theme-top-cart-bg-color: #51b6ef;
     --theme-living-bg-color: #fb7198;
     --theme-living-active-bg-color: #ffa13b;
+    --theme-bg-global-image: url('https://cdn.ihan.club/bg.png');
+    --theme-popper-bg-color: #fff;
+    --theme-popper-border-color: #fff;
 }
 
 [data-theme="dark"] {
-    --theme-color-primary: #ffb769;
+    --theme-color-primary: #527fba;
     --theme-color-success: #fff;
     --theme-color-warning: #fff;
     --theme-color-message: #fff;
     --theme-color-danger: #fff;
     --theme-color-secondary: #333;
     --theme-bg-global: #f6f2ef;
-    --theme-bg-primary: rgba(110, 168, 47, 0.1);
+    --theme-bg-primary: #355176;
     --theme-bg-success: #6ea82f;
     --theme-bg-warning: #e09d16;
     --theme-bg-message: #909399;
@@ -101,26 +106,28 @@
     --theme-bg-reverse: #333;
     --theme-bg-tag: #f5b976;
     --theme-bg-active: #cccccc61;
+    --theme-hearder-bg-color: #000;
+    --theme-popover-bg-color: #000;
     --theme-text-color: #571A10;
-    --theme-text-color-auxiliary: #666;
+    --theme-text-color-auxiliary: #2b60a6;
     --theme-text-color-auxiliary-light: #7e7e7e;
     --theme-text-color-secondary: #999;
     --theme-text-color-white: #fff;
     --theme-bg-color-white: #ffffff80;
     --theme-text-color-disabled: #aaa;
-    --theme-text-color-link: #ff7241;
+    --theme-text-color-link: #527fba;
     --theme-text-color-reverse: #fff;
     --theme-border-color: #f99326;
     --theme-border-color-dark: #e6e6e6;
-    --theme-border-color-divider: #9B2F2F;
+    --theme-border-color-divider: #527fba;
     --theme-border-color-disabled: #e4e7ed;
     --theme-border-color-input: #ccc;
     --theme-border-color-input-focus: #7cb043;
-    --theme-input-bg-color: #fdedd3;
+    --theme-input-bg-color: #728196;
     --theme-input-text-color: #333;
-    --theme-input-placeholder-color: #f9b278;
-    --theme-hover-color: #f5b976;
-    --theme-hover-color-primary: #7cb043;
+    --theme-input-placeholder-color: #a0b1c7;
+    --theme-hover-color: #527fba;
+    --theme-hover-color-primary: #527fba;
     --theme-active-color: #f99326;
     --theme-icon-color-auxiliary: #808080;
     --theme-modal-bg-color: rgba(37, 37, 37, 0.7);
@@ -161,6 +168,9 @@
     --theme-top-cart-bg-color: #51b6ef;
     --theme-living-bg-color: #fb7198;
     --theme-living-active-bg-color: #ffa13b;
+    --theme-bg-global-image: url('https://cdn.ihan.club/dark.png');
+    --theme-popper-bg-color: #272732;
+    --theme-popper-border-color: #000;
 }
 
 [data-theme="new-year"] {
@@ -183,6 +193,8 @@
     --theme-bg-reverse: #333;
     --theme-bg-tag: #f5b976;
     --theme-bg-active: #cccccc61;
+    --theme-hearder-bg-color: #fff;
+    --theme-popover-bg-color: #fff;
     --theme-text-color: #571A10;
     --theme-text-color-auxiliary: #666;
     --theme-text-color-auxiliary-light: #7e7e7e;
@@ -243,6 +255,9 @@
     --theme-top-cart-bg-color: #51b6ef;
     --theme-living-bg-color: #fb7198;
     --theme-living-active-bg-color: #ffa13b;
+    --theme-bg-global-image: url('https://cdn.ihan.club/bg.png');
+    --theme-popper-bg-color: #fff;
+    --theme-popper-border-color: #fff;
 }
 
 [data-theme="birthday-2022"] {
@@ -265,6 +280,8 @@
     --theme-bg-reverse: #333;
     --theme-bg-tag: #f5b976;
     --theme-bg-active: #cccccc61;
+    --theme-hearder-bg-color: #fff;
+    --theme-popover-bg-color: #fff;
     --theme-text-color: #333;
     --theme-text-color-auxiliary: #666;
     --theme-text-color-auxiliary-light: #7e7e7e;
@@ -325,4 +342,7 @@
     --theme-top-cart-bg-color: #51b6ef;
     --theme-living-bg-color: #fb7198;
     --theme-living-active-bg-color: #ffa13b;
+    --theme-bg-global-image: url('https://cdn.ihan.club/bg.png');
+    --theme-popper-bg-color: #fff;
+    --theme-popper-border-color: #fff;
 }

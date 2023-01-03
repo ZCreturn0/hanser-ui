@@ -5,7 +5,7 @@
     font-size: 14px;
     cursor: pointer;
     border: none;
-    background-color: var(--theme-color-primary);
+    background-color: var(--theme-bg-primary);
     color: var(--theme-text-color-white);
 }
 
@@ -26,7 +26,7 @@
 }
 
 .h-button:not(:disabled):hover {
-    background-color: var(--theme-color-primary-plain-hover);
+    background-color: var(--theme-hover-color-primary);
 }
 
 @keyframes rotate {

@@ -17,6 +17,8 @@ module.exports = {
     BG_REVERSE: '全局背景反色',
     BG_TAG: 'tag背景色',
     BG_ACTIVE: '选中菜单背景色',
+    HEADER_BG_COLOR: '头部背景色',
+    POPOVER_BG_COLOR: '气泡背景色',
     TEXT_COLOR: '字体颜色',
     TEXT_COLOR_AUXILIARY: '辅助颜色',
     TEXT_COLOR_AUXILIARY_LIGHT: '辅助浅色',
@@ -74,5 +76,7 @@ module.exports = {
     ODD_BG_COLOR: '奇数行背景色',
     TOP_CART_BG_COLOR: '置顶角标背景色',
     LIVING_BG_COLOR: '直播状态背景色',
-    LIVING_ACTIVE_BG_COLOR: '直播激活背景色'
+    LIVING_ACTIVE_BG_COLOR: '直播激活背景色',
+    POPPER_BG_COLOR: '弹出框背景色',
+    POPPER_BORDER_COLOR: '弹出框边框色'
 };

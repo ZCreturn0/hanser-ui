@@ -93,6 +93,16 @@ export const BG_TAG = 'var(--theme-bg-tag)';
 export const BG_ACTIVE = 'var(--theme-bg-active)';
 
 /**
+ * @description 头部背景色
+ */
+export const HEADER_BG_COLOR = 'var(--theme-header-bg-color)';
+
+/**
+ * @description 气泡背景色
+ */
+export const POPOVER_BG_COLOR = 'var(--theme-popover-bg-color)';
+
+/**
  * @description 字体颜色
  */
 export const TEXT_COLOR = 'var(--theme-text-color)';
@@ -381,4 +391,14 @@ export const LIVING_BG_COLOR = 'var(--theme-living-bg-color)';
  * @description 直播激活背景色
  */
 export const LIVING_ACTIVE_BG_COLOR = 'var(--theme-living-active-bg-color)';
+
+/**
+ * @description 弹出框背景色
+ */
+export const POPPER_BG_COLOR = 'var(--theme-popper-bg-color)';
+
+/**
+ * @description 弹出框边框色
+ */
+export const POPPER_BORDER_COLOR = 'var(--theme-popper-border-color)';
 
