@@ -402,3 +402,18 @@ export const POPPER_BG_COLOR = 'var(--theme-popper-bg-color)';
  */
 export const POPPER_BORDER_COLOR = 'var(--theme-popper-border-color)';
 
+/**
+ * @description dialog头部背景色
+ */
+export const DIALOG_HEADER_BG_COLOR = 'var(--theme-dialog-header-bg-color)';
+
+/**
+ * @description dialog头部字体色
+ */
+export const DIALOG_HEADER_COLOR = 'var(--theme-dialog-header-color)';
+
+/**
+ * @description dialog头部选中字体色
+ */
+export const DIALOG_HEADER_SELECTED_COLOR = 'var(--theme-dialog-header-selected-color)';
+

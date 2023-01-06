@@ -78,5 +78,8 @@ module.exports = {
     LIVING_BG_COLOR: '直播状态背景色',
     LIVING_ACTIVE_BG_COLOR: '直播激活背景色',
     POPPER_BG_COLOR: '弹出框背景色',
-    POPPER_BORDER_COLOR: '弹出框边框色'
+    POPPER_BORDER_COLOR: '弹出框边框色',
+    DIALOG_HEADER_BG_COLOR: 'dialog头部背景色',
+    DIALOG_HEADER_COLOR: 'dialog头部字体色',
+    DIALOG_HEADER_SELECTED_COLOR: 'dialog头部选中字体色'
 };
