@@ -9,6 +9,7 @@
         "build-js": "node script/css-to-js.js",
         "build-html": "node script/build-html.js",
         "build-theme": "node script/css-to-js.js && node script/build-html.js",
+        "add-color": "node script/add-color.js",
         "release": "standard-version && git push --follow-tags && npm publish"
     },
     "repository": {
