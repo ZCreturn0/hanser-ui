@@ -87,6 +87,11 @@
     --theme-dialog-header-bg-color: #fff;
     --theme-dialog-header-color: #000;
     --theme-dialog-header-selected-color: #ffb769;
+    --theme-chat-editor-bg-color: #fff;
+    --theme-chat-footer-bg-color: #fff;
+    --theme-drak-bg-text-color: #fff;
+    --theme-global-bg-color: #000;
+    --theme-drawer-bg-color: #fff;
 }
 
 [data-theme="dark"] {
@@ -138,8 +143,8 @@
     --theme-text-color-primary-plain: #f99326;
     --theme-color-primary-plain-hover: #f99326;
     --theme-text-color-primary-plain-hover: #fff;
-    --theme-bg-color-badge: #f85726;
-    --theme-text-color-badge: #571A10;
+    --theme-bg-color-badge: #335785;
+    --theme-text-color-badge: #fff;
     --theme-shadow-color: #000;
     --theme-douyu-unbind-color: #b3704d;
     --theme-douyu-unbind-hover-color: #ff813c;
@@ -177,6 +182,11 @@
     --theme-dialog-header-bg-color: #527fba;
     --theme-dialog-header-color: #000;
     --theme-dialog-header-selected-color: #bbd8ff;
+    --theme-chat-editor-bg-color: #527fba;
+    --theme-chat-footer-bg-color: #527fba;
+    --theme-drak-bg-text-color: #527fba;
+    --theme-global-bg-color: #527fba;
+    --theme-drawer-bg-color: #527fbae8;
 }
 
 [data-theme="new-year"] {
@@ -267,6 +277,11 @@
     --theme-dialog-header-bg-color: #fff;
     --theme-dialog-header-color: #000;
     --theme-dialog-header-selected-color: #ffb769;
+    --theme-chat-editor-bg-color: #fff;
+    --theme-chat-footer-bg-color: #fff;
+    --theme-drak-bg-text-color: #fff;
+    --theme-global-bg-color: #000;
+    --theme-drawer-bg-color: #fff;
 }
 
 [data-theme="birthday-2022"] {
@@ -357,4 +372,9 @@
     --theme-dialog-header-bg-color: #fff;
     --theme-dialog-header-color: #000;
     --theme-dialog-header-selected-color: #ffb769;
+    --theme-chat-editor-bg-color: #fff;
+    --theme-chat-footer-bg-color: #fff;
+    --theme-drak-bg-text-color: #fff;
+    --theme-global-bg-color: #000;
+    --theme-drawer-bg-color: #fff;
 }

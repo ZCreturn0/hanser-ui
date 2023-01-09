@@ -81,5 +81,10 @@ module.exports = {
     POPPER_BORDER_COLOR: '弹出框边框色',
     DIALOG_HEADER_BG_COLOR: 'dialog头部背景色',
     DIALOG_HEADER_COLOR: 'dialog头部字体色',
-    DIALOG_HEADER_SELECTED_COLOR: 'dialog头部选中字体色'
+    DIALOG_HEADER_SELECTED_COLOR: 'dialog头部选中字体色',
+    CHAT_EDITOR_BG_COLOR: '聊天编辑器背景色',
+    CHAT_FOOTER_BG_COLOR: '聊天底部背景色',
+    DARK_BG_TEXT_COLOR: '深色背景字体颜色',
+    GLOBAL_BG_COLOR: '全局背景字体颜色',
+    DRAWER_BG_COLOR: '侧拉弹窗背景色'
 };
