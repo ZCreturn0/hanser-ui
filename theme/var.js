@@ -482,3 +482,43 @@ export const POST_DATA_COLOR = 'var(--theme-post-data-color)';
  */
 export const NICKNAME_DEFAULT_COLOR = 'var(--theme-nickname-default-color)';
 
+/**
+ * @description 编辑器周边背景颜色
+ */
+export const EDITOR_AROUND_BG_COLOR = 'var(--theme-editor-around-bg-color)';
+
+/**
+ * @description 编辑器字体颜色
+ */
+export const EDITOR_TEXT_COLOR = 'var(--theme-editor-text-color)';
+
+/**
+ * @description 翻页器背景颜色
+ */
+export const PAGINATION_BG_COLOR = 'var(--theme-pagination-bg-color)';
+
+/**
+ * @description 翻页器跳转字体颜色
+ */
+export const PAGINATION_JUMPER_TEXT_COLOR = 'var(--theme-pagination-jumper-text-color)';
+
+/**
+ * @description 翻页器跳转输入框字体颜色
+ */
+export const PAGINATION_JUMPER_INPUT_TEXT_COLOR = 'var(--theme-pagination-jumper-input-text-color)';
+
+/**
+ * @description 翻页器跳转输入框边框
+ */
+export const PAGINATION_JUMPER_INPUT_BORDER = 'var(--theme-pagination-jumper-input-border)';
+
+/**
+ * @description 底部备案信息背景色
+ */
+export const BOTTOM_AUTH_BG_COLOR = 'var(--theme-bottom-auth-bg-color)';
+
+/**
+ * @description 底部备案信息字体色
+ */
+export const BOTTOM_AUTH_TEXT_COLOR = 'var(--theme-bottom-auth-text-color)';
+
