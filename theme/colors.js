@@ -86,5 +86,21 @@ module.exports = {
     CHAT_FOOTER_BG_COLOR: '聊天底部背景色',
     DARK_BG_TEXT_COLOR: '深色背景字体颜色',
     GLOBAL_BG_COLOR: '全局背景字体颜色',
-    DRAWER_BG_COLOR: '侧拉弹窗背景色'
+    DRAWER_BG_COLOR: '侧拉弹窗背景色',
+    SIDE_MENU_BG_COLOR: '侧栏菜单背景色',
+    MAIN_POSTS_BG_COLOR: '主页帖子区背景色',
+    LEVEL_LABEL_BG_COLOR: '等级牌背景色',
+    LEVEL_LABEL_TEXT_COLOR: '等级牌字体色',
+    POST_TITLE_COLOR: '帖子标题颜色',
+    POST_LIST_CONTENT_COLOR: '帖子列表字体颜色',
+    POST_DATA_COLOR: '帖子数据字体颜色',
+    NICKNAME_DEFAULT_COLOR: '昵称默认字体颜色',
+    EDITOR_AROUND_BG_COLOR: '编辑器周边背景颜色',
+    EDITOR_TEXT_COLOR: '编辑器字体颜色',
+    PAGINATION_BG_COLOR: '翻页器背景颜色',
+    PAGINATION_JUMPER_TEXT_COLOR: '翻页器跳转字体颜色',
+    PAGINATION_JUMPER_INPUT_TEXT_COLOR: '翻页器跳转输入框字体颜色',
+    PAGINATION_JUMPER_INPUT_BORDER: '翻页器跳转输入框边框',
+    BOTTOM_AUTH_BG_COLOR: '底部备案信息背景色',
+    BOTTOM_AUTH_TEXT_COLOR: '底部备案信息字体色'
 };

@@ -417,3 +417,68 @@ export const DIALOG_HEADER_COLOR = 'var(--theme-dialog-header-color)';
  */
 export const DIALOG_HEADER_SELECTED_COLOR = 'var(--theme-dialog-header-selected-color)';
 
+/**
+ * @description 聊天编辑器背景色
+ */
+export const CHAT_EDITOR_BG_COLOR = 'var(--theme-chat-editor-bg-color)';
+
+/**
+ * @description 聊天底部背景色
+ */
+export const CHAT_FOOTER_BG_COLOR = 'var(--theme-chat-footer-bg-color)';
+
+/**
+ * @description 深色背景字体颜色
+ */
+export const DARK_BG_TEXT_COLOR = 'var(--theme-dark-bg-text-color)';
+
+/**
+ * @description 全局背景字体颜色
+ */
+export const GLOBAL_BG_COLOR = 'var(--theme-global-bg-color)';
+
+/**
+ * @description 侧拉弹窗背景色
+ */
+export const DRAWER_BG_COLOR = 'var(--theme-drawer-bg-color)';
+
+/**
+ * @description 侧栏菜单背景色
+ */
+export const SIDE_MENU_BG_COLOR = 'var(--theme-side-menu-bg-color)';
+
+/**
+ * @description 主页帖子区背景色
+ */
+export const MAIN_POSTS_BG_COLOR = 'var(--theme-main-posts-bg-color)';
+
+/**
+ * @description 等级牌背景色
+ */
+export const LEVEL_LABEL_BG_COLOR = 'var(--theme-level-label-bg-color)';
+
+/**
+ * @description 等级牌字体色
+ */
+export const LEVEL_LABEL_TEXT_COLOR = 'var(--theme-level-label-text-color)';
+
+/**
+ * @description 帖子标题颜色
+ */
+export const POST_TITLE_COLOR = 'var(--theme-post-title-color)';
+
+/**
+ * @description 帖子列表字体颜色
+ */
+export const POST_LIST_CONTENT_COLOR = 'var(--theme-post-list-content-color)';
+
+/**
+ * @description 帖子数据字体颜色
+ */
+export const POST_DATA_COLOR = 'var(--theme-post-data-color)';
+
+/**
+ * @description 昵称默认字体颜色
+ */
+export const NICKNAME_DEFAULT_COLOR = 'var(--theme-nickname-default-color)';
+

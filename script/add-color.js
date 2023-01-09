@@ -38,7 +38,7 @@ const getCssClassName = (name) => {
     return `--theme-${pieces.join('-')}`;
 };
 
-const modules = cssPath.split('\n').filter((item) => !!item).slice(1);
+const modules = cssPath.split('\n').filter((item) => !!item);
 const indexes = findAllIndex(modules, '}');
 
 const themes = indexes.map((item, index) => {

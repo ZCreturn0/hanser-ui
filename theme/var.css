@@ -1,4 +1,3 @@
-/* 颜色待确认 */
 [data-theme="light"] {
     --theme-color-primary: #ffb769;
     --theme-color-success: #6ea82f;
@@ -92,6 +91,22 @@
     --theme-drak-bg-text-color: #fff;
     --theme-global-bg-color: #000;
     --theme-drawer-bg-color: #fff;
+    --theme-side-menu-bg-color: #fff;
+    --theme-main-posts-bg-color: #fff;
+    --theme-level-label-bg-color: #fff;
+    --theme-level-label-text-color: #999;
+    --theme-post-title-color: #ffb769;
+    --theme-post-list-content-color: #999;
+    --theme-post-data-color: #808080;
+    --theme-nickname-default-color: #606266;
+    --theme-editor-around-bg-color: #fff;
+    --theme-editor-text-color: #000;
+    --theme-pagination-bg-color: #fff;
+    --theme-pagination-jumper-text-color: #000;
+    --theme-pagination-jumper-input-text-color: #000;
+    --theme-pagination-jumper-input-border: 1px solid #DCDFE6;
+    --theme-bottom-auth-bg-color: #fff;
+    --theme-bottom-auth-text-color: #000;
 }
 
 [data-theme="dark"] {
@@ -152,7 +167,7 @@
     --theme-bilibili-unbind-color: #4a6dc7;
     --theme-bilibili-unbind-hover-color: #5f84e3;
     --theme-bilibili-color: #5f84e3;
-    --theme-words-limitation-color: #868e96;
+    --theme-words-limitation-color: #98c2eb;
     --theme-signed-days-bg-color: #ffb245;
     --theme-sign-today-text-color: #fa8f22;
     --theme-manager-text-color: #808080;
@@ -187,6 +202,22 @@
     --theme-drak-bg-text-color: #527fba;
     --theme-global-bg-color: #527fba;
     --theme-drawer-bg-color: #527fbae8;
+    --theme-side-menu-bg-color: #527fbae8;
+    --theme-main-posts-bg-color: #3e628980;
+    --theme-level-label-bg-color: #1d71c8;
+    --theme-level-label-text-color: #fff;
+    --theme-post-title-color: #3e92ff;
+    --theme-post-list-content-color: #2973c8;
+    --theme-post-data-color: #527fba;
+    --theme-nickname-default-color: #4f8fcf;
+    --theme-editor-around-bg-color: #2e445c;
+    --theme-editor-text-color: #61a5fd;
+    --theme-pagination-bg-color: #4e77ad;
+    --theme-pagination-jumper-text-color: #527fba;
+    --theme-pagination-jumper-input-text-color: #bdd9fe;
+    --theme-pagination-jumper-input-border: none;
+    --theme-bottom-auth-bg-color: #000;
+    --theme-bottom-auth-text-color: #999;
 }
 
 [data-theme="new-year"] {
@@ -211,7 +242,7 @@
     --theme-bg-active: #cccccc61;
     --theme-hearder-bg-color: #fff;
     --theme-popover-bg-color: #fff;
-    --theme-text-color: #571A10;
+    --theme-text-color: #64a7ff;
     --theme-text-color-auxiliary: #666;
     --theme-text-color-auxiliary-light: #7e7e7e;
     --theme-text-color-secondary: #999;
@@ -282,6 +313,22 @@
     --theme-drak-bg-text-color: #fff;
     --theme-global-bg-color: #000;
     --theme-drawer-bg-color: #fff;
+    --theme-side-menu-bg-color: #fff;
+    --theme-main-posts-bg-color: #fff;
+    --theme-level-label-bg-color: #fff;
+    --theme-level-label-text-color: #999;
+    --theme-post-title-color: #ffb769;
+    --theme-post-list-content-color: #999;
+    --theme-post-data-color: #808080;
+    --theme-nickname-default-color: #606266;
+    --theme-editor-around-bg-color: #fff;
+    --theme-editor-text-color: #000;
+    --theme-pagination-bg-color: #fff;
+    --theme-pagination-jumper-text-color: #000;
+    --theme-pagination-jumper-input-text-color: #000;
+    --theme-pagination-jumper-input-border: 1px solid #DCDFE6;
+    --theme-bottom-auth-bg-color: #fff;
+    --theme-bottom-auth-text-color: #000;
 }
 
 [data-theme="birthday-2022"] {
@@ -377,4 +424,20 @@
     --theme-drak-bg-text-color: #fff;
     --theme-global-bg-color: #000;
     --theme-drawer-bg-color: #fff;
+    --theme-side-menu-bg-color: #fff;
+    --theme-main-posts-bg-color: #fff;
+    --theme-level-label-bg-color: #fff;
+    --theme-level-label-text-color: #999;
+    --theme-post-title-color: #ffb769;
+    --theme-post-list-content-color: #999;
+    --theme-post-data-color: #808080;
+    --theme-nickname-default-color: #606266;
+    --theme-editor-around-bg-color: #fff;
+    --theme-editor-text-color: #000;
+    --theme-pagination-bg-color: #fff;
+    --theme-pagination-jumper-text-color: #000;
+    --theme-pagination-jumper-input-text-color: #000;
+    --theme-pagination-jumper-input-border: 1px solid #DCDFE6;
+    --theme-bottom-auth-bg-color: #fff;
+    --theme-bottom-auth-text-color: #000;
 }
