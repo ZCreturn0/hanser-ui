@@ -102,5 +102,8 @@ module.exports = {
     PAGINATION_JUMPER_INPUT_TEXT_COLOR: '翻页器跳转输入框字体颜色',
     PAGINATION_JUMPER_INPUT_BORDER: '翻页器跳转输入框边框',
     BOTTOM_AUTH_BG_COLOR: '底部备案信息背景色',
-    BOTTOM_AUTH_TEXT_COLOR: '底部备案信息字体色'
+    BOTTOM_AUTH_TEXT_COLOR: '底部备案信息字体色',
+    COLLAPSE_HEADER_BG_COLOR: '折叠面板背景色',
+    COLLAPSE_HEADER_TEXT_COLOR: '折叠面板字体色',
+    CHAT_SELECTED_BG_COLOR: '选中聊天背景色'
 };

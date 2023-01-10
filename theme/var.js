@@ -522,3 +522,18 @@ export const BOTTOM_AUTH_BG_COLOR = 'var(--theme-bottom-auth-bg-color)';
  */
 export const BOTTOM_AUTH_TEXT_COLOR = 'var(--theme-bottom-auth-text-color)';
 
+/**
+ * @description 折叠面板背景色
+ */
+export const COLLAPSE_HEADER_BG_COLOR = 'var(--theme-collapse-header-bg-color)';
+
+/**
+ * @description 折叠面板字体色
+ */
+export const COLLAPSE_HEADER_TEXT_COLOR = 'var(--theme-collapse-header-text-color)';
+
+/**
+ * @description 选中聊天背景色
+ */
+export const CHAT_SELECTED_BG_COLOR = 'var(--theme-chat-selected-bg-color)';
+
