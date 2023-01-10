@@ -88,6 +88,7 @@ module.exports = {
     GLOBAL_BG_COLOR: '全局背景字体颜色',
     DRAWER_BG_COLOR: '侧拉弹窗背景色',
     SIDE_MENU_BG_COLOR: '侧栏菜单背景色',
+    SIDE_MENU_TEXT_COLOR: '侧栏菜单字体色',
     MAIN_POSTS_BG_COLOR: '主页帖子区背景色',
     LEVEL_LABEL_BG_COLOR: '等级牌背景色',
     LEVEL_LABEL_TEXT_COLOR: '等级牌字体色',

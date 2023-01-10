@@ -92,6 +92,7 @@
     --theme-global-bg-color: #000;
     --theme-drawer-bg-color: #fff;
     --theme-side-menu-bg-color: #fff;
+    --theme-side-menu-text-color: #333;
     --theme-main-posts-bg-color: #fff;
     --theme-level-label-bg-color: #fff;
     --theme-level-label-text-color: #999;
@@ -206,6 +207,7 @@
     --theme-global-bg-color: #527fba;
     --theme-drawer-bg-color: #527fbae8;
     --theme-side-menu-bg-color: #527fbae8;
+    --theme-side-menu-text-color: #97b9ff;
     --theme-main-posts-bg-color: #3e628980;
     --theme-level-label-bg-color: #1d71c8;
     --theme-level-label-text-color: #fff;
@@ -320,6 +322,7 @@
     --theme-global-bg-color: #000;
     --theme-drawer-bg-color: #fff;
     --theme-side-menu-bg-color: #fff;
+    --theme-side-menu-text-color: #333;
     --theme-main-posts-bg-color: #fff;
     --theme-level-label-bg-color: #fff;
     --theme-level-label-text-color: #999;
@@ -434,6 +437,7 @@
     --theme-global-bg-color: #000;
     --theme-drawer-bg-color: #fff;
     --theme-side-menu-bg-color: #fff;
+    --theme-side-menu-text-color: #333;
     --theme-main-posts-bg-color: #fff;
     --theme-level-label-bg-color: #fff;
     --theme-level-label-text-color: #999;
