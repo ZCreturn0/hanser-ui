@@ -393,6 +393,16 @@ export const LIVING_BG_COLOR = 'var(--theme-living-bg-color)';
 export const LIVING_ACTIVE_BG_COLOR = 'var(--theme-living-active-bg-color)';
 
 /**
+ * @description 全局背景图
+ */
+export const BG_GLOBAL_IMAGE = 'var(--theme-bg-global-image)';
+
+/**
+ * @description 移动端全局背景图
+ */
+export const MOBILE_BG_GLOBAL_IMAGE = 'var(--theme-mobile-bg-global-image)';
+
+/**
  * @description 弹出框背景色
  */
 export const POPPER_BG_COLOR = 'var(--theme-popper-bg-color)';
@@ -446,6 +456,11 @@ export const DRAWER_BG_COLOR = 'var(--theme-drawer-bg-color)';
  * @description 侧栏菜单背景色
  */
 export const SIDE_MENU_BG_COLOR = 'var(--theme-side-menu-bg-color)';
+
+/**
+ * @description 侧栏菜单字体色
+ */
+export const SIDE_MENU_TEXT_COLOR = 'var(--theme-side-menu-text-color)';
 
 /**
  * @description 主页帖子区背景色

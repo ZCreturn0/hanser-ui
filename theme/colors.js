@@ -77,6 +77,8 @@ module.exports = {
     TOP_CART_BG_COLOR: '置顶角标背景色',
     LIVING_BG_COLOR: '直播状态背景色',
     LIVING_ACTIVE_BG_COLOR: '直播激活背景色',
+    BG_GLOBAL_IMAGE: '全局背景图',
+    MOBILE_BG_GLOBAL_IMAGE: '移动端全局背景图',
     POPPER_BG_COLOR: '弹出框背景色',
     POPPER_BORDER_COLOR: '弹出框边框色',
     DIALOG_HEADER_BG_COLOR: 'dialog头部背景色',

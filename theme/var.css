@@ -81,6 +81,7 @@
     --theme-living-bg-color: #fb7198;
     --theme-living-active-bg-color: #ffa13b;
     --theme-bg-global-image: url('https://cdn.ihan.club/bg.png');
+    --theme-mobile-bg-global-image: url('https://cdn.ihan.club/bg.png');
     --theme-popper-bg-color: #fff;
     --theme-popper-border-color: #fff;
     --theme-dialog-header-bg-color: #fff;
@@ -187,7 +188,7 @@
     --theme-chat-avtive-color: #d2d2d2;
     --theme-chat-side-menu-bg-color: #000;
     --theme-chat-border-color: #1661de;
-    --theme-chat-self-bubble-bg-color: #a9e87a;
+    --theme-chat-self-bubble-bg-color: #80b15b;
     --theme-chat-other-bubble-bg-color: #527fba;
     --theme-chat-unread-tip-bg-color: #88d2f5;
     --theme-even-bg-color: #59595a;
@@ -196,6 +197,7 @@
     --theme-living-bg-color: #fb7198;
     --theme-living-active-bg-color: #ffa13b;
     --theme-bg-global-image: url('https://cdn.ihan.club/dark.png');
+    --theme-mobile-bg-global-image: url('https://cdn.ihan.club/dark-mobile-bg.png');
     --theme-popper-bg-color: #272732;
     --theme-popper-border-color: #000;
     --theme-dialog-header-bg-color: #527fba;
@@ -311,6 +313,7 @@
     --theme-living-bg-color: #fb7198;
     --theme-living-active-bg-color: #ffa13b;
     --theme-bg-global-image: url('https://cdn.ihan.club/bg.png');
+    --theme-mobile-bg-global-image: url('https://cdn.ihan.club/bg.png');
     --theme-popper-bg-color: #fff;
     --theme-popper-border-color: #fff;
     --theme-dialog-header-bg-color: #fff;
@@ -426,6 +429,7 @@
     --theme-living-bg-color: #fb7198;
     --theme-living-active-bg-color: #ffa13b;
     --theme-bg-global-image: url('https://cdn.ihan.club/bg.png');
+    --theme-mobile-bg-global-image: url('https://cdn.ihan.club/bg.png');
     --theme-popper-bg-color: #fff;
     --theme-popper-border-color: #fff;
     --theme-dialog-header-bg-color: #fff;
