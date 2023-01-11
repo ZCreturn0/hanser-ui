@@ -108,5 +108,11 @@ module.exports = {
     BOTTOM_AUTH_TEXT_COLOR: '底部备案信息字体色',
     COLLAPSE_HEADER_BG_COLOR: '折叠面板背景色',
     COLLAPSE_HEADER_TEXT_COLOR: '折叠面板字体色',
-    CHAT_SELECTED_BG_COLOR: '选中聊天背景色'
+    CHAT_SELECTED_BG_COLOR: '选中聊天背景色',
+    BLOCK_TEXT_COLOR: '块级字体色',
+    USER_DATA_TEXT_COLOR: '用户数据字体色',
+    LOADING_TEXT_COLOR: '加载中字体色',
+    POST_CONTENT_BG_COLOR: '帖子正文背景色',
+    POST_DATA_TEXT_COLOR: '帖子数据字体色',
+    POST_REPLY_BG_COLOR: '帖子数据字体色'
 };
