@@ -552,3 +552,48 @@ export const COLLAPSE_HEADER_TEXT_COLOR = 'var(--theme-collapse-header-text-colo
  */
 export const CHAT_SELECTED_BG_COLOR = 'var(--theme-chat-selected-bg-color)';
 
+/**
+ * @description 块级字体色
+ */
+export const BLOCK_TEXT_COLOR = 'var(--theme-block-text-color)';
+
+/**
+ * @description 用户数据字体色
+ */
+export const USER_DATA_TEXT_COLOR = 'var(--theme-user-data-text-color)';
+
+/**
+ * @description 加载中字体色
+ */
+export const LOADING_TEXT_COLOR = 'var(--theme-loading-text-color)';
+
+/**
+ * @description 帖子正文背景色
+ */
+export const POST_CONTENT_BG_COLOR = 'var(--theme-post-content-bg-color)';
+
+/**
+ * @description 帖子数据字体色
+ */
+export const POST_DATA_TEXT_COLOR = 'var(--theme-post-data-text-color)';
+
+/**
+ * @description 帖子数据字体色
+ */
+export const POST_REPLY_BG_COLOR = 'var(--theme-post-reply-bg-color)';
+
+/**
+ * @description 侧栏边框
+ */
+export const BLOCK_BORDER = 'var(--theme-block-border)';
+
+/**
+ * @description 导航栏背景色
+ */
+export const NAV_BG_COLOR = 'var(--theme-nav-bg-color)';
+
+/**
+ * @description 首页块阴影
+ */
+export const INDEX_BLOCK_SHADOW = 'var(--theme-index-block-shadow)';
+

@@ -114,5 +114,8 @@ module.exports = {
     LOADING_TEXT_COLOR: '加载中字体色',
     POST_CONTENT_BG_COLOR: '帖子正文背景色',
     POST_DATA_TEXT_COLOR: '帖子数据字体色',
-    POST_REPLY_BG_COLOR: '帖子数据字体色'
+    POST_REPLY_BG_COLOR: '帖子数据字体色',
+    BLOCK_BORDER: '侧栏边框',
+    NAV_BG_COLOR: '导航栏背景色',
+    INDEX_BLOCK_SHADOW: '首页块阴影'
 };
