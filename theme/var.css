@@ -12,7 +12,7 @@
     --theme-bg-message: #909399;
     --theme-bg-danger: #dc3a48;
     --theme-bg-secondary: rgba(51, 51, 51, 0.1);
-    --theme-bg-block: #eee;
+    --theme-bg-block: #fff;
     --theme-bg-block-disabled: #bdc5cf;
     --theme-bg-block-dark: #f5f6f7;
     --theme-bg-reverse: #333;
@@ -27,7 +27,7 @@
     --theme-text-color-white: #fff;
     --theme-bg-color-white: #fff;
     --theme-text-color-disabled: #aaa;
-    --theme-text-color-link: #ff7241;
+    --theme-text-color-link: #ffb769;
     --theme-text-color-reverse: #fff;
     --theme-border-color: #e6e6e6;
     --theme-border-color-dark: #e6e6e6;
@@ -129,6 +129,7 @@
     --theme-nav-float-button-text-color: #fff;
     --theme-liked-text-color: #ffb769;
     --theme-header-search: none;
+    --theme-switch-bg-color: #ffb769;
 }
 
 [data-theme="dark"] {
@@ -262,6 +263,7 @@
     --theme-nav-float-button-text-color: #fff;
     --theme-liked-text-color: #527fba;
     --theme-header-search: none;
+    --theme-switch-bg-color: #527fba;
 }
 
 [data-theme="new-year-2023"] {
@@ -358,11 +360,11 @@
     --theme-chat-footer-bg-color: #fff;
     --theme-drak-bg-text-color: #fff;
     --theme-global-bg-color: #000;
-    --theme-drawer-bg-color: #fff;
+    --theme-drawer-bg-color: #d93b44;
     --theme-side-menu-bg-color: #d93b44;
     --theme-side-menu-text-color: #fff47f;
     --theme-main-posts-bg-color: #fff;
-    --theme-level-label-bg-color: #fff;
+    --theme-level-label-bg-color: #eee;
     --theme-level-label-text-color: #999;
     --theme-post-title-color: #000;
     --theme-post-list-content-color: #999;
@@ -380,7 +382,7 @@
     --theme-collapse-header-text-color: #ffd62e;
     --theme-chat-selected-bg-color: #d2d2d2;
     --theme-block-text-color: #eee;
-    --theme-user-data-text-color: #eee;
+    --theme-user-data-text-color: #d93b44;
     --theme-loading-text-color: #eee;
     --theme-post-content-bg-color: #fff;
     --theme-post-data-text-color: #d93b44;
@@ -395,4 +397,5 @@
     --theme-nav-float-button-text-color: #fff47f;
     --theme-liked-text-color: #ffab00;
     --theme-header-search: 2px solid var(--theme-border-color);
+    --theme-switch-bg-color: #d93b44;
 }

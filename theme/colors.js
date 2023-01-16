@@ -124,5 +124,6 @@ module.exports = {
     NAV_FLOAT_BUTTON_BG_COLOR: '浮动按钮背景颜色',
     NAV_FLOAT_BUTTON_TEXT_COLOR: '浮动按钮背景颜色',
     LIKED_TEXT_COLOR: '已点赞字体颜色',
-    HEADER_SEARCH: 'BORDER'
+    HEADER_SEARCH: 'BORDER',
+    SWITCH_BG_COLOR: '切换器背景色'
 };

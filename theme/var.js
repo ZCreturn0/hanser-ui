@@ -632,3 +632,8 @@ export const LIKED_TEXT_COLOR = 'var(--theme-liked-text-color)';
  */
 export const HEADER_SEARCH = 'var(--theme-header-search)';
 
+/**
+ * @description 切换器背景色
+ */
+export const SWITCH_BG_COLOR = 'var(--theme-switch-bg-color)';
+
