@@ -122,5 +122,6 @@ module.exports = {
     NAV_TEXT_COLOR: '导航栏字体颜色',
     NAV_BORDER_COLOR: '导航栏边框颜色',
     NAV_FLOAT_BUTTON_BG_COLOR: '浮动按钮背景颜色',
-    NAV_FLOAT_BUTTON_TEXT_COLOR: '浮动按钮背景颜色'
+    NAV_FLOAT_BUTTON_TEXT_COLOR: '浮动按钮背景颜色',
+    LIKED_TEXT_COLOR: '已点赞字体颜色'
 };

@@ -96,7 +96,7 @@
     --theme-side-menu-bg-color: #fff;
     --theme-side-menu-text-color: #333;
     --theme-main-posts-bg-color: #fff;
-    --theme-level-label-bg-color: #fff;
+    --theme-level-label-bg-color: #eee;
     --theme-level-label-text-color: #999;
     --theme-post-title-color: #000;
     --theme-post-list-content-color: #999;
@@ -114,19 +114,20 @@
     --theme-collapse-header-text-color: #000;
     --theme-chat-selected-bg-color: #d2d2d2;
     --theme-block-text-color: #eee;
-    --theme-user-data-text-color: #eee;
+    --theme-user-data-text-color: ##606266;
     --theme-loading-text-color: #eee;
     --theme-post-content-bg-color: #fff;
     --theme-post-data-text-color: #7e7e7e;
     --theme-post-reply-bg-color: #fff;
     --theme-block-border: transparent;
     --theme-nav-bg-color: #ffb769;
-    --theme-index-block-shadow: 0px 0px 10px 4px var(--theme-shadow-color);
+    --theme-index-block-shadow: 1px 1px 10px -4px #2b0404;
     --theme-header-button-text-color: #fff;
     --theme-nav-text-color: #fff;
     --theme-nav-border-color: #fff;
     --theme-nav-float-button-bg-color: #ffb769;
     --theme-nav-float-button-text-color: #fff;
+    --theme-liked-text-color: #ffb769;
 }
 
 [data-theme="dark"] {
@@ -258,6 +259,7 @@
     --theme-nav-border-color: #fff;
     --theme-nav-float-button-bg-color: #527fba;
     --theme-nav-float-button-text-color: #fff;
+    --theme-liked-text-color: #527fba;
 }
 
 [data-theme="new-year-2023"] {
@@ -362,7 +364,7 @@
     --theme-level-label-text-color: #999;
     --theme-post-title-color: #000;
     --theme-post-list-content-color: #999;
-    --theme-post-data-color: #808080;
+    --theme-post-data-color: #d93b44;
     --theme-nickname-default-color: #606266;
     --theme-editor-around-bg-color: #fff;
     --theme-editor-text-color: #000;
@@ -379,7 +381,7 @@
     --theme-user-data-text-color: #eee;
     --theme-loading-text-color: #eee;
     --theme-post-content-bg-color: #fff;
-    --theme-post-data-text-color: #7e7e7e;
+    --theme-post-data-text-color: #d93b44;
     --theme-post-reply-bg-color: #fff;
     --theme-block-border: #ffd62e;
     --theme-nav-bg-color: #d93b44;
@@ -389,4 +391,5 @@
     --theme-nav-border-color: #fff47f;
     --theme-nav-float-button-bg-color: #b9363b;
     --theme-nav-float-button-text-color: #fff47f;
+    --theme-liked-text-color: #ffab00;
 }

@@ -622,3 +622,8 @@ export const NAV_FLOAT_BUTTON_BG_COLOR = 'var(--theme-nav-float-button-bg-color)
  */
 export const NAV_FLOAT_BUTTON_TEXT_COLOR = 'var(--theme-nav-float-button-text-color)';
 
+/**
+ * @description 已点赞字体颜色
+ */
+export const LIKED_TEXT_COLOR = 'var(--theme-liked-text-color)';
+
