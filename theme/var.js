@@ -627,3 +627,8 @@ export const NAV_FLOAT_BUTTON_TEXT_COLOR = 'var(--theme-nav-float-button-text-co
  */
 export const LIKED_TEXT_COLOR = 'var(--theme-liked-text-color)';
 
+/**
+ * @description BORDER
+ */
+export const HEADER_SEARCH = 'var(--theme-header-search)';
+
