@@ -122,6 +122,11 @@
     --theme-block-border: transparent;
     --theme-nav-bg-color: #ffb769;
     --theme-index-block-shadow: 0px 0px 10px 4px var(--theme-shadow-color);
+    --theme-header-button-text-color: #fff;
+    --theme-nav-text-color: #fff;
+    --theme-nav-border-color: #fff;
+    --theme-nav-float-button-bg-color: #ffb769;
+    --theme-nav-float-button-text-color: #fff;
 }
 
 [data-theme="dark"] {
@@ -248,17 +253,22 @@
     --theme-block-border: transparent;
     --theme-nav-bg-color: #527fba;
     --theme-index-block-shadow: 0px 0px 10px 4px var(--theme-shadow-color);
+    --theme-header-button-text-color: #fff47f;
+    --theme-nav-text-color: #fff;
+    --theme-nav-border-color: #fff;
+    --theme-nav-float-button-bg-color: #527fba;
+    --theme-nav-float-button-text-color: #fff;
 }
 
 [data-theme="new-year-2023"] {
-    --theme-color-primary: #ffb769;
+    --theme-color-primary: #fff47f;
     --theme-color-success: #fff;
     --theme-color-warning: #fff;
     --theme-color-message: #fff;
     --theme-color-danger: #fff;
     --theme-color-secondary: #333;
     --theme-bg-global: #f6f2ef;
-    --theme-bg-primary: #ba363c;
+    --theme-bg-primary: #b9363b;
     --theme-bg-success: #6ea82f;
     --theme-bg-warning: #e09d16;
     --theme-bg-message: #909399;
@@ -270,7 +280,7 @@
     --theme-bg-reverse: #333;
     --theme-bg-tag: #f5b976;
     --theme-bg-active: #cccccc61;
-    --theme-header-bg-color: #da493a;
+    --theme-header-bg-color: #d93b44;
     --theme-popover-bg-color: #fff;
     --theme-text-color: #ffd62e;
     --theme-text-color-auxiliary: #666;
@@ -287,7 +297,7 @@
     --theme-border-color-disabled: #e4e7ed;
     --theme-border-color-input: #ccc;
     --theme-border-color-input-focus: #7cb043;
-    --theme-input-bg-color: #da493a;
+    --theme-input-bg-color: #d93b44;
     --theme-input-text-color: #333;
     --theme-input-placeholder-color: #f9b278;
     --theme-hover-color: #ffde9b;
@@ -337,7 +347,7 @@
     --theme-mobile-bg-global-image: url('https://cdn.ihan.club/bg.png');
     --theme-popper-bg-color: #fff;
     --theme-popper-border-color: #fff;
-    --theme-dialog-header-bg-color: #da493a;
+    --theme-dialog-header-bg-color: #d93b44;
     --theme-dialog-header-color: #000;
     --theme-dialog-header-selected-color: #ffb769;
     --theme-chat-editor-bg-color: #fff;
@@ -345,8 +355,8 @@
     --theme-drak-bg-text-color: #fff;
     --theme-global-bg-color: #000;
     --theme-drawer-bg-color: #fff;
-    --theme-side-menu-bg-color: #da493a;
-    --theme-side-menu-text-color: #ffd62e;
+    --theme-side-menu-bg-color: #d93b44;
+    --theme-side-menu-text-color: #fff47f;
     --theme-main-posts-bg-color: #fff;
     --theme-level-label-bg-color: #fff;
     --theme-level-label-text-color: #999;
@@ -362,7 +372,7 @@
     --theme-pagination-jumper-input-border: 1px solid #DCDFE6;
     --theme-bottom-auth-bg-color: #fff;
     --theme-bottom-auth-text-color: #000;
-    --theme-collapse-header-bg-color: #da493a;
+    --theme-collapse-header-bg-color: #d93b44;
     --theme-collapse-header-text-color: #ffd62e;
     --theme-chat-selected-bg-color: #d2d2d2;
     --theme-block-text-color: #eee;
@@ -372,6 +382,11 @@
     --theme-post-data-text-color: #7e7e7e;
     --theme-post-reply-bg-color: #fff;
     --theme-block-border: #ffd62e;
-    --theme-nav-bg-color: #da493a;
+    --theme-nav-bg-color: #d93b44;
     --theme-index-block-shadow: none;
+    --theme-header-button-text-color: #fff;
+    --theme-nav-text-color: #fff47f;
+    --theme-nav-border-color: #fff47f;
+    --theme-nav-float-button-bg-color: #b9363b;
+    --theme-nav-float-button-text-color: #fff47f;
 }

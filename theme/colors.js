@@ -117,5 +117,10 @@ module.exports = {
     POST_REPLY_BG_COLOR: '帖子数据字体色',
     BLOCK_BORDER: '侧栏边框',
     NAV_BG_COLOR: '导航栏背景色',
-    INDEX_BLOCK_SHADOW: '首页块阴影'
-};
+    INDEX_BLOCK_SHADOW: '首页块阴影',
+    HEADER_BUTTON_TEXT_COLOR: '顶部按钮字体颜色',
+    NAV_TEXT_COLOR: '导航栏字体颜色',
+    NAV_BORDER_COLOR: '导航栏边框颜色',
+    NAV_FLOAT_BUTTON_BG_COLOR: '浮动按钮背景颜色',
+    NAV_FLOAT_BUTTON_TEXT_COLOR: '浮动按钮背景颜色'
+};

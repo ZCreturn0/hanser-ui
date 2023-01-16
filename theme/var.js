@@ -597,3 +597,28 @@ export const NAV_BG_COLOR = 'var(--theme-nav-bg-color)';
  */
 export const INDEX_BLOCK_SHADOW = 'var(--theme-index-block-shadow)';
 
+/**
+ * @description 顶部按钮字体颜色
+ */
+export const HEADER_BUTTON_TEXT_COLOR = 'var(--theme-header-button-text-color)';
+
+/**
+ * @description 导航栏字体颜色
+ */
+export const NAV_TEXT_COLOR = 'var(--theme-nav-text-color)';
+
+/**
+ * @description 导航栏边框颜色
+ */
+export const NAV_BORDER_COLOR = 'var(--theme-nav-border-color)';
+
+/**
+ * @description 浮动按钮背景颜色
+ */
+export const NAV_FLOAT_BUTTON_BG_COLOR = 'var(--theme-nav-float-button-bg-color)';
+
+/**
+ * @description 浮动按钮背景颜色
+ */
+export const NAV_FLOAT_BUTTON_TEXT_COLOR = 'var(--theme-nav-float-button-text-color)';
+
