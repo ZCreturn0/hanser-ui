@@ -141,6 +141,8 @@
     --theme-reply-area-bg-color: #eee;
     --theme-not-living-text-color: #999;
     --theme-chat-header-bg-color: #fff;
+    --theme-mobile-header-bg-color: #ffb769;
+    --theme-message-text-color: ffb769;
 }
 
 [data-theme="dark"] {
@@ -286,6 +288,8 @@
     --theme-reply-area-bg-color: #eee;
     --theme-not-living-text-color: #dcdcdc;
     --theme-chat-header-bg-color: #527fba;
+    --theme-mobile-header-bg-color: #527fba;
+    --theme-message-text-color: #527fba;
 }
 
 [data-theme="new-year-2023"] {
@@ -431,4 +435,6 @@
     --theme-reply-area-bg-color: #f5ebeb;
     --theme-not-living-text-color: #cfcfcf;
     --theme-chat-header-bg-color: #fff;
+    --theme-mobile-header-bg-color: #bdad00;
+    --theme-message-text-color: #b9363b;
 }

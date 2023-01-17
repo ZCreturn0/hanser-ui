@@ -136,5 +136,8 @@ module.exports = {
     AVATAR_BORDER_RADIUS: '头像边框圆角',
     REPLY_AREA_BG_COLOR: '回复区背景色',
     NOT_LIVING_TEXT_COLOR: '未开播字体色',
-    CHAT_HEADER_BG_COLOR: '聊天框头部背景色'
+    CHAT_HEADER_BG_COLOR: '聊天框头部背景色',
+    MOBILE_HEADER_BG_COLOR: '移动端头部背景色',
+    MESSAGE_TEXT_COLOR: '消息颜色',
+    MESSAGE_TEXT_COLOR: '消息颜色'
 };

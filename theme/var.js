@@ -692,3 +692,13 @@ export const NOT_LIVING_TEXT_COLOR = 'var(--theme-not-living-text-color)';
  */
 export const CHAT_HEADER_BG_COLOR = 'var(--theme-chat-header-bg-color)';
 
+/**
+ * @description 移动端头部背景色
+ */
+export const MOBILE_HEADER_BG_COLOR = 'var(--theme-mobile-header-bg-color)';
+
+/**
+ * @description 消息颜色
+ */
+export const MESSAGE_TEXT_COLOR = 'var(--theme-message-text-color)';
+
