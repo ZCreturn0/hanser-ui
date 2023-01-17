@@ -386,8 +386,8 @@
     --theme-side-menu-bg-color: #d93b44e6;
     --theme-side-menu-text-color: #fff47f;
     --theme-main-posts-bg-color: #fff;
-    --theme-level-label-bg-color: #eee;
-    --theme-level-label-text-color: #999;
+    --theme-level-label-bg-color: #b9363b;
+    --theme-level-label-text-color: #fff;
     --theme-post-title-color: #000;
     --theme-post-list-content-color: #999;
     --theme-post-data-color: #d93b44;
@@ -424,7 +424,7 @@
     --theme-post-master-label-color: #d93b44;
     --theme-editor-border-color: #d93b44;
     --theme-home-link-text-color: #edff8f;
-    --theme-avatar-bg-color: #eee;
+    --theme-avatar-bg-color: transparent;
     --theme-home-banner-bg: url('https://cdn.ihan.club/new-year-2023/home-banner.jpg');
     --theme-avatar-border: url('https://cdn.ihan.club/new-year-2023/avatar-border.png');
     --theme-avatar-border-radius: none;
