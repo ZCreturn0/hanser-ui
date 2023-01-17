@@ -117,7 +117,8 @@ module.exports = {
     POST_REPLY_BG_COLOR: '帖子数据字体色',
     BLOCK_BORDER: '侧栏边框',
     NAV_BG_COLOR: '导航栏背景色',
-    INDEX_BLOCK_SHADOW: '首页块阴影',
+    INDEX_BLOCK_SHADOW: '首页块阴影'
+,
     HEADER_BUTTON_TEXT_COLOR: '顶部按钮字体颜色',
     NAV_TEXT_COLOR: '导航栏字体颜色',
     NAV_BORDER_COLOR: '导航栏边框颜色',
@@ -139,5 +140,5 @@ module.exports = {
     CHAT_HEADER_BG_COLOR: '聊天框头部背景色',
     MOBILE_HEADER_BG_COLOR: '移动端头部背景色',
     MESSAGE_TEXT_COLOR: '消息颜色',
-    MESSAGE_TEXT_COLOR: '消息颜色'
-};
+    MOBILE_FLOAT_BUTTON_BG_COLOR: '移动端悬浮按钮背景色色'
+};

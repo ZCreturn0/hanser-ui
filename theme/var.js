@@ -702,3 +702,8 @@ export const MOBILE_HEADER_BG_COLOR = 'var(--theme-mobile-header-bg-color)';
  */
 export const MESSAGE_TEXT_COLOR = 'var(--theme-message-text-color)';
 
+/**
+ * @description 移动端悬浮按钮背景色色
+ */
+export const MOBILE_FLOAT_BUTTON_BG_COLOR = 'var(--theme-mobile-float-button-bg-color)';
+
