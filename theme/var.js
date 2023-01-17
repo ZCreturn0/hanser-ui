@@ -637,3 +637,58 @@ export const HEADER_SEARCH = 'var(--theme-header-search)';
  */
 export const SWITCH_BG_COLOR = 'var(--theme-switch-bg-color)';
 
+/**
+ * @description 编辑器控件背景色
+ */
+export const EDITOR_TOOLBAR_BG_COLOR = 'var(--theme-editor-toolbar-bg-color)';
+
+/**
+ * @description 楼主标颜色
+ */
+export const POST_MASTER_LABEL_COLOR = 'var(--theme-post-master-label-color)';
+
+/**
+ * @description 编辑器边框色
+ */
+export const EDITOR_BORDER_COLOR = 'var(--theme-editor-border-color)';
+
+/**
+ * @description 主页链接字体颜色
+ */
+export const HOME_LINK_TEXT_COLOR = 'var(--theme-home-link-text-color)';
+
+/**
+ * @description 头像背景颜色
+ */
+export const AVATAR_BG_COLOR = 'var(--theme-avatar-bg-color)';
+
+/**
+ * @description 主页banner背景
+ */
+export const HOME_BANNER_BG = 'var(--theme-home-banner-bg)';
+
+/**
+ * @description 头像边框
+ */
+export const AVATAR_BORDER = 'var(--theme-avatar-border)';
+
+/**
+ * @description 头像边框圆角
+ */
+export const AVATAR_BORDER_RADIUS = 'var(--theme-avatar-border-radius)';
+
+/**
+ * @description 回复区背景色
+ */
+export const REPLY_AREA_BG_COLOR = 'var(--theme-reply-area-bg-color)';
+
+/**
+ * @description 未开播字体色
+ */
+export const NOT_LIVING_TEXT_COLOR = 'var(--theme-not-living-text-color)';
+
+/**
+ * @description 聊天框头部背景色
+ */
+export const CHAT_HEADER_BG_COLOR = 'var(--theme-chat-header-bg-color)';
+

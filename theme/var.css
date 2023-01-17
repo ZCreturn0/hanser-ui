@@ -130,6 +130,17 @@
     --theme-liked-text-color: #ffb769;
     --theme-header-search: none;
     --theme-switch-bg-color: #ffb769;
+    --theme-editor-toolbar-bg-color: #fff;
+    --theme-post-master-label-color: #ffb769;
+    --theme-editor-border-color: #ffb769;
+    --theme-home-link-text-color: #ffb769;
+    --theme-avatar-bg-color: #eee;
+    --theme-home-banner-bg: url('https://cdn.ihan.club/banner.jpg');
+    --theme-avatar-border: none;
+    --theme-avatar-border-radius: 50%;
+    --theme-reply-area-bg-color: #eee;
+    --theme-not-living-text-color: #999;
+    --theme-chat-header-bg-color: #fff;
 }
 
 [data-theme="dark"] {
@@ -264,6 +275,17 @@
     --theme-liked-text-color: #527fba;
     --theme-header-search: none;
     --theme-switch-bg-color: #527fba;
+    --theme-editor-toolbar-bg-color: #527fba;
+    --theme-post-master-label-color: #527fba;
+    --theme-editor-border-color: #527fba;
+    --theme-home-link-text-color: 97b9ff;
+    --theme-avatar-bg-color: #eee;
+    --theme-home-banner-bg: url('https://cdn.ihan.club/banner.jpg');
+    --theme-avatar-border: none;
+    --theme-avatar-border-radius: 50%;
+    --theme-reply-area-bg-color: #eee;
+    --theme-not-living-text-color: #dcdcdc;
+    --theme-chat-header-bg-color: #527fba;
 }
 
 [data-theme="new-year-2023"] {
@@ -280,7 +302,7 @@
     --theme-bg-message: #909399;
     --theme-bg-danger: #dc3a48;
     --theme-bg-secondary: rgba(51, 51, 51, 0.1);
-    --theme-bg-block: #eee;
+    --theme-bg-block: #d93b44e6;
     --theme-bg-block-disabled: #bdc5cf;
     --theme-bg-block-dark: #f5f6f7;
     --theme-bg-reverse: #333;
@@ -295,7 +317,7 @@
     --theme-text-color-white: #fff;
     --theme-bg-color-white: #ffffff80;
     --theme-text-color-disabled: #aaa;
-    --theme-text-color-link: #ffcd6a;
+    --theme-text-color-link: #d93b44;
     --theme-text-color-reverse: #fff;
     --theme-border-color: #ffd62e;
     --theme-border-color-dark: #e6e6e6;
@@ -317,7 +339,7 @@
     --theme-text-color-primary-plain-hover: #fff;
     --theme-bg-color-badge: #ffd62e;
     --theme-text-color-badge: #571A10;
-    --theme-shadow-color: #000;
+    --theme-shadow-color: #70091e;
     --theme-douyu-unbind-color: #b3704d;
     --theme-douyu-unbind-hover-color: #ff813c;
     --theme-douyu-color: #ff813c;
@@ -361,7 +383,7 @@
     --theme-drak-bg-text-color: #fff;
     --theme-global-bg-color: #000;
     --theme-drawer-bg-color: #d93b44;
-    --theme-side-menu-bg-color: #d93b44;
+    --theme-side-menu-bg-color: #d93b44e6;
     --theme-side-menu-text-color: #fff47f;
     --theme-main-posts-bg-color: #fff;
     --theme-level-label-bg-color: #eee;
@@ -381,7 +403,7 @@
     --theme-collapse-header-bg-color: #d93b44;
     --theme-collapse-header-text-color: #ffd62e;
     --theme-chat-selected-bg-color: #d2d2d2;
-    --theme-block-text-color: #eee;
+    --theme-block-text-color: #fff;
     --theme-user-data-text-color: #d93b44;
     --theme-loading-text-color: #eee;
     --theme-post-content-bg-color: #fff;
@@ -398,4 +420,15 @@
     --theme-liked-text-color: #ffab00;
     --theme-header-search: 2px solid var(--theme-border-color);
     --theme-switch-bg-color: #d93b44;
+    --theme-editor-toolbar-bg-color: #d93b44;
+    --theme-post-master-label-color: #d93b44;
+    --theme-editor-border-color: #d93b44;
+    --theme-home-link-text-color: #edff8f;
+    --theme-avatar-bg-color: #eee;
+    --theme-home-banner-bg: url('https://cdn.ihan.club/new-year-2023/home-banner.jpg');
+    --theme-avatar-border: url('https://cdn.ihan.club/new-year-2023/avatar-border.png');
+    --theme-avatar-border-radius: none;
+    --theme-reply-area-bg-color: #f5ebeb;
+    --theme-not-living-text-color: #cfcfcf;
+    --theme-chat-header-bg-color: #fff;
 }

@@ -125,5 +125,16 @@ module.exports = {
     NAV_FLOAT_BUTTON_TEXT_COLOR: '浮动按钮背景颜色',
     LIKED_TEXT_COLOR: '已点赞字体颜色',
     HEADER_SEARCH: 'BORDER',
-    SWITCH_BG_COLOR: '切换器背景色'
+    SWITCH_BG_COLOR: '切换器背景色',
+    EDITOR_TOOLBAR_BG_COLOR: '编辑器控件背景色',
+    POST_MASTER_LABEL_COLOR: '楼主标颜色',
+    EDITOR_BORDER_COLOR: '编辑器边框色',
+    HOME_LINK_TEXT_COLOR: '主页链接字体颜色',
+    AVATAR_BG_COLOR: '头像背景颜色',
+    HOME_BANNER_BG: '主页banner背景',
+    AVATAR_BORDER: '头像边框',
+    AVATAR_BORDER_RADIUS: '头像边框圆角',
+    REPLY_AREA_BG_COLOR: '回复区背景色',
+    NOT_LIVING_TEXT_COLOR: '未开播字体色',
+    CHAT_HEADER_BG_COLOR: '聊天框头部背景色'
 };
