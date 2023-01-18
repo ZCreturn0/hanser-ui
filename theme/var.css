@@ -421,7 +421,7 @@
     --theme-header-button-text-color: #fff;
     --theme-nav-text-color: #fff47f;
     --theme-nav-border-color: #fff47f;
-    --theme-nav-float-button-bg-color: #f3e9ea;
+    --theme-nav-float-button-bg-color: #d93b44e6;
     --theme-nav-float-button-text-color: #c4343e;
     --theme-liked-text-color: #ffab00;
     --theme-header-search: 2px solid var(--theme-border-color);
@@ -439,5 +439,5 @@
     --theme-chat-header-bg-color: #fff;
     --theme-mobile-header-bg-color: #bdad00;
     --theme-message-text-color: #b9363b;
-    --theme-mobile-float-button-bg-color: #d93b44e6;
+    --theme-mobile-float-button-bg-color: #f3e9ea;
 }
