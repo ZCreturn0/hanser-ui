@@ -707,3 +707,13 @@ export const MESSAGE_TEXT_COLOR = 'var(--theme-message-text-color)';
  */
 export const MOBILE_FLOAT_BUTTON_BG_COLOR = 'var(--theme-mobile-float-button-bg-color)';
 
+/**
+ * @description 帖子详情字体颜色
+ */
+export const POST_TEXT_COLOR = 'var(--theme-post-text-color)';
+
+/**
+ * @description 帖子头部背景颜色
+ */
+export const POST_HEADER_BG_COLOR = 'var(--theme-post-header-bg-color)';
+

@@ -113,7 +113,7 @@
     --theme-collapse-header-bg-color: #fff;
     --theme-collapse-header-text-color: #000;
     --theme-chat-selected-bg-color: #d2d2d2;
-    --theme-block-text-color: #eee;
+    --theme-block-text-color: #333;
     --theme-user-data-text-color: #606266;
     --theme-loading-text-color: #eee;
     --theme-post-content-bg-color: #fff;
@@ -130,7 +130,7 @@
     --theme-liked-text-color: #ffb769;
     --theme-header-search: none;
     --theme-switch-bg-color: #ffb769;
-    --theme-editor-toolbar-bg-color: #fff;
+    --theme-editor-toolbar-bg-color: #ffb769;
     --theme-post-master-label-color: #ffb769;
     --theme-editor-border-color: #ffb769;
     --theme-home-link-text-color: #ffb769;
@@ -144,6 +144,8 @@
     --theme-mobile-header-bg-color: #ffb769;
     --theme-message-text-color: ffb769;
     --theme-mobile-float-button-bg-color: #ffb769;
+    --theme-post-text-color: #000;
+    --theme-post-header-bg-color: #fff;
 }
 
 [data-theme="dark"] {
@@ -265,7 +267,7 @@
     --theme-user-data-text-color: #b2d5f1;
     --theme-loading-text-color: #527fba;
     --theme-post-content-bg-color: #3e5f8b;
-    --theme-post-data-text-color: #527fba;
+    --theme-post-data-text-color: #588dd2;
     --theme-post-reply-bg-color: #3e5f8b;
     --theme-block-border: transparent;
     --theme-nav-bg-color: #527fba;
@@ -275,7 +277,7 @@
     --theme-nav-border-color: #fff;
     --theme-nav-float-button-bg-color: #527fba;
     --theme-nav-float-button-text-color: #fff;
-    --theme-liked-text-color: #527fba;
+    --theme-liked-text-color: #ffb769;
     --theme-header-search: none;
     --theme-switch-bg-color: #527fba;
     --theme-editor-toolbar-bg-color: #527fba;
@@ -286,12 +288,14 @@
     --theme-home-banner-bg: url('https://cdn.ihan.club/banner.jpg');
     --theme-avatar-border: none;
     --theme-avatar-border-radius: 50%;
-    --theme-reply-area-bg-color: #eee;
+    --theme-reply-area-bg-color: #5277a8;
     --theme-not-living-text-color: #dcdcdc;
     --theme-chat-header-bg-color: #527fba;
     --theme-mobile-header-bg-color: #527fba;
     --theme-message-text-color: #527fba;
     --theme-mobile-float-button-bg-color: #527fba;
+    --theme-post-text-color: #6ca3eb;
+    --theme-post-header-bg-color: #3d5f8a;
 }
 
 [data-theme="new-year-2023"] {
@@ -440,4 +444,6 @@
     --theme-mobile-header-bg-color: #bdad00;
     --theme-message-text-color: #b9363b;
     --theme-mobile-float-button-bg-color: #f3e9ea;
+    --theme-post-text-color: #000;
+    --theme-post-header-bg-color: #fff;
 }
