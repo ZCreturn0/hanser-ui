@@ -717,3 +717,8 @@ export const POST_TEXT_COLOR = 'var(--theme-post-text-color)';
  */
 export const POST_HEADER_BG_COLOR = 'var(--theme-post-header-bg-color)';
 
+/**
+ * @description 通知背景色
+ */
+export const NOTICE_BG_COLOR = 'var(--theme-notice-bg-color)';
+

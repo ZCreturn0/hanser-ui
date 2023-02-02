@@ -141,5 +141,6 @@ module.exports = {
     MESSAGE_TEXT_COLOR: '消息颜色',
     MOBILE_FLOAT_BUTTON_BG_COLOR: '移动端悬浮按钮背景色色',
     POST_TEXT_COLOR: '帖子详情字体颜色',
-    POST_HEADER_BG_COLOR: '帖子头部背景颜色'
+    POST_HEADER_BG_COLOR: '帖子头部背景颜色',
+    NOTICE_BG_COLOR: '通知背景色'
 };
