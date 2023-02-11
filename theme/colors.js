@@ -142,5 +142,7 @@ module.exports = {
     MOBILE_FLOAT_BUTTON_BG_COLOR: '移动端悬浮按钮背景色色',
     POST_TEXT_COLOR: '帖子详情字体颜色',
     POST_HEADER_BG_COLOR: '帖子头部背景颜色',
-    NOTICE_BG_COLOR: '通知背景色'
+    NOTICE_BG_COLOR: '通知背景色',
+    SIDEBAR_ICON_COLOR: '侧栏图标颜色',
+    SIDEBAR_LINK_COLOR: '侧栏链接颜色'
 };
