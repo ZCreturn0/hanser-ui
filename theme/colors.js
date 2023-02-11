@@ -144,5 +144,8 @@ module.exports = {
     POST_HEADER_BG_COLOR: '帖子头部背景颜色',
     NOTICE_BG_COLOR: '通知背景色',
     SIDEBAR_ICON_COLOR: '侧栏图标颜色',
-    SIDEBAR_LINK_COLOR: '侧栏链接颜色'
+    SIDEBAR_LINK_COLOR: '侧栏链接颜色',
+    TIP_TITLE_COLOR: '提示框标题字体颜色',
+    TIP_CONTENT_COLOR: '提示框内容字体颜色',
+    QUOTE_BG_COLOR: '引用背景颜色'
 };

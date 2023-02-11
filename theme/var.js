@@ -722,3 +722,28 @@ export const POST_HEADER_BG_COLOR = 'var(--theme-post-header-bg-color)';
  */
 export const NOTICE_BG_COLOR = 'var(--theme-notice-bg-color)';
 
+/**
+ * @description 侧栏图标颜色
+ */
+export const SIDEBAR_ICON_COLOR = 'var(--theme-sidebar-icon-color)';
+
+/**
+ * @description 侧栏链接颜色
+ */
+export const SIDEBAR_LINK_COLOR = 'var(--theme-sidebar-link-color)';
+
+/**
+ * @description 提示框标题字体颜色
+ */
+export const TIP_TITLE_COLOR = 'var(--theme-tip-title-color)';
+
+/**
+ * @description 提示框内容字体颜色
+ */
+export const TIP_CONTENT_COLOR = 'var(--theme-tip-content-color)';
+
+/**
+ * @description 引用背景颜色
+ */
+export const QUOTE_BG_COLOR = 'var(--theme-quote-bg-color)';
+
