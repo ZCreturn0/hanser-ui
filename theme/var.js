@@ -747,3 +747,8 @@ export const TIP_CONTENT_COLOR = 'var(--theme-tip-content-color)';
  */
 export const QUOTE_BG_COLOR = 'var(--theme-quote-bg-color)';
 
+/**
+ * @description 编辑器图标选中颜色
+ */
+export const EDITOR_ICON_ACTIVE_COLOR = 'var(--theme-editor-icon-active-color)';
+

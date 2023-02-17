@@ -152,6 +152,7 @@
     --theme-tip-title-color: #ffb769;
     --theme-tip-content-color: #aeaeae;
     --theme-quote-bg-color: #e5e5e5;
+    --theme-editor-icon-active-color: #3dfc5a;
 }
 
 [data-theme="dark"] {
@@ -308,6 +309,7 @@
     --theme-tip-title-color: #ffb769;
     --theme-tip-content-color: #aeaeae;
     --theme-quote-bg-color: #366b93;
+    --theme-editor-icon-active-color: #3dfc5a;
 }
 
 [data-theme="new-year-2022"] {
@@ -464,6 +466,7 @@
     --theme-tip-title-color: #ffb769;
     --theme-tip-content-color: #aeaeae;
     --theme-quote-bg-color: #e5e5e5;
+    --theme-editor-icon-active-color: #3dfc5a;
 }
 
 [data-theme="new-year-2023"] {
@@ -620,4 +623,5 @@
     --theme-tip-title-color: #ffb769;
     --theme-tip-content-color: #aeaeae;
     --theme-quote-bg-color: #344962;
+    --theme-editor-icon-active-color: #3dfc5a;
 }
