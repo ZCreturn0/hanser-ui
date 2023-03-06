@@ -752,3 +752,8 @@ export const QUOTE_BG_COLOR = 'var(--theme-quote-bg-color)';
  */
 export const EDITOR_ICON_ACTIVE_COLOR = 'var(--theme-editor-icon-active-color)';
 
+/**
+ * @description 管理员界面字体主色
+ */
+export const MANAGER_PRIMARY_TEXT_COLOR = 'var(--theme-manager-primary-text-color)';
+

@@ -148,5 +148,6 @@ module.exports = {
     TIP_TITLE_COLOR: '提示框标题字体颜色',
     TIP_CONTENT_COLOR: '提示框内容字体颜色',
     QUOTE_BG_COLOR: '引用背景颜色',
-    EDITOR_ICON_ACTIVE_COLOR: '编辑器图标选中颜色'
+    EDITOR_ICON_ACTIVE_COLOR: '编辑器图标选中颜色',
+    MANAGER_PRIMARY_TEXT_COLOR: '管理员界面字体主色'
 };
