@@ -154,6 +154,8 @@
     --theme-quote-bg-color: #e5e5e5;
     --theme-editor-icon-active-color: #3dfc5a;
     --theme-manager-primary-text-color: #ffb769;
+    --theme-dialog-text-color: #333;
+    --theme-spoiler-bg-color: #ffb769;
 }
 
 [data-theme="dark"] {
@@ -312,6 +314,8 @@
     --theme-quote-bg-color: #366b93;
     --theme-editor-icon-active-color: #3dfc5a;
     --theme-manager-primary-text-color: #527fba;
+    --theme-dialog-text-color: #9e9e9e;
+    --theme-spoiler-bg-color: #527fba;
 }
 
 [data-theme="new-year-2022"] {
@@ -470,6 +474,8 @@
     --theme-quote-bg-color: #e5e5e5;
     --theme-editor-icon-active-color: #3dfc5a;
     --theme-manager-primary-text-color: #ffb769;
+    --theme-dialog-text-color: #333;
+    --theme-spoiler-bg-color: #ba363b;
 }
 
 [data-theme="new-year-2023"] {
@@ -628,4 +634,6 @@
     --theme-quote-bg-color: #344962;
     --theme-editor-icon-active-color: #3dfc5a;
     --theme-manager-primary-text-color: #ffb769;
+    --theme-dialog-text-color: #333;
+    --theme-spoiler-bg-color: #d83b45;
 }

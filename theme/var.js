@@ -757,3 +757,13 @@ export const EDITOR_ICON_ACTIVE_COLOR = 'var(--theme-editor-icon-active-color)';
  */
 export const MANAGER_PRIMARY_TEXT_COLOR = 'var(--theme-manager-primary-text-color)';
 
+/**
+ * @description 弹框字体颜色
+ */
+export const DIALOG_TEXT_COLOR = 'var(--theme-dialog-text-color)';
+
+/**
+ * @description spoiler背景颜色
+ */
+export const SPOILER_BG_COLOR = 'var(--theme-spoiler-bg-color)';
+
