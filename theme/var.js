@@ -767,3 +767,8 @@ export const DIALOG_TEXT_COLOR = 'var(--theme-dialog-text-color)';
  */
 export const SPOILER_BG_COLOR = 'var(--theme-spoiler-bg-color)';
 
+/**
+ * @description 关键字字体颜色
+ */
+export const KEYWORD_TEXT_COLOR = 'var(--theme-keyword-text-color)';
+

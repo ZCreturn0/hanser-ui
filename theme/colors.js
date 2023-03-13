@@ -151,5 +151,6 @@ module.exports = {
     EDITOR_ICON_ACTIVE_COLOR: '编辑器图标选中颜色',
     MANAGER_PRIMARY_TEXT_COLOR: '管理员界面字体主色',
     DIALOG_TEXT_COLOR: '弹框字体颜色',
-    SPOILER_BG_COLOR: 'spoiler背景颜色'
+    SPOILER_BG_COLOR: 'spoiler背景颜色',
+    KEYWORD_TEXT_COLOR: '关键字字体颜色'
 };
