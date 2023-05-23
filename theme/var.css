@@ -80,9 +80,8 @@
     --theme-top-cart-bg-color: #51b6ef;
     --theme-living-bg-color: #fb7198;
     --theme-living-active-bg-color: #ffa13b;
-    --theme-bg-global-image: url('https://cdn.ihan.club/bg/20230515.png');
-    --theme-bg-global-image-size: 120%;
-    --theme-bg-global-image-position: top left;
+    --theme-bg-global-image: url('https://cdn.ihan.club/bg.png');
+    --theme-bg-global-image-size: 90%;
     --theme-mobile-bg-global-image: url('https://cdn.ihan.club/bg.png');
     --theme-popper-bg-color: #fff;
     --theme-popper-border-color: #fff;
@@ -94,7 +93,7 @@
     --theme-drak-bg-text-color: #fff;
     --theme-global-bg-color: #000;
     --theme-drawer-bg-color: #fff;
-    --theme-side-menu-bg-color: #ffffffb0;
+    --theme-side-menu-bg-color: #fff;
     --theme-side-menu-text-color: #333;
     --theme-main-posts-bg-color: #fff;
     --theme-level-label-bg-color: #eee;
@@ -244,7 +243,6 @@
     --theme-living-active-bg-color: #ffa13b;
     --theme-bg-global-image: url('https://cdn.ihan.club/dark.png');
     --theme-bg-global-image-size: 90%;
-    --theme-bg-global-image-position: bottom;
     --theme-mobile-bg-global-image: url('https://cdn.ihan.club/dark-mobile-bg.png');
     --theme-popper-bg-color: #272732;
     --theme-popper-border-color: #000;
@@ -406,7 +404,6 @@
     --theme-living-active-bg-color: #ffa13b;
     --theme-bg-global-image: url('https://cdn.ihan.club/new-year-2022/new-year-2022.jpg');
     --theme-bg-global-image-size: cover;
-    --theme-bg-global-image-position: bottom;
     --theme-mobile-bg-global-image: url('https://cdn.ihan.club/new-year-2022/new-year-2022.jpg');
     --theme-popper-bg-color: #fff;
     --theme-popper-border-color: #fff;
@@ -568,7 +565,6 @@
     --theme-living-active-bg-color: #ffa13b;
     --theme-bg-global-image: url('https://cdn.ihan.club/new-yaer/new-year-2023.png');
     --theme-bg-global-image-size: cover;
-    --theme-bg-global-image-position: bottom;
     --theme-mobile-bg-global-image: url('https://cdn.ihan.club/bg.png');
     --theme-popper-bg-color: #fff;
     --theme-popper-border-color: #fff;
