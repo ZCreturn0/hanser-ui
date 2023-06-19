@@ -37,3 +37,10 @@
     color: var(--theme-text-color-white);
     background-color: var(--theme-bg-danger);
 }
+
+@media screen and (max-width: 750px) {
+    .h-message {
+        left: 5%;
+        width: 90%;
+    }
+}
