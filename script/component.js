@@ -20,12 +20,7 @@ const toHumpNaming = (name) => {
 
 // 返回空格数
 const space = (num) => {
-    let i = 0;
-    let str = '';
-    while (i++ < num) {
-        str += ' ';
-    }
-    return str;
+    return ' '.repeat(num);
 };
 
 const makeComponent = () => {
