@@ -779,8 +779,8 @@
     --theme-editor-border-color: #d93b44;
     --theme-home-link-text-color: #edff8f;
     --theme-avatar-bg-color: transparent;
-    --theme-home-banner-bg: url('https://cdn.ihan.club/new-year-2023/home-banner.jpg');
-    --theme-avatar-border: url('https://cdn.ihan.club/new-year-2023/avatar-border.png');
+    --theme-home-banner-bg: url('https://cdn.ihan.club/new-year-2024/banner.png');
+    --theme-avatar-border: none;
     --theme-avatar-border-radius: none;
     --theme-reply-area-bg-color: #f5ebeb;
     --theme-not-living-text-color: #cfcfcf;
