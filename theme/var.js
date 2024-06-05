@@ -772,3 +772,8 @@ export const SPOILER_BG_COLOR = 'var(--theme-spoiler-bg-color)';
  */
 export const KEYWORD_TEXT_COLOR = 'var(--theme-keyword-text-color)';
 
+/**
+ * @description 表情组背景色
+ */
+export const EDITOR_EMOTION_SORTS_BG_COLOR = 'var(--theme-editor-emotion-sorts-bg-color)';
+

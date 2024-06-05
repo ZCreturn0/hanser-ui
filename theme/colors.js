@@ -152,5 +152,8 @@ module.exports = {
     MANAGER_PRIMARY_TEXT_COLOR: '管理员界面字体主色',
     DIALOG_TEXT_COLOR: '弹框字体颜色',
     SPOILER_BG_COLOR: 'spoiler背景颜色',
-    KEYWORD_TEXT_COLOR: '关键字字体颜色'
+    KEYWORD_TEXT_COLOR: '关键字字体颜色',
+    EDITOR_EMOTION_SORTS_BG_COLOR: '表情组背景色',
+    EDITOR_EMOTION_SORTS_HOVER_BG_COLOR: '表情组hover背景色',
+    EDITOR_EMOTION_SORTS_SELECTED_BG_COLOR: '表情组选中背景色'
 };
