@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/ZCreturn0/hanser-ui/compare/v1.2.0...v1.3.0) (2024-07-16)
+
+
+### Features
+
+* 编辑器相关 ([3b3f2f3](https://github.com/ZCreturn0/hanser-ui/commit/3b3f2f3bb507e3af0b78f36e258475d27bf9ae71))
+* cdn ([498315e](https://github.com/ZCreturn0/hanser-ui/commit/498315e4df319529dd9e36b0514430c472086233))
+* version 1.2.2 ([dfca9a9](https://github.com/ZCreturn0/hanser-ui/commit/dfca9a9e439bf87c4df03a1334e8ee072a6e04aa))
+
 ## [1.2.0](https://github.com/ZCreturn0/hanser-ui/compare/v1.1.1...v1.2.0) (2024-03-20)
 
 
