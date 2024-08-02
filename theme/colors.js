@@ -155,5 +155,9 @@ module.exports = {
     KEYWORD_TEXT_COLOR: '关键字字体颜色',
     EDITOR_EMOTION_SORTS_BG_COLOR: '表情组背景色',
     EDITOR_EMOTION_SORTS_HOVER_BG_COLOR: '表情组hover背景色',
-    EDITOR_EMOTION_SORTS_SELECTED_BG_COLOR: '表情组选中背景色'
+    EDITOR_EMOTION_SORTS_SELECTED_BG_COLOR: '表情组选中背景色',
+    EDITOR_ATTR_BG_COLOR: '编辑器附加元素背景色',
+    EDITOR_ATTR_COLOR: '编辑器附加元素字体色',
+    EDITOR_ATTR_HOVER_COLOR: '编辑器附加元素HOVER字体色',
+    EDITOR_TAG_HOVER_BG_COLOR: '编辑器TAG的HOVER背景色'
 };

@@ -2,6 +2,10 @@
     display: flex;
 }
 
+.column-direction {
+    flex-direction: column;
+}
+
 .h-radio-group > * {
     margin-right: 20px;
 }

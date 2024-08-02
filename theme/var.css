@@ -160,6 +160,10 @@
     --theme-editor-emotion-sorts-bg-color: #f3f3f3;
     --theme-editor-emotion-sorts-hover-bg-color: #e8e8e8;
     --theme-editor-emotion-sorts-selected-bg-color: #fff;
+    --theme-editor-attr-bg-color: #e2e2e2;
+    --theme-editor-attr-color: #9499a0;
+    --theme-editor-attr-hover-color: #cbcaca;
+    --theme-editor-tag-hover-bg-color: #efefef;
 }
 
 [data-theme="dark"] {
@@ -324,6 +328,10 @@
     --theme-editor-emotion-sorts-bg-color: #f3f3f3;
     --theme-editor-emotion-sorts-hover-bg-color: #e8e8e8;
     --theme-editor-emotion-sorts-selected-bg-color: #fff;
+    --theme-editor-attr-bg-color: #e2e2e2;
+    --theme-editor-attr-color: #9499a0;
+    --theme-editor-attr-hover-color: #cbcaca;
+    --theme-editor-tag-hover-bg-color: #efefef;
 }
 
 [data-theme="new-year-2022"] {
@@ -488,6 +496,10 @@
     --theme-editor-emotion-sorts-bg-color: #f3f3f3;
     --theme-editor-emotion-sorts-hover-bg-color: #e8e8e8;
     --theme-editor-emotion-sorts-selected-bg-color: #fff;
+    --theme-editor-attr-bg-color: #e2e2e2;
+    --theme-editor-attr-color: #9499a0;
+    --theme-editor-attr-hover-color: #cbcaca;
+    --theme-editor-tag-hover-bg-color: #efefef;
 }
 
 [data-theme="new-year-2023"] {
@@ -652,6 +664,10 @@
     --theme-editor-emotion-sorts-bg-color: #f3f3f3;
     --theme-editor-emotion-sorts-hover-bg-color: #e8e8e8;
     --theme-editor-emotion-sorts-selected-bg-color: #fff;
+    --theme-editor-attr-bg-color: #e2e2e2;
+    --theme-editor-attr-color: #9499a0;
+    --theme-editor-attr-hover-color: #cbcaca;
+    --theme-editor-tag-hover-bg-color: #efefef;
 }
 
 [data-theme="new-year-2024"] {
@@ -816,4 +832,8 @@
     --theme-editor-emotion-sorts-bg-color: #f3f3f3;
     --theme-editor-emotion-sorts-hover-bg-color: #e8e8e8;
     --theme-editor-emotion-sorts-selected-bg-color: #fff;
+    --theme-editor-attr-bg-color: #e2e2e2;
+    --theme-editor-attr-color: #9499a0;
+    --theme-editor-attr-hover-color: #cbcaca;
+    --theme-editor-tag-hover-bg-color: #efefef;
 }

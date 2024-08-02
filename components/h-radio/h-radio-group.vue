@@ -1,6 +1,6 @@
 <template>
     <!-- 单选框组 -->
-    <div class="h-radio-group">
+    <div class="h-radio-group" :class="{ 'column-direction': column }">
         <slot />
     </div>
 </template>
@@ -13,7 +13,7 @@ export default {
 
         }
     },
-    props: ['value']
+    props: ['value', 'column']
 }
 </script>
 
