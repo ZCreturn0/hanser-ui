@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/ZCreturn0/hanser-ui/compare/v1.3.7...v1.4.0) (2024-08-02)
+
+
+### Features
+
+* save ([bf0147f](https://github.com/ZCreturn0/hanser-ui/commit/bf0147f92887dae72c4ce2c5c14563ada6f858c9))
+
 ### [1.3.7](https://github.com/ZCreturn0/hanser-ui/compare/v1.3.6...v1.3.7) (2024-08-02)
 
 ### [1.3.6](https://github.com/ZCreturn0/hanser-ui/compare/v1.3.5...v1.3.6) (2024-07-18)
