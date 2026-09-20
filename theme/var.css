@@ -43,6 +43,10 @@
     --theme-active-color: #f99326;
     --theme-icon-color-auxiliary: #808080;
     --theme-modal-bg-color: rgba(37, 37, 37, 0.7);
+    --theme-modal-panel-bg-color: #ffffff;
+    --theme-modal-text-color: #2b2724;
+    --theme-modal-text-auxiliary-color: #6b6157;
+    --theme-modal-hover-bg-color: #faf8f5;
     --theme-color-primary-plain: #ffe0bf;
     --theme-text-color-primary-plain: #f99326;
     --theme-color-primary-plain-hover: #f99326;
@@ -211,6 +215,10 @@
     --theme-active-color: #f99326;
     --theme-icon-color-auxiliary: #808080;
     --theme-modal-bg-color: rgba(37, 37, 37, 0.7);
+    --theme-modal-panel-bg-color: #2b3d52;
+    --theme-modal-text-color: #e8eef6;
+    --theme-modal-text-auxiliary-color: #b3c4d6;
+    --theme-modal-hover-bg-color: #31425a;
     --theme-color-primary-plain: #9ab9e1;
     --theme-text-color-primary-plain: #ffffff;
     --theme-color-primary-plain-hover: #aac4e4;
@@ -379,6 +387,10 @@
     --theme-active-color: #ffde9b;
     --theme-icon-color-auxiliary: #808080;
     --theme-modal-bg-color: rgba(37, 37, 37, 0.7);
+    --theme-modal-panel-bg-color: #ffffff;
+    --theme-modal-text-color: #2b2724;
+    --theme-modal-text-auxiliary-color: #6b6157;
+    --theme-modal-hover-bg-color: #fbf8f8;
     --theme-color-primary-plain: #ffe0bf;
     --theme-text-color-primary-plain: #f99326;
     --theme-color-primary-plain-hover: #f99326;
@@ -547,6 +559,10 @@
     --theme-active-color: #ffde9b;
     --theme-icon-color-auxiliary: #808080;
     --theme-modal-bg-color: rgba(37, 37, 37, 0.7);
+    --theme-modal-panel-bg-color: #ffffff;
+    --theme-modal-text-color: #2b2724;
+    --theme-modal-text-auxiliary-color: #6b6157;
+    --theme-modal-hover-bg-color: #fbf8f8;
     --theme-color-primary-plain: #ffe0bf;
     --theme-text-color-primary-plain: #f99326;
     --theme-color-primary-plain-hover: #f99326;
@@ -715,6 +731,10 @@
     --theme-active-color: #ffde9b;
     --theme-icon-color-auxiliary: #808080;
     --theme-modal-bg-color: rgba(37, 37, 37, 0.7);
+    --theme-modal-panel-bg-color: #ffffff;
+    --theme-modal-text-color: #2b2724;
+    --theme-modal-text-auxiliary-color: #6b6157;
+    --theme-modal-hover-bg-color: #fbf8f8;
     --theme-color-primary-plain: #ffe0bf;
     --theme-text-color-primary-plain: #f99326;
     --theme-color-primary-plain-hover: #f99326;

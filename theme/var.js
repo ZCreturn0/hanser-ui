@@ -218,6 +218,26 @@ export const ICON_COLOR_AUXILIARY = 'var(--theme-icon-color-auxiliary)';
 export const MODAL_BG_COLOR = 'var(--theme-modal-bg-color)';
 
 /**
+ * @description modal面板背景色
+ */
+export const MODAL_PANEL_BG_COLOR = 'var(--theme-modal-panel-bg-color)';
+
+/**
+ * @description modal主要字体色
+ */
+export const MODAL_TEXT_COLOR = 'var(--theme-modal-text-color)';
+
+/**
+ * @description modal辅助字体色
+ */
+export const MODAL_TEXT_AUXILIARY_COLOR = 'var(--theme-modal-text-auxiliary-color)';
+
+/**
+ * @description modal悬浮背景色
+ */
+export const MODAL_HOVER_BG_COLOR = 'var(--theme-modal-hover-bg-color)';
+
+/**
  * @description 主朴素按钮背景色
  */
 export const COLOR_PRIMARY_PLAIN = 'var(--theme-color-primary-plain)';
@@ -776,4 +796,34 @@ export const KEYWORD_TEXT_COLOR = 'var(--theme-keyword-text-color)';
  * @description 表情组背景色
  */
 export const EDITOR_EMOTION_SORTS_BG_COLOR = 'var(--theme-editor-emotion-sorts-bg-color)';
+
+/**
+ * @description 表情组hover背景色
+ */
+export const EDITOR_EMOTION_SORTS_HOVER_BG_COLOR = 'var(--theme-editor-emotion-sorts-hover-bg-color)';
+
+/**
+ * @description 表情组选中背景色
+ */
+export const EDITOR_EMOTION_SORTS_SELECTED_BG_COLOR = 'var(--theme-editor-emotion-sorts-selected-bg-color)';
+
+/**
+ * @description 编辑器附加元素背景色
+ */
+export const EDITOR_ATTR_BG_COLOR = 'var(--theme-editor-attr-bg-color)';
+
+/**
+ * @description 编辑器附加元素字体色
+ */
+export const EDITOR_ATTR_COLOR = 'var(--theme-editor-attr-color)';
+
+/**
+ * @description 编辑器附加元素HOVER字体色
+ */
+export const EDITOR_ATTR_HOVER_COLOR = 'var(--theme-editor-attr-hover-color)';
+
+/**
+ * @description 编辑器TAG的HOVER背景色
+ */
+export const EDITOR_TAG_HOVER_BG_COLOR = 'var(--theme-editor-tag-hover-bg-color)';
 
