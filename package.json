@@ -1,6 +1,6 @@
 {
     "name": "hanser-ui",
-    "version": "1.4.1",
+    "version": "1.5.0",
     "description": "hanser弹幕组UI库(Vue版)",
     "main": "index.js",
     "scripts": {

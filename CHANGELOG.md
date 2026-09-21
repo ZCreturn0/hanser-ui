@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/ZCreturn0/hanser-ui/compare/v1.4.1...v1.5.0) (2026-09-21)
+
+
+### Features
+
+* 新增通用弹窗组件 ([955459d](https://github.com/ZCreturn0/hanser-ui/commit/955459d9c2aa4446f72a7613b72fc181ed821bba))
+
 ### [1.4.1](https://github.com/ZCreturn0/hanser-ui/compare/v1.4.0...v1.4.1) (2024-08-02)
 
 ## [1.4.0](https://github.com/ZCreturn0/hanser-ui/compare/v1.3.7...v1.4.0) (2024-08-02)
