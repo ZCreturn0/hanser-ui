@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/ZCreturn0/hanser-ui/compare/v1.5.0...v1.6.0) (2026-09-23)
+
+
+### Features
+
+* 新增 h-popover 气泡组件，h-dialog 补关闭拦截和 closed 事件 ([ff74767](https://github.com/ZCreturn0/hanser-ui/commit/ff7476715995703e7cbdcff30402f9b5eee55c3f))
+
 ## [1.5.0](https://github.com/ZCreturn0/hanser-ui/compare/v1.4.1...v1.5.0) (2026-09-21)
 
 
