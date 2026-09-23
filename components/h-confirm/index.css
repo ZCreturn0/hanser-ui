@@ -1,0 +1,6 @@
+.h-confirm .h-confirm__message {
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--theme-modal-text-color, #333);
+    word-break: break-word;
+}
