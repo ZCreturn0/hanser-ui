@@ -337,10 +337,16 @@ export default {
                     options: { element: this.$refs.arrow, padding: 8 }
                 });
             }
-            this.popperInstance = createPopper(this.$refs.reference, this.$refs.panel, {
+            this.popperInstance = createPopper(this.referenceElement(), this.$refs.panel, {
                 placement: this.placement,
                 modifiers
             });
+        },
+        // 锚在插槽里用户实际点的那个元素上，而不是外面这层 span。插槽内容被绝对定位挪走时，
+        // span 会塌成 0x0 留在原地，锚在它上面浮层就飞到别处去了（帖子楼层和消息气泡旁的 ⋮）
+        referenceElement() {
+            const wrapper = this.$refs.reference;
+            return (wrapper && wrapper.firstElementChild) || wrapper;
         },
         recreatePopper() {
             if (!this.isVisible) return;
