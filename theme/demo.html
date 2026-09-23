@@ -97,6 +97,12 @@
         .--theme-popover-bg-color {
             background-color: var(--theme-popover-bg-color);
         }
+        .--theme-popover-border-color {
+            background-color: var(--theme-popover-border-color);
+        }
+        .--theme-popover-shadow {
+            background-color: var(--theme-popover-shadow);
+        }
         .--theme-text-color {
             background-color: var(--theme-text-color);
         }
@@ -532,6 +538,78 @@
         .--theme-editor-tag-hover-bg-color {
             background-color: var(--theme-editor-tag-hover-bg-color);
         }
+        .--theme-surface-bg-color {
+            background-color: var(--theme-surface-bg-color);
+        }
+        .--theme-surface-bar-bg-color {
+            background-color: var(--theme-surface-bar-bg-color);
+        }
+        .--theme-surface-border-color {
+            background-color: var(--theme-surface-border-color);
+        }
+        .--theme-surface-divider-color {
+            background-color: var(--theme-surface-divider-color);
+        }
+        .--theme-surface-text-color {
+            background-color: var(--theme-surface-text-color);
+        }
+        .--theme-surface-secondary-text-color {
+            background-color: var(--theme-surface-secondary-text-color);
+        }
+        .--theme-surface-link-color {
+            background-color: var(--theme-surface-link-color);
+        }
+        .--theme-surface-hover-bg-color {
+            background-color: var(--theme-surface-hover-bg-color);
+        }
+        .--theme-surface-active-bg-color {
+            background-color: var(--theme-surface-active-bg-color);
+        }
+        .--theme-surface-capsule-bg-color {
+            background-color: var(--theme-surface-capsule-bg-color);
+        }
+        .--theme-menu-hover-bg-color {
+            background-color: var(--theme-menu-hover-bg-color);
+        }
+        .--theme-accent-color {
+            background-color: var(--theme-accent-color);
+        }
+        .--theme-on-accent-text-color {
+            background-color: var(--theme-on-accent-text-color);
+        }
+        .--theme-unread-badge-bg-color {
+            background-color: var(--theme-unread-badge-bg-color);
+        }
+        .--theme-unread-badge-text-color {
+            background-color: var(--theme-unread-badge-text-color);
+        }
+        .--theme-chat-message-bg-color {
+            background-color: var(--theme-chat-message-bg-color);
+        }
+        .--theme-chat-self-bubble-text-color {
+            background-color: var(--theme-chat-self-bubble-text-color);
+        }
+        .--theme-chat-other-bubble-text-color {
+            background-color: var(--theme-chat-other-bubble-text-color);
+        }
+        .--theme-side-menu-hover-bg-color {
+            background-color: var(--theme-side-menu-hover-bg-color);
+        }
+        .--theme-side-menu-active-bg-color {
+            background-color: var(--theme-side-menu-active-bg-color);
+        }
+        .--theme-side-menu-active-text-color {
+            background-color: var(--theme-side-menu-active-text-color);
+        }
+        .--theme-skeleton-bg-color {
+            background-color: var(--theme-skeleton-bg-color);
+        }
+        .--theme-skeleton-shine-bg-color {
+            background-color: var(--theme-skeleton-shine-bg-color);
+        }
+        .--theme-float-shadow {
+            background-color: var(--theme-float-shadow);
+        }
 
     </style>
 </head>
@@ -701,6 +779,16 @@
             <div>--theme-popover-bg-color</div>
             <div>POPOVER_BG_COLOR</div>
             <div>气泡背景色</div>
+        </div>
+        <div class="box --theme-popover-border-color">
+            <div>--theme-popover-border-color</div>
+            <div>POPOVER_BORDER_COLOR</div>
+            <div>气泡边框色</div>
+        </div>
+        <div class="box --theme-popover-shadow">
+            <div>--theme-popover-shadow</div>
+            <div>POPOVER_SHADOW</div>
+            <div>气泡阴影</div>
         </div>
         <div class="box --theme-text-color">
             <div>--theme-text-color</div>
@@ -1426,6 +1514,126 @@
             <div>--theme-editor-tag-hover-bg-color</div>
             <div>EDITOR_TAG_HOVER_BG_COLOR</div>
             <div>编辑器TAG的HOVER背景色</div>
+        </div>
+        <div class="box --theme-surface-bg-color">
+            <div>--theme-surface-bg-color</div>
+            <div>SURFACE_BG_COLOR</div>
+            <div>面板底色</div>
+        </div>
+        <div class="box --theme-surface-bar-bg-color">
+            <div>--theme-surface-bar-bg-color</div>
+            <div>SURFACE_BAR_BG_COLOR</div>
+            <div>面板顶栏、工具栏底色</div>
+        </div>
+        <div class="box --theme-surface-border-color">
+            <div>--theme-surface-border-color</div>
+            <div>SURFACE_BORDER_COLOR</div>
+            <div>面板描边色</div>
+        </div>
+        <div class="box --theme-surface-divider-color">
+            <div>--theme-surface-divider-color</div>
+            <div>SURFACE_DIVIDER_COLOR</div>
+            <div>面板分割线色，比描边淡一档，给贯穿全高的长线用</div>
+        </div>
+        <div class="box --theme-surface-text-color">
+            <div>--theme-surface-text-color</div>
+            <div>SURFACE_TEXT_COLOR</div>
+            <div>面板正文色</div>
+        </div>
+        <div class="box --theme-surface-secondary-text-color">
+            <div>--theme-surface-secondary-text-color</div>
+            <div>SURFACE_SECONDARY_TEXT_COLOR</div>
+            <div>面板次要文字色</div>
+        </div>
+        <div class="box --theme-surface-link-color">
+            <div>--theme-surface-link-color</div>
+            <div>SURFACE_LINK_COLOR</div>
+            <div>面板强调文字色，强调色压暗（暗夜提亮）到对面板和悬浮底都够 4.5</div>
+        </div>
+        <div class="box --theme-surface-hover-bg-color">
+            <div>--theme-surface-hover-bg-color</div>
+            <div>SURFACE_HOVER_BG_COLOR</div>
+            <div>面板浅悬浮底色：列表行、图标按钮、输入框底</div>
+        </div>
+        <div class="box --theme-surface-active-bg-color">
+            <div>--theme-surface-active-bg-color</div>
+            <div>SURFACE_ACTIVE_BG_COLOR</div>
+            <div>面板选中底色</div>
+        </div>
+        <div class="box --theme-surface-capsule-bg-color">
+            <div>--theme-surface-capsule-bg-color</div>
+            <div>SURFACE_CAPSULE_BG_COLOR</div>
+            <div>面板胶囊底色：时间、计数这类小标签</div>
+        </div>
+        <div class="box --theme-menu-hover-bg-color">
+            <div>--theme-menu-hover-bg-color</div>
+            <div>MENU_HOVER_BG_COLOR</div>
+            <div>下拉菜单选项悬浮底色，比面板浅悬浮底深一档</div>
+        </div>
+        <div class="box --theme-accent-color">
+            <div>--theme-accent-color</div>
+            <div>ACCENT_COLOR</div>
+            <div>强调色：填充、图标、描边，不直接当正文色</div>
+        </div>
+        <div class="box --theme-on-accent-text-color">
+            <div>--theme-on-accent-text-color</div>
+            <div>ON_ACCENT_TEXT_COLOR</div>
+            <div>强调色填充上的文字色</div>
+        </div>
+        <div class="box --theme-unread-badge-bg-color">
+            <div>--theme-unread-badge-bg-color</div>
+            <div>UNREAD_BADGE_BG_COLOR</div>
+            <div>未读徽章底色</div>
+        </div>
+        <div class="box --theme-unread-badge-text-color">
+            <div>--theme-unread-badge-text-color</div>
+            <div>UNREAD_BADGE_TEXT_COLOR</div>
+            <div>未读徽章字体色</div>
+        </div>
+        <div class="box --theme-chat-message-bg-color">
+            <div>--theme-chat-message-bg-color</div>
+            <div>CHAT_MESSAGE_BG_COLOR</div>
+            <div>私聊消息区底色</div>
+        </div>
+        <div class="box --theme-chat-self-bubble-text-color">
+            <div>--theme-chat-self-bubble-text-color</div>
+            <div>CHAT_SELF_BUBBLE_TEXT_COLOR</div>
+            <div>私聊自己气泡字体色</div>
+        </div>
+        <div class="box --theme-chat-other-bubble-text-color">
+            <div>--theme-chat-other-bubble-text-color</div>
+            <div>CHAT_OTHER_BUBBLE_TEXT_COLOR</div>
+            <div>私聊对方气泡字体色</div>
+        </div>
+        <div class="box --theme-side-menu-hover-bg-color">
+            <div>--theme-side-menu-hover-bg-color</div>
+            <div>SIDE_MENU_HOVER_BG_COLOR</div>
+            <div>侧栏菜单悬浮底色</div>
+        </div>
+        <div class="box --theme-side-menu-active-bg-color">
+            <div>--theme-side-menu-active-bg-color</div>
+            <div>SIDE_MENU_ACTIVE_BG_COLOR</div>
+            <div>侧栏菜单选中底色</div>
+        </div>
+        <div class="box --theme-side-menu-active-text-color">
+            <div>--theme-side-menu-active-text-color</div>
+            <div>SIDE_MENU_ACTIVE_TEXT_COLOR</div>
+            <div>侧栏菜单选中字体色</div>
+        </div>
+        <div class="box --theme-skeleton-bg-color">
+            <div>--theme-skeleton-bg-color</div>
+            <div>SKELETON_BG_COLOR</div>
+            <div>骨架屏底色，半透明以贴合任意卡片底</div>
+        </div>
+        <div class="box --theme-skeleton-shine-bg-color">
+            <div>--theme-skeleton-shine-bg-color</div>
+            <div>SKELETON_SHINE_BG_COLOR</div>
+            <div>骨架屏高光色</div>
+        </div>
+        <div class="box --theme-float-shadow">
+            <div>--theme-float-shadow</div>
+            <div>FLOAT_SHADOW</div>
+            <div>浮层阴影</div>
         </div>
 
     </div>
