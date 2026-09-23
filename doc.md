@@ -54,6 +54,86 @@ import HDialog from 'hanser-ui/components/h-dialog';
 
 `before-close` 兼容回调和 Promise 两种写法。回调模式调用 `done()` 关闭、`done(false)` 取消；Promise resolve 后关闭、reject 后取消。同步返回 `true` 或 `false` 也可直接确认或取消。
 
+## 确认框
+
+```javascript
+import Vue from 'vue';
+import { Confirm } from 'hanser-ui/components/h-confirm';
+
+Vue.use(Confirm);
+```
+
+```javascript
+this.$confirm('草稿删除后将无法恢复，是否继续', '提示', { confirmButtonText: '删除' })
+    .then(() => this.deleteDraft())
+    .catch(() => {});
+
+this.$alert('本地草稿已损坏！');
+```
+
+调用方式和 element 的 `MessageBox` 一致：`(message, title, options)`，`title` 可省略，默认「提示」。
+
+- `$confirm`：点确定 resolve `'confirm'`；点取消、关闭按钮、遮罩或按 Esc 时 reject `'cancel'` 或 `'close'`
+- `$alert`：只有确定按钮，遮罩和 Esc 不关闭；不管怎么关都 resolve，调用方不用补 `catch`
+- 同一时间只显示一个，后来的排队；打开时焦点落在确定按钮上，回车即确认
+
+| 选项                     | 说明                            | 类型            | 默认值                 |
+| ------------------------ | ------------------------------- | --------------- | ---------------------- |
+| confirmButtonText        | 确定按钮文字                    | String          | 确定                   |
+| cancelButtonText         | 取消按钮文字                    | String          | 取消                   |
+| showCancel               | 是否显示取消按钮                | Boolean         | confirm 为 true        |
+| showClose                | 是否显示右上角关闭按钮          | Boolean         | true                   |
+| closeOnOverlay           | 点击遮罩是否关闭                | Boolean         | confirm 为 true        |
+| closeOnEscape            | 按 Esc 是否关闭                 | Boolean         | confirm 为 true        |
+| dangerouslyUseHTMLString | 正文按 HTML 渲染，内容必须可信  | Boolean         | false                  |
+| width                    | 面板宽度，数字按 px 处理        | Number / String | 420                    |
+| zIndex                   | 遮罩层级，要压过普通弹窗和下拉  | Number / String | 5000                   |
+| callback                 | 关闭时回调，参数为 action       | Function        | -                      |
+
+## 切换栏
+
+```javascript
+import HTabs from 'hanser-ui/components/h-tabs';
+```
+
+```html
+<!-- 页面顶部的主题色导航条，选项带 to 时渲染成 router-link -->
+<h-tabs type="nav" replace :items="[{ value: '#point', label: '我的积分', to: '/score#point' }]" :value="$route.hash" />
+
+<!-- 卡片里的下划线筛选，count 为真时在文字后面显示数量 -->
+<h-tabs v-model="status" :items="[{ value: 0, label: '待审核', count: 3 }, { value: 1, label: '已发货' }]" />
+```
+
+| 属性    | 说明                                                        | 类型            | 默认值 |
+| ------- | ----------------------------------------------------------- | --------------- | ------ |
+| value   | 当前选中项的 value，支持 `v-model`                          | String / Number | -      |
+| items   | 选项列表 `[{ value, label, count, to }]`                    | Array           | []     |
+| type    | `nav` 页面导航条，`line` 卡片内下划线筛选                   | String          | line   |
+| replace | 带 `to` 的项用 `router.replace` 跳转                        | Boolean         | false  |
+
+事件：`input(value)`、`change(value)` 只在选中项变化时触发；`tab-click(item)` 每次点击都触发，点当前项也会，适合做刷新。
+
+带 `to` 的项依赖 vue-router 注册的 `router-link`。路由驱动的切换栏由调用方根据路由算出 `value` 传入。
+
+## 卡片
+
+```javascript
+import HCard from 'hanser-ui/components/h-card';
+```
+
+```html
+<h-card class="score-card">内容</h-card>
+```
+
+卡片外壳：10px 圆角、`--theme-block-border` 描边、`--theme-index-block-shadow` 阴影、`--theme-notice-bg-color` 底色；默认屏宽 750px 以下去掉描边和圆角。内边距、宽度由调用方的类名给。
+
+| 属性           | 说明                                                     | 类型    | 默认值 |
+| -------------- | -------------------------------------------------------- | ------- | ------ |
+| tag            | 渲染的标签                                               | String  | div    |
+| flat-on-mobile | 屏宽 750px 以下去掉描边和圆角，两侧留了边距的卡要关掉 | Boolean | true   |
+
+换底色用 `--h-card-bg-color`，例如侧栏小组件：`--h-card-bg-color: var(--theme-side-menu-bg-color)`。不要直接覆盖 `background`，调用方类名和组件同权重，谁生效取决于样式加载顺序。
+
 ## 气泡弹窗
 
 ```javascript
