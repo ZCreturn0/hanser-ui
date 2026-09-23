@@ -103,6 +103,16 @@ export const HEADER_BG_COLOR = 'var(--theme-header-bg-color)';
 export const POPOVER_BG_COLOR = 'var(--theme-popover-bg-color)';
 
 /**
+ * @description 气泡边框色
+ */
+export const POPOVER_BORDER_COLOR = 'var(--theme-popover-border-color)';
+
+/**
+ * @description 气泡阴影
+ */
+export const POPOVER_SHADOW = 'var(--theme-popover-shadow)';
+
+/**
  * @description 字体颜色
  */
 export const TEXT_COLOR = 'var(--theme-text-color)';

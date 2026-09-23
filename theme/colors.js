@@ -19,6 +19,8 @@ module.exports = {
     BG_ACTIVE: '选中菜单背景色',
     HEADER_BG_COLOR: '头部背景色',
     POPOVER_BG_COLOR: '气泡背景色',
+    POPOVER_BORDER_COLOR: '气泡边框色',
+    POPOVER_SHADOW: '气泡阴影',
     TEXT_COLOR: '字体颜色',
     TEXT_COLOR_AUXILIARY: '辅助颜色',
     TEXT_COLOR_AUXILIARY_LIGHT: '辅助浅色',

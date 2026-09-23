@@ -1,10 +1,5 @@
 <template>
-    <div
-        v-show="visible"
-        ref="root"
-        class="h-dialog"
-        :style="rootStyle"
-        @click.self="handleOverlayClick">
+    <div v-show="visible" ref="root" class="h-dialog" :style="rootStyle" @click.self="handleOverlayClick">
         <div
             ref="panel"
             class="h-dialog__panel"
@@ -26,8 +21,9 @@
                         v-if="showClose"
                         type="button"
                         class="h-dialog__close"
+                        :disabled="closePending"
                         aria-label="关闭"
-                        @click="close"></button>
+                        @click="requestClose('button')"></button>
                 </div>
                 <div class="h-dialog__body" :class="[bodyClass, { 'h-dialog__body--scroll': scroll }]">
                     <slot />
@@ -116,7 +112,17 @@ export default {
         row: {
             type: Boolean,
             default: false
+        },
+        beforeClose: {
+            type: Function,
+            default: null
         }
+    },
+    data() {
+        return {
+            closePending: false,
+            destroyed: false
+        };
     },
     computed: {
         hasLabel() {
@@ -143,11 +149,20 @@ export default {
         }
     },
     watch: {
-        visible(value) {
+        visible(value, previousValue) {
             if (value) {
+                this.closePending = false;
                 this.activate();
             } else {
+                this.closePending = false;
                 this.release();
+                if (previousValue) {
+                    this.$nextTick(() => {
+                        if (!this.visible && !this.destroyed) {
+                            this.$emit('closed');
+                        }
+                    });
+                }
             }
         }
     },
@@ -161,6 +176,7 @@ export default {
         }
     },
     beforeDestroy() {
+        this.destroyed = true;
         document.removeEventListener('keydown', this.handleKeydown);
         this.release(false);
         if (this.appendToBody) {
@@ -172,22 +188,60 @@ export default {
     },
     methods: {
         toCssSize(value) {
-            return typeof value === 'number' ? `${value}px` : value;
+            if (typeof value === 'number' || (typeof value === 'string' && /^\d+(\.\d+)?$/.test(value))) {
+                return `${value}px`;
+            }
+            return value;
         },
-        close() {
+        commitClose(reason) {
             this.$emit('update:visible', false);
-            this.$emit('close');
+            this.$emit('close', reason);
+        },
+        requestClose(reason = 'api') {
+            if (this.closePending) return;
+            if (!this.beforeClose) {
+                this.commitClose(reason);
+                return;
+            }
+
+            this.closePending = true;
+            let settled = false;
+            const done = (shouldClose = true) => {
+                if (settled || this.destroyed) return;
+                settled = true;
+                this.closePending = false;
+                if (shouldClose !== false) {
+                    this.commitClose(reason);
+                }
+            };
+
+            let result;
+            try {
+                result = this.beforeClose(done, reason);
+            } catch (error) {
+                this.closePending = false;
+                throw error;
+            }
+
+            if (result && typeof result.then === 'function') {
+                result.then(() => done()).catch(() => done(false));
+            } else if (result === true || result === false) {
+                done(result);
+            }
+        },
+        close(reason = 'api') {
+            this.requestClose(reason);
         },
         handleOverlayClick() {
             if (this.closeOnOverlay) {
-                this.close();
+                this.requestClose('overlay');
             }
         },
         handleKeydown(event) {
             if (!this.visible || openedStack[openedStack.length - 1] !== this) return;
             if (event.key === 'Escape' && this.closeOnEscape) {
                 event.preventDefault();
-                this.close();
+                this.requestClose('escape');
             } else if (event.key === 'Tab') {
                 this.trapFocus(event);
             }
@@ -208,7 +262,10 @@ export default {
             if (event.shiftKey && (document.activeElement === first || document.activeElement === panel)) {
                 event.preventDefault();
                 last.focus();
-            } else if (!event.shiftKey && (document.activeElement === last || !panel.contains(document.activeElement))) {
+            } else if (
+                !event.shiftKey &&
+                (document.activeElement === last || !panel.contains(document.activeElement))
+            ) {
                 event.preventDefault();
                 first.focus();
             }
