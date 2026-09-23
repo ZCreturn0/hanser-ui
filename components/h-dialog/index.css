@@ -60,6 +60,10 @@
     cursor: pointer;
 }
 
+.h-dialog__close:disabled {
+    cursor: wait;
+}
+
 .h-dialog__close:hover {
     background-color: var(--theme-modal-hover-bg-color, var(--theme-bg-active, rgba(0, 0, 0, 0.04)));
     color: var(--theme-modal-text-color, var(--theme-dialog-text-color, #333));

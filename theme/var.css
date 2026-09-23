@@ -20,6 +20,8 @@
     --theme-bg-active: #cccccc61;
     --theme-header-bg-color: #fff;
     --theme-popover-bg-color: #fff;
+    --theme-popover-border-color: #eadfd6;
+    --theme-popover-shadow: 0 10px 30px rgba(43, 39, 36, 0.12);
     --theme-text-color: #333;
     --theme-text-color-auxiliary: #666;
     --theme-text-color-auxiliary-light: #7e7e7e;
@@ -192,6 +194,8 @@
     --theme-bg-active: #cccccc61;
     --theme-header-bg-color: #000;
     --theme-popover-bg-color: #000;
+    --theme-popover-border-color: rgba(151, 185, 255, 0.3);
+    --theme-popover-shadow: 0 12px 32px rgba(0, 0, 0, 0.36);
     --theme-text-color: #571A10;
     --theme-text-color-auxiliary: #2b60a6;
     --theme-text-color-auxiliary-light: #7e7e7e;
@@ -364,6 +368,8 @@
     --theme-bg-active: #cccccc61;
     --theme-header-bg-color: #23221e;
     --theme-popover-bg-color: #fff;
+    --theme-popover-border-color: #eadfd6;
+    --theme-popover-shadow: 0 10px 30px rgba(43, 39, 36, 0.12);
     --theme-text-color: #333;
     --theme-text-color-auxiliary: #666;
     --theme-text-color-auxiliary-light: #7e7e7e;
@@ -536,6 +542,8 @@
     --theme-bg-active: #cccccc61;
     --theme-header-bg-color: #d93b44;
     --theme-popover-bg-color: #fff;
+    --theme-popover-border-color: #eadfd6;
+    --theme-popover-shadow: 0 10px 30px rgba(112, 9, 30, 0.16);
     --theme-text-color: #ffd62e;
     --theme-text-color-auxiliary: #666;
     --theme-text-color-auxiliary-light: #7e7e7e;
@@ -708,6 +716,8 @@
     --theme-bg-active: #cccccc61;
     --theme-header-bg-color: #d93b44;
     --theme-popover-bg-color: #fff;
+    --theme-popover-border-color: #eadfd6;
+    --theme-popover-shadow: 0 10px 30px rgba(112, 9, 30, 0.16);
     --theme-text-color: #ffd62e;
     --theme-text-color-auxiliary: #666;
     --theme-text-color-auxiliary-light: #7e7e7e;
