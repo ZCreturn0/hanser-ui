@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.1](https://github.com/ZCreturn0/hanser-ui/compare/v1.6.0...v1.6.1) (2026-09-23)
+
+
+### Bug Fixes
+
+* h-popover 锚到插槽里实际的触发元素，修浮层位置飞走 ([b192295](https://github.com/ZCreturn0/hanser-ui/commit/b192295c42bb61e74824cf9d8873e8a8b9f9621c))
+
 ## [1.6.0](https://github.com/ZCreturn0/hanser-ui/compare/v1.5.0...v1.6.0) (2026-09-23)
 
 
