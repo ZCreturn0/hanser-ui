@@ -1,6 +1,6 @@
 <template>
     <!-- 切换栏：nav 是页面顶部的主题色导航条，line 是卡片里的下划线筛选 -->
-    <nav class="h-tabs" :class="`h-tabs--${type}`">
+    <nav class="h-tabs" :class="[`h-tabs--${type}`, { 'h-tabs--fill-on-mobile': fillOnMobile }]">
         <template v-for="item in items">
             <router-link
                 v-if="item.to"
@@ -26,6 +26,7 @@
                 <span v-if="item.count" class="h-tabs__count">{{ item.count }}</span>
             </button>
         </template>
+        <slot name="extra" />
     </nav>
 </template>
 
@@ -52,6 +53,11 @@ export default {
         replace: {
             type: Boolean,
             default: false
+        },
+        // 屏宽 750px 以下 nav 的项等分铺满
+        fillOnMobile: {
+            type: Boolean,
+            default: true
         }
     },
     methods: {

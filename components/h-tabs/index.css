@@ -13,21 +13,28 @@
     outline: none;
 }
 
+/* nav 的尺寸和字色开成变量：首页那条和二级页的几条间距、字色不同，调用方在自己的类名上改 */
 .h-tabs--nav {
     display: inline-flex;
+    align-items: center;
     width: 100%;
-    padding: 11px 28px;
+    padding: var(--h-tabs-nav-padding, 11px 28px);
     box-sizing: border-box;
     border: 2px solid var(--theme-block-border);
-    border-radius: 10px;
+    border-radius: var(--h-tabs-nav-radius, 10px);
     background: var(--theme-nav-bg-color);
     box-shadow: var(--theme-index-block-shadow);
 }
 
 .h-tabs--nav .h-tabs__item {
-    margin: 0 15px;
+    min-width: var(--h-tabs-nav-item-min-width, auto);
+    margin: var(--h-tabs-nav-item-margin, 0 15px);
     text-align: center;
-    color: var(--theme-text-color-white);
+    color: var(--h-tabs-nav-text-color, var(--theme-text-color-white));
+}
+
+.h-tabs--nav .h-tabs__label {
+    padding: var(--h-tabs-nav-label-padding, 0);
 }
 
 /* 下划线挂在文字上：项是 flex item 会被拉满整行高，挂在项上会离文字一大截 */
@@ -71,11 +78,11 @@
 }
 
 @media screen and (max-width: 750px) {
-    .h-tabs--nav {
+    .h-tabs--nav.h-tabs--fill-on-mobile {
         justify-content: space-between;
     }
 
-    .h-tabs--nav .h-tabs__item {
+    .h-tabs--nav.h-tabs--fill-on-mobile .h-tabs__item {
         flex: 1;
         margin: 0;
     }

@@ -104,14 +104,19 @@ import HTabs from 'hanser-ui/components/h-tabs';
 <h-tabs v-model="status" :items="[{ value: 0, label: '待审核', count: 3 }, { value: 1, label: '已发货' }]" />
 ```
 
-| 属性    | 说明                                                        | 类型            | 默认值 |
-| ------- | ----------------------------------------------------------- | --------------- | ------ |
-| value   | 当前选中项的 value，支持 `v-model`                          | String / Number | -      |
-| items   | 选项列表 `[{ value, label, count, to }]`                    | Array           | []     |
-| type    | `nav` 页面导航条，`line` 卡片内下划线筛选                   | String          | line   |
-| replace | 带 `to` 的项用 `router.replace` 跳转                        | Boolean         | false  |
+| 属性           | 说明                                                        | 类型            | 默认值 |
+| -------------- | ----------------------------------------------------------- | --------------- | ------ |
+| value          | 当前选中项的 value，支持 `v-model`                          | String / Number | -      |
+| items          | 选项列表 `[{ value, label, count, to }]`                    | Array           | []     |
+| type           | `nav` 页面导航条，`line` 卡片内下划线筛选                   | String          | line   |
+| replace        | 带 `to` 的项用 `router.replace` 跳转                        | Boolean         | false  |
+| fill-on-mobile | 屏宽 750px 以下 `nav` 的项等分铺满                          | Boolean         | true   |
+
+插槽：`extra`，放在所有项后面，用来放搜索、下载这类入口。
 
 事件：`input(value)`、`change(value)` 只在选中项变化时触发；`tab-click(item)` 每次点击都触发，点当前项也会，适合做刷新。
+
+`nav` 的尺寸和字色可以用变量调整，写在调用方自己的类名上：`--h-tabs-nav-padding`（默认 11px 28px）、`--h-tabs-nav-radius`（10px）、`--h-tabs-nav-text-color`（`--theme-text-color-white`）、`--h-tabs-nav-item-margin`（0 15px）、`--h-tabs-nav-item-min-width`（auto）、`--h-tabs-nav-label-padding`（0）。
 
 带 `to` 的项依赖 vue-router 注册的 `router-link`。路由驱动的切换栏由调用方根据路由算出 `value` 传入。
 
