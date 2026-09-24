@@ -1,77 +1,113 @@
 import HConfirm from './main.vue';
 
-const normalize = (message, title, options) => {
+// 调用方可传的选项
+const OPTION_KEYS = [
+    'title',
+    'type',
+    'confirmButtonText',
+    'cancelButtonText',
+    'confirmButtonType',
+    'showConfirmButton',
+    'showCancelButton',
+    'showClose',
+    'closeOnClickModal',
+    'closeOnPressEscape',
+    'distinguishCancelAndClose',
+    'dangerouslyUseHTMLString',
+    'customClass',
+    'width',
+    'zIndex',
+    'beforeClose',
+    'inputValue',
+    'inputType',
+    'inputPlaceholder',
+    'inputPattern',
+    'inputValidator',
+    'inputErrorMessage'
+];
+
+const KIND_DEFAULTS = {
+    confirm: {},
+    // alert 必须点确定：没有取消，点遮罩和 Esc 不关
+    alert: { showCancelButton: false, closeOnClickModal: false, closeOnPressEscape: false },
+    prompt: { showInput: true }
+};
+
+let Constructor = null;
+const queue = [];
+let current = null;
+
+const showNext = () => {
+    if (current || !queue.length) return;
+    current = queue.shift();
+    const { kind, fields, callback, resolve, reject } = current;
+    const instance = new Constructor();
+    Object.assign(instance, fields);
+    instance.$on('action', (action) => {
+        if (typeof callback === 'function') {
+            if (instance.showInput) {
+                callback(instance.inputValue, action);
+            } else {
+                callback(action, instance);
+            }
+        }
+        if (action === 'confirm') {
+            resolve(instance.showInput ? { value: instance.inputValue, action } : action);
+        } else if (kind === 'alert') {
+            resolve(action);
+        } else {
+            reject(action);
+        }
+    });
+    instance.$on('closed', () => {
+        instance.$destroy();
+        current = null;
+        showNext();
+    });
+    instance.$mount();
+    instance.visible = true;
+};
+
+// 调用方式：(message, title, options)，title 可省略
+// 确定 resolve；取消、关闭 reject，关闭默认也给 'cancel'，开 distinguishCancelAndClose 才给 'close'
+// alert 不管怎么关都 resolve，调用方不用补 catch
+// 同一时间只弹一个，后来的排队
+const open = (kind) => (message, title, options) => {
+    if (!Constructor) {
+        throw new Error('hanser-ui h-confirm：先 Vue.use(Confirm) 再调用');
+    }
     if (title && typeof title === 'object') {
         options = title;
         title = undefined;
     }
-    return { message, title, options: options || {} };
+    options = options || {};
+    const fields = Object.assign({}, KIND_DEFAULTS[kind], {
+        message: message == null ? '' : String(message)
+    });
+    if (title !== undefined && title !== '') fields.title = String(title);
+    OPTION_KEYS.forEach((key) => {
+        if (options[key] !== undefined) fields[key] = options[key];
+    });
+    return new Promise((resolve, reject) => {
+        queue.push({ kind, fields, callback: options.callback, resolve, reject });
+        showNext();
+    });
 };
 
-// 调用方式和 element 的 MessageBox 一致：(message, title, options)
-// $confirm 点确定 resolve('confirm')，取消或关闭 reject('cancel' | 'close')
-// $alert 不管怎么关都 resolve，调用方不用补 catch
-// 同一时间只弹一个，后来的排队
+export const confirm = open('confirm');
+export const alert = open('alert');
+export const prompt = open('prompt');
+
 export const Confirm = {
     install(Vue) {
-        const Constructor = Vue.extend(HConfirm);
-        const queue = [];
-        let current = null;
-
-        const showNext = () => {
-            if (current || !queue.length) return;
-            current = queue.shift();
-            const { propsData, isAlert, callback, resolve, reject } = current;
-            const instance = new Constructor({ propsData });
-            instance.$on('action', (action) => {
-                if (typeof callback === 'function') callback(action);
-                if (action === 'confirm' || isAlert) {
-                    resolve(action);
-                } else {
-                    reject(action);
-                }
-            });
-            instance.$on('closed', () => {
-                instance.$destroy();
-                current = null;
-                showNext();
-            });
-            instance.$mount();
-            instance.visible = true;
-        };
-
-        const open = (isAlert) => (...args) => {
-            const { message, title, options } = normalize(...args);
-            const propsData = {
-                message: message == null ? '' : String(message),
-                showCancel: !isAlert,
-                closeOnOverlay: !isAlert,
-                closeOnEscape: !isAlert
-            };
-            if (title !== undefined && title !== '') propsData.title = String(title);
-            [
-                'confirmButtonText',
-                'cancelButtonText',
-                'showCancel',
-                'showClose',
-                'closeOnOverlay',
-                'closeOnEscape',
-                'dangerouslyUseHTMLString',
-                'width',
-                'zIndex'
-            ].forEach((key) => {
-                if (options[key] !== undefined) propsData[key] = options[key];
-            });
-            return new Promise((resolve, reject) => {
-                queue.push({ propsData, isAlert, callback: options.callback, resolve, reject });
-                showNext();
-            });
-        };
-
-        Vue.prototype.$confirm = open(false);
-        Vue.prototype.$alert = open(true);
-    }
+        Constructor = Vue.extend(HConfirm);
+        Vue.prototype.$confirm = confirm;
+        Vue.prototype.$alert = alert;
+        Vue.prototype.$prompt = prompt;
+    },
+    confirm,
+    alert,
+    prompt
 };
 
-export default HConfirm;
-export { HConfirm };
+export default Confirm;
