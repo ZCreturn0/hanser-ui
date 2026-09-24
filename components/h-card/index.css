@@ -1,10 +1,10 @@
-/* 底色开成变量给调用方换：调用方的类名和这里同权重，直接写 background 谁赢要看样式加载顺序 */
+/* 外观开成变量给调用方换：调用方的类名和这里同权重，直接覆盖属性谁赢要看样式加载顺序 */
 .h-card {
     box-sizing: border-box;
-    border: 2px solid var(--theme-block-border);
-    border-radius: 10px;
+    border: var(--h-card-border, 2px solid var(--theme-block-border));
+    border-radius: var(--h-card-radius, 10px);
     background-color: var(--h-card-bg-color, var(--theme-notice-bg-color));
-    box-shadow: var(--theme-index-block-shadow);
+    box-shadow: var(--h-card-shadow, var(--theme-index-block-shadow));
 }
 
 @media screen and (max-width: 750px) {
