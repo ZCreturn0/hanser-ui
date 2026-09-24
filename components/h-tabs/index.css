@@ -13,6 +13,11 @@
     outline: none;
 }
 
+.h-tabs__item--disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
 /* nav 的尺寸和字色开成变量：首页那条和二级页的几条间距、字色不同，调用方在自己的类名上改 */
 .h-tabs--nav {
     display: inline-flex;
@@ -38,7 +43,7 @@
 }
 
 /* 下划线挂在文字上：项是 flex item 会被拉满整行高，挂在项上会离文字一大截 */
-.h-tabs--nav .h-tabs__item.is-active .h-tabs__label {
+.h-tabs--nav .h-tabs__item--active .h-tabs__label {
     border-bottom: 2px solid var(--theme-nav-border-color);
 }
 
@@ -62,11 +67,11 @@
     font-size: 14px;
 }
 
-.h-tabs--line .h-tabs__item:hover {
+.h-tabs--line .h-tabs__item:not(.h-tabs__item--disabled):hover {
     color: var(--theme-surface-text-color);
 }
 
-.h-tabs--line .h-tabs__item.is-active {
+.h-tabs--line .h-tabs__item--active {
     color: var(--theme-surface-text-color);
     border-bottom-color: var(--theme-color-primary);
 }
