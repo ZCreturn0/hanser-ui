@@ -194,6 +194,10 @@
     --theme-skeleton-bg-color: rgba(0, 0, 0, 0.06);
     --theme-skeleton-shine-bg-color: rgba(0, 0, 0, 0.11);
     --theme-float-shadow: 0 6px 24px rgba(43, 39, 36, 0.14);
+    --theme-status-info-color: var(--theme-surface-secondary-text-color);
+    --theme-status-success-color: #5a9a28;
+    --theme-status-warning-color: #c27c0e;
+    --theme-status-danger-color: var(--theme-color-danger);
 }
 
 [data-theme="dark"] {
@@ -392,6 +396,10 @@
     --theme-skeleton-bg-color: rgba(255, 255, 255, 0.09);
     --theme-skeleton-shine-bg-color: rgba(255, 255, 255, 0.16);
     --theme-float-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+    --theme-status-info-color: var(--theme-surface-secondary-text-color);
+    --theme-status-success-color: #8fd16a;
+    --theme-status-warning-color: #f0b44c;
+    --theme-status-danger-color: #ff8f8f;
 }
 
 [data-theme="new-year-2022"] {
@@ -590,6 +598,10 @@
     --theme-skeleton-bg-color: rgba(0, 0, 0, 0.06);
     --theme-skeleton-shine-bg-color: rgba(0, 0, 0, 0.11);
     --theme-float-shadow: 0 6px 24px rgba(112, 9, 30, 0.18);
+    --theme-status-info-color: var(--theme-surface-secondary-text-color);
+    --theme-status-success-color: #5a9a28;
+    --theme-status-warning-color: #c27c0e;
+    --theme-status-danger-color: var(--theme-color-danger);
 }
 
 [data-theme="new-year-2023"] {
@@ -788,6 +800,10 @@
     --theme-skeleton-bg-color: rgba(0, 0, 0, 0.06);
     --theme-skeleton-shine-bg-color: rgba(0, 0, 0, 0.11);
     --theme-float-shadow: 0 6px 24px rgba(112, 9, 30, 0.18);
+    --theme-status-info-color: var(--theme-surface-secondary-text-color);
+    --theme-status-success-color: #5a9a28;
+    --theme-status-warning-color: #c27c0e;
+    --theme-status-danger-color: var(--theme-color-danger);
 }
 
 [data-theme="new-year-2024"] {
@@ -986,4 +1002,8 @@
     --theme-skeleton-bg-color: rgba(0, 0, 0, 0.06);
     --theme-skeleton-shine-bg-color: rgba(0, 0, 0, 0.11);
     --theme-float-shadow: 0 6px 24px rgba(112, 9, 30, 0.18);
+    --theme-status-info-color: var(--theme-surface-secondary-text-color);
+    --theme-status-success-color: #5a9a28;
+    --theme-status-warning-color: #c27c0e;
+    --theme-status-danger-color: var(--theme-color-danger);
 }

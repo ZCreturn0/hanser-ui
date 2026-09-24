@@ -189,5 +189,9 @@ module.exports = {
     SIDE_MENU_ACTIVE_TEXT_COLOR: '侧栏菜单选中字体色',
     SKELETON_BG_COLOR: '骨架屏底色，半透明以贴合任意卡片底',
     SKELETON_SHINE_BG_COLOR: '骨架屏高光色',
-    FLOAT_SHADOW: '浮层阴影'
+    FLOAT_SHADOW: '浮层阴影',
+    STATUS_INFO_COLOR: '状态图标：提示，压面板底 >= 3',
+    STATUS_SUCCESS_COLOR: '状态图标：成功，压面板底 >= 3',
+    STATUS_WARNING_COLOR: '状态图标：警告，压面板底 >= 3',
+    STATUS_DANGER_COLOR: '状态图标：危险、错误，压面板底 >= 3'
 };

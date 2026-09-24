@@ -18,3 +18,6 @@
 - 暗夜面板是深蓝，未读徽章反过来做亮底深字，否则深压深看不见
 - `--theme-modal-panel-bg-color`、`--theme-modal-text-color` 等弹窗变量和气泡变量都引用 surface，改面板配色时一起生效
 
+## 状态色（status）
+
+`--theme-status-*-color` 是提示、成功、警告、危险四种状态图标的颜色，压面板底色都 >= 3。原有的 `--theme-color-warning`（#e09d16）、`--theme-color-success`（#6ea82f）压白底只有 2.33、2.87，当图标看不清，所以另起这一组；`--theme-color-*` 仍用在按钮底色这类填充上。

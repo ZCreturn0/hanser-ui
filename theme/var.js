@@ -957,3 +957,23 @@ export const SKELETON_SHINE_BG_COLOR = 'var(--theme-skeleton-shine-bg-color)';
  */
 export const FLOAT_SHADOW = 'var(--theme-float-shadow)';
 
+/**
+ * @description 状态图标：提示，压面板底 >= 3
+ */
+export const STATUS_INFO_COLOR = 'var(--theme-status-info-color)';
+
+/**
+ * @description 状态图标：成功，压面板底 >= 3
+ */
+export const STATUS_SUCCESS_COLOR = 'var(--theme-status-success-color)';
+
+/**
+ * @description 状态图标：警告，压面板底 >= 3
+ */
+export const STATUS_WARNING_COLOR = 'var(--theme-status-warning-color)';
+
+/**
+ * @description 状态图标：危险、错误，压面板底 >= 3
+ */
+export const STATUS_DANGER_COLOR = 'var(--theme-status-danger-color)';
+
