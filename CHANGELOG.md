@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/ZCreturn0/hanser-ui/compare/v1.6.1...v1.7.0) (2026-09-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* h-dialog 的 close-on-overlay、close-on-escape、panel-class 改为
+close-on-click-modal、close-on-press-escape、custom-class；h-popover 的
+close-on-escape、show-arrow、panel-class 改为 close-on-press-escape、
+visible-arrow、popper-class，事件 after-show、after-hide 改为 after-enter、after-leave。
+
+### Features
+
+* h-card 描边、圆角、阴影开成样式变量 ([f4dcabb](https://github.com/ZCreturn0/hanser-ui/commit/f4dcabb4486a25d246bb5ab109a11dacd36bc6fd))
+* h-confirm 支持 type 图标、$prompt、beforeClose 和组件外调用 ([691c933](https://github.com/ZCreturn0/hanser-ui/commit/691c9335005b28128ec6bcaff48b77091d6a978c))
+* h-dialog、h-popover 属性和事件改用通行命名，h-dialog 支持 role ([b48d87c](https://github.com/ZCreturn0/hanser-ui/commit/b48d87ce3d0663577707f12021304ed5d2cfcc61))
+* h-tabs 加右侧插槽、手机端等分开关和导航条样式变量 ([8a7bbb6](https://github.com/ZCreturn0/hanser-ui/commit/8a7bbb6451ac516bb36c9e85120edadb3b7e91c1))
+* h-tabs 支持 label 插槽、禁用项和单项 replace ([7d22ff8](https://github.com/ZCreturn0/hanser-ui/commit/7d22ff86e7df0940f3fdb49abd08d317a06c1786))
+* **theme:** 新增状态图标色 ([a2b2cc5](https://github.com/ZCreturn0/hanser-ui/commit/a2b2cc5434eca36168206ac064b1653f72d51319))
+* **theme:** 面板配色收进主题变量，弹窗和气泡变量改为引用面板配色 ([97ce912](https://github.com/ZCreturn0/hanser-ui/commit/97ce912bb881af69b26b2d18901022388e2535cf))
+* 新增 h-card 卡片外壳 ([fd188c6](https://github.com/ZCreturn0/hanser-ui/commit/fd188c621e980e7984734e778bb34c143220609d))
+* 新增 h-confirm 确认框，提供 $confirm / $alert ([5df170b](https://github.com/ZCreturn0/hanser-ui/commit/5df170bf2ba4c4a4004ffed5a27480e1bda52180))
+* 新增 h-tabs 切换栏，支持页面导航条和卡片内下划线两种 ([76fcfa6](https://github.com/ZCreturn0/hanser-ui/commit/76fcfa6401f6608a86130ff1691403471acd25d4))
+* 新增包入口，手机端断点收成常量并在发版前检查 ([d27ceac](https://github.com/ZCreturn0/hanser-ui/commit/d27ceace8300cd315d1758603fb91fe118e9b2f1))
+
+
+### Bug Fixes
+
+* h-button 带类型按钮悬停不再变成主色 ([d2abd74](https://github.com/ZCreturn0/hanser-ui/commit/d2abd74f98ddfe2bf5ae3e9bdd0ca2f7822846c6))
+
 ### [1.6.1](https://github.com/ZCreturn0/hanser-ui/compare/v1.6.0...v1.6.1) (2026-09-23)
 
 
