@@ -10,7 +10,8 @@
         "build-html": "node script/build-html.js",
         "build-theme": "node script/css-to-js.js && node script/build-html.js",
         "add-color": "node script/add-color.js",
-        "release": "standard-version && git push --follow-tags && npm publish"
+        "check-breakpoints": "node script/check-breakpoints.js",
+        "release": "npm run check-breakpoints && standard-version && git push --follow-tags && npm publish"
     },
     "repository": {
         "type": "git",
