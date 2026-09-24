@@ -837,3 +837,143 @@ export const EDITOR_ATTR_HOVER_COLOR = 'var(--theme-editor-attr-hover-color)';
  */
 export const EDITOR_TAG_HOVER_BG_COLOR = 'var(--theme-editor-tag-hover-bg-color)';
 
+/**
+ * @description 面板底色
+ */
+export const SURFACE_BG_COLOR = 'var(--theme-surface-bg-color)';
+
+/**
+ * @description 面板顶栏、工具栏底色
+ */
+export const SURFACE_BAR_BG_COLOR = 'var(--theme-surface-bar-bg-color)';
+
+/**
+ * @description 面板描边色
+ */
+export const SURFACE_BORDER_COLOR = 'var(--theme-surface-border-color)';
+
+/**
+ * @description 面板分割线色，比描边淡一档，给贯穿全高的长线用
+ */
+export const SURFACE_DIVIDER_COLOR = 'var(--theme-surface-divider-color)';
+
+/**
+ * @description 面板正文色
+ */
+export const SURFACE_TEXT_COLOR = 'var(--theme-surface-text-color)';
+
+/**
+ * @description 面板次要文字色
+ */
+export const SURFACE_SECONDARY_TEXT_COLOR = 'var(--theme-surface-secondary-text-color)';
+
+/**
+ * @description 面板强调文字色，强调色压暗（暗夜提亮）到对面板和悬浮底都够 4.5
+ */
+export const SURFACE_LINK_COLOR = 'var(--theme-surface-link-color)';
+
+/**
+ * @description 面板浅悬浮底色：列表行、图标按钮、输入框底
+ */
+export const SURFACE_HOVER_BG_COLOR = 'var(--theme-surface-hover-bg-color)';
+
+/**
+ * @description 面板选中底色
+ */
+export const SURFACE_ACTIVE_BG_COLOR = 'var(--theme-surface-active-bg-color)';
+
+/**
+ * @description 面板胶囊底色：时间、计数这类小标签
+ */
+export const SURFACE_CAPSULE_BG_COLOR = 'var(--theme-surface-capsule-bg-color)';
+
+/**
+ * @description 下拉菜单选项悬浮底色，比面板浅悬浮底深一档
+ */
+export const MENU_HOVER_BG_COLOR = 'var(--theme-menu-hover-bg-color)';
+
+/**
+ * @description 强调色：填充、图标、描边，不直接当正文色
+ */
+export const ACCENT_COLOR = 'var(--theme-accent-color)';
+
+/**
+ * @description 强调色填充上的文字色
+ */
+export const ON_ACCENT_TEXT_COLOR = 'var(--theme-on-accent-text-color)';
+
+/**
+ * @description 未读徽章底色
+ */
+export const UNREAD_BADGE_BG_COLOR = 'var(--theme-unread-badge-bg-color)';
+
+/**
+ * @description 未读徽章字体色
+ */
+export const UNREAD_BADGE_TEXT_COLOR = 'var(--theme-unread-badge-text-color)';
+
+/**
+ * @description 私聊消息区底色
+ */
+export const CHAT_MESSAGE_BG_COLOR = 'var(--theme-chat-message-bg-color)';
+
+/**
+ * @description 私聊自己气泡字体色
+ */
+export const CHAT_SELF_BUBBLE_TEXT_COLOR = 'var(--theme-chat-self-bubble-text-color)';
+
+/**
+ * @description 私聊对方气泡字体色
+ */
+export const CHAT_OTHER_BUBBLE_TEXT_COLOR = 'var(--theme-chat-other-bubble-text-color)';
+
+/**
+ * @description 侧栏菜单悬浮底色
+ */
+export const SIDE_MENU_HOVER_BG_COLOR = 'var(--theme-side-menu-hover-bg-color)';
+
+/**
+ * @description 侧栏菜单选中底色
+ */
+export const SIDE_MENU_ACTIVE_BG_COLOR = 'var(--theme-side-menu-active-bg-color)';
+
+/**
+ * @description 侧栏菜单选中字体色
+ */
+export const SIDE_MENU_ACTIVE_TEXT_COLOR = 'var(--theme-side-menu-active-text-color)';
+
+/**
+ * @description 骨架屏底色，半透明以贴合任意卡片底
+ */
+export const SKELETON_BG_COLOR = 'var(--theme-skeleton-bg-color)';
+
+/**
+ * @description 骨架屏高光色
+ */
+export const SKELETON_SHINE_BG_COLOR = 'var(--theme-skeleton-shine-bg-color)';
+
+/**
+ * @description 浮层阴影
+ */
+export const FLOAT_SHADOW = 'var(--theme-float-shadow)';
+
+/**
+ * @description 状态图标：提示，压面板底 >= 3
+ */
+export const STATUS_INFO_COLOR = 'var(--theme-status-info-color)';
+
+/**
+ * @description 状态图标：成功，压面板底 >= 3
+ */
+export const STATUS_SUCCESS_COLOR = 'var(--theme-status-success-color)';
+
+/**
+ * @description 状态图标：警告，压面板底 >= 3
+ */
+export const STATUS_WARNING_COLOR = 'var(--theme-status-warning-color)';
+
+/**
+ * @description 状态图标：危险、错误，压面板底 >= 3
+ */
+export const STATUS_DANGER_COLOR = 'var(--theme-status-danger-color)';
+

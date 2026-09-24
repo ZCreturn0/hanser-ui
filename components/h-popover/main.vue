@@ -14,13 +14,13 @@
             @focusout="handleReferenceFocusout">
             <slot name="reference" />
         </span>
-        <transition name="h-popover-fade" @after-enter="$emit('after-show')" @after-leave="handleAfterLeave">
+        <transition name="h-popover-fade" @after-enter="$emit('after-enter')" @after-leave="handleAfterLeave">
             <div
                 v-show="isVisible"
                 :id="popoverId"
                 ref="panel"
                 class="h-popover__panel"
-                :class="panelClass"
+                :class="popperClass"
                 :style="panelStyle"
                 :role="role"
                 @click="handlePanelClick"
@@ -29,7 +29,7 @@
                 @focusin="handlePanelMouseenter"
                 @focusout="handlePanelMouseleave">
                 <slot />
-                <span v-if="showArrow" ref="arrow" class="h-popover__arrow" data-popper-arrow></span>
+                <span v-if="visibleArrow" ref="arrow" class="h-popover__arrow" data-popper-arrow></span>
             </div>
         </transition>
     </span>
@@ -86,7 +86,7 @@ export default {
             type: Boolean,
             default: true
         },
-        closeOnEscape: {
+        closeOnPressEscape: {
             type: Boolean,
             default: true
         },
@@ -94,11 +94,11 @@ export default {
             type: Boolean,
             default: false
         },
-        showArrow: {
+        visibleArrow: {
             type: Boolean,
             default: false
         },
-        panelClass: {
+        popperClass: {
             type: [String, Array, Object],
             default: ''
         },
@@ -165,7 +165,7 @@ export default {
         offset() {
             this.recreatePopper();
         },
-        showArrow() {
+        visibleArrow() {
             this.recreatePopper();
         }
     },
@@ -290,7 +290,7 @@ export default {
         handleAfterLeave() {
             if (this.isVisible) return;
             this.destroyPopper();
-            this.$emit('after-hide');
+            this.$emit('after-leave');
         },
         handleDocumentPointerdown(event) {
             if (!this.closeOnOutside || !this.isVisible) return;
@@ -300,7 +300,7 @@ export default {
             this.hide();
         },
         handleDocumentKeydown(event) {
-            if (event.key === 'Escape' && this.closeOnEscape && this.isVisible) {
+            if (event.key === 'Escape' && this.closeOnPressEscape && this.isVisible) {
                 event.preventDefault();
                 this.hide();
             }
@@ -331,7 +331,7 @@ export default {
                     options: { padding: 8 }
                 }
             ];
-            if (this.showArrow) {
+            if (this.visibleArrow) {
                 modifiers.push({
                     name: 'arrow',
                     options: { element: this.$refs.arrow, padding: 8 }

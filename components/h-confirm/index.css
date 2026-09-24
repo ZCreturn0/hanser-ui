@@ -1,0 +1,60 @@
+.h-confirm__body {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.h-confirm__icon {
+    flex: none;
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.h-confirm__icon--info {
+    color: var(--theme-status-info-color, #6b6157);
+}
+
+.h-confirm__icon--success {
+    color: var(--theme-status-success-color, #5a9a28);
+}
+
+.h-confirm__icon--warning {
+    color: var(--theme-status-warning-color, #c27c0e);
+}
+
+.h-confirm__icon--danger {
+    color: var(--theme-status-danger-color, #dc3a48);
+}
+
+.h-confirm__content {
+    flex: 1;
+    min-width: 0;
+}
+
+.h-confirm__message {
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--theme-modal-text-color, #333);
+    word-break: break-word;
+}
+
+.h-confirm__input {
+    margin-top: 12px;
+}
+
+.h-confirm__input > .h-input {
+    display: block;
+    width: 100%;
+}
+
+.h-confirm__error {
+    margin-top: 6px;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--theme-status-danger-color, #dc3a48);
+}

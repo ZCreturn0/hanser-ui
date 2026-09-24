@@ -93,3 +93,28 @@
 .h-button--danger {
     background-color: var(--theme-color-danger);
 }
+
+/* 带类型的按钮悬停保持自己的底色，压一层暗色表示悬停。
+   不写的话会被上面 .h-button:hover 那条同权重规则改成主色 */
+.h-button--success:not(:disabled):hover {
+    background-color: var(--theme-color-success);
+}
+
+.h-button--warning:not(:disabled):hover {
+    background-color: var(--theme-color-warning);
+}
+
+.h-button--message:not(:disabled):hover {
+    background-color: var(--theme-color-message);
+}
+
+.h-button--danger:not(:disabled):hover {
+    background-color: var(--theme-color-danger);
+}
+
+.h-button--success:not(:disabled):hover,
+.h-button--warning:not(:disabled):hover,
+.h-button--message:not(:disabled):hover,
+.h-button--danger:not(:disabled):hover {
+    box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.08);
+}

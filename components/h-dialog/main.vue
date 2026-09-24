@@ -3,9 +3,9 @@
         <div
             ref="panel"
             class="h-dialog__panel"
-            :class="panelClass"
+            :class="customClass"
             :style="panelStyle"
-            role="dialog"
+            :role="role"
             aria-modal="true"
             :aria-labelledby="hasLabel ? titleId : null"
             :aria-label="hasLabel ? null : ariaLabel"
@@ -65,6 +65,11 @@ export default {
             type: String,
             default: '弹窗'
         },
+        // 需要用户确认的弹窗用 alertdialog
+        role: {
+            type: String,
+            default: 'dialog'
+        },
         width: {
             type: [Number, String],
             default: 480
@@ -77,11 +82,11 @@ export default {
             type: [Number, String],
             default: 'calc(100vh - 24px)'
         },
-        closeOnOverlay: {
+        closeOnClickModal: {
             type: Boolean,
             default: true
         },
-        closeOnEscape: {
+        closeOnPressEscape: {
             type: Boolean,
             default: true
         },
@@ -101,7 +106,7 @@ export default {
             type: [Number, String],
             default: 3000
         },
-        panelClass: {
+        customClass: {
             type: [String, Array, Object],
             default: ''
         },
@@ -233,13 +238,13 @@ export default {
             this.requestClose(reason);
         },
         handleOverlayClick() {
-            if (this.closeOnOverlay) {
+            if (this.closeOnClickModal) {
                 this.requestClose('overlay');
             }
         },
         handleKeydown(event) {
             if (!this.visible || openedStack[openedStack.length - 1] !== this) return;
-            if (event.key === 'Escape' && this.closeOnEscape) {
+            if (event.key === 'Escape' && this.closeOnPressEscape) {
                 event.preventDefault();
                 this.requestClose('escape');
             } else if (event.key === 'Tab') {
