@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/ZCreturn0/hanser-ui/compare/v1.7.0...v1.8.0) (2026-10-03)
+
+
+### Features
+
+* h-message 加类型图标，改成自适应宽度的圆角卡片，按实际高度叠放 ([b3071cd](https://github.com/ZCreturn0/hanser-ui/commit/b3071cd746c322304a566e4f1549a5ba6d0e8265))
+
 ## [1.7.0](https://github.com/ZCreturn0/hanser-ui/compare/v1.6.1...v1.7.0) (2026-09-24)
 
 
