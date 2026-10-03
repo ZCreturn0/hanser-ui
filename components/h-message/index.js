@@ -1,10 +1,25 @@
 import HMessage from './main.vue';
 
+const TOP = 20;
+const GAP = 12;
+// 和 index.css 里收起动画的时长一致
+const LEAVE_DURATION = 300;
+
 export const Message = {
     install(Vue) {
         const Constructor = Vue.extend(HMessage);
-        let instances = [];
+        const instances = [];
         let hanserMessageId = 0;
+
+        // 正在关闭的不占位置
+        const openInstances = () => instances.filter((instance) => instance.status !== 'closing');
+        // 按每条的实际高度从上往下排
+        const layout = () => {
+            openInstances().reduce((top, instance) => {
+                instance.$el.style.top = `${top}px`;
+                return top + instance.$el.offsetHeight + GAP;
+            }, TOP);
+        };
 
         Vue.prototype.$message = (options) => {
             let messageOptions = {};
@@ -30,9 +45,8 @@ export const Message = {
             const instance = new Constructor(messageOptions);
             instance.hanserMessageId = hanserMessageId++;
             instance.$mount();
-            // 正在关闭的 message 不计入高度
-            const exsistInstance = instances.filter((instance) => instance.status !== 'closing');
-            instance.$el.style = `top: ${20 + exsistInstance.length * 80}px`;
+            // 先算好位置再挂上去，挂上去之后再改 top 会从最上面滑下来
+            instance.$el.style.top = `${openInstances().reduce((top, item) => top + item.$el.offsetHeight + GAP, TOP)}px`;
             document.body.appendChild(instance.$el);
             instances.push(instance);
             if (!Vue.prototype.ui) {
@@ -45,44 +59,21 @@ export const Message = {
         };
 
         Vue.prototype.$messageClose = (hanserMessageId) => {
-            const index = instances.findIndex((instance) => instance.hanserMessageId === hanserMessageId);
-            const [instance] = instances.slice(index, index + 1);
+            const instance = instances.find((item) => item.hanserMessageId === hanserMessageId);
             // 正在关闭的实例不往下执行
-            if (!instance || (instance && instance.status === 'closing')) return;
+            if (!instance || instance.status === 'closing') return;
             instance.$el.classList.add('h-message-disappear');
             instance.status = 'closing';
-            instances.forEach((instance, instanceIndex) => {
-                if (instanceIndex >= index && instance.status !== 'closing') {
-                    const top = instance.$el.style.top;
-                    instance.$el.style.top = parseInt(top) - 80 + 'px';
-                }
-            });
+            layout();
             setTimeout(() => {
-                // 由于 instances 可能发生了变化，上面获取的 index 在 setTimeout 里失效，需要重新获取
-                const index = instances.findIndex((instance) => instance.hanserMessageId === hanserMessageId);
                 document.body.removeChild(instance.$el);
-                instances.splice(index, 1);
+                instances.splice(instances.indexOf(instance), 1);
                 Vue.prototype.ui.messageCount = instances.length;
-            }, 500);
+            }, LEAVE_DURATION);
         };
 
         Vue.prototype.$messageCloseAll = () => {
-            for (let instance of instances) {
-                if (instance.status !== 'closing') {
-                    instance.$el.classList.add('h-message-disappear');
-                    instance.status = 'closing';
-                    const top = instance.$el.style.top;
-                    instance.$el.style.top = parseInt(top) - 80 + 'px';
-                }
-            }
-            setTimeout(() => {
-                instances.forEach((instance) => {
-                    // 调用 messageCloseAll 后再次弹出 message，这时的 message status 不为 closing
-                    if (instance.status === 'closing') document.body.removeChild(instance.$el);
-                });
-                instances = instances.filter((instance) => instance.status !== 'closing');
-                Vue.prototype.ui.messageCount = instances.length;
-            }, 500);
+            instances.forEach((instance) => Vue.prototype.$messageClose(instance.hanserMessageId));
         };
     }
 };

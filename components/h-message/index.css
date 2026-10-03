@@ -3,19 +3,49 @@
 .h-message {
     position: fixed;
     top: 20px;
-    left: calc(50% - 190px);
+    left: 0;
+    right: 0;
     z-index: 110000;
-    width: 380px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: max-content;
+    max-width: 420px;
+    margin: 0 auto;
     box-sizing: border-box;
-    text-align: left;
-    border-radius: 4px;
-    padding: 15px 15px 15px 20px;
-    transition: top 0.5s ease-in-out;
-    animation: messageAppear 0.5s ease-in-out;
+    padding: 10px 18px 10px 14px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 22px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.14);
+    transition: top 0.3s ease;
+    animation: messageAppear 0.3s ease;
 }
 
 .h-message-disappear {
-    animation: messageDisappear 0.5s ease-in-out;
+    animation: messageDisappear 0.3s ease forwards;
+}
+
+.h-message__icon {
+    flex: none;
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* 点比线略粗，按线宽画会显得太细 */
+.h-message__dot {
+    fill: currentColor;
+    stroke: none;
+}
+
+.h-message__text {
+    min-width: 0;
+    word-break: break-word;
 }
 
 .message-type--success {
@@ -40,7 +70,6 @@
 
 @media screen and (max-width: 750px) {
     .h-message {
-        left: 5%;
-        width: 90%;
+        max-width: calc(100% - 32px);
     }
 }
