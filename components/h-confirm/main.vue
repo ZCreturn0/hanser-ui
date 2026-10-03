@@ -14,41 +14,18 @@
         role="alertdialog"
         @close="handleAction(distinguishCancelAndClose ? 'close' : 'cancel')"
         @closed="$emit('closed')">
-        <div class="h-confirm__body">
-            <svg
-                v-if="iconType"
-                class="h-confirm__icon"
-                :class="`h-confirm__icon--${iconType}`"
-                viewBox="0 0 24 24"
-                aria-hidden="true">
-                <template v-if="iconType === 'warning'">
-                    <path d="M12 3.5 21 19.5H3Z" />
-                    <path d="M12 10v4.5" />
-                    <circle cx="12" cy="17" r="0.6" />
-                </template>
-                <template v-else>
-                    <circle cx="12" cy="12" r="9" />
-                    <path v-if="iconType === 'success'" d="M8 12.5 11 15.5 16.5 9.5" />
-                    <path v-else-if="iconType === 'danger'" d="M9 9l6 6M15 9l-6 6" />
-                    <template v-else>
-                        <path d="M12 11v5.5" />
-                        <circle cx="12" cy="7.8" r="0.6" />
-                    </template>
-                </template>
-            </svg>
-            <div class="h-confirm__content">
-                <div v-if="dangerouslyUseHTMLString" class="h-confirm__message" v-html="message"></div>
-                <div v-else class="h-confirm__message">{{ message }}</div>
-                <div v-if="showInput" class="h-confirm__input">
-                    <h-input
-                        ref="input"
-                        v-model="inputValue"
-                        size="small"
-                        :type="inputType"
-                        :placeholder="inputPlaceholder"
-                        @enter-press="handleAction('confirm')" />
-                    <div v-if="editorErrorMessage" class="h-confirm__error">{{ editorErrorMessage }}</div>
-                </div>
+        <div class="h-confirm__content">
+            <div v-if="dangerouslyUseHTMLString" class="h-confirm__message" v-html="message"></div>
+            <div v-else class="h-confirm__message">{{ message }}</div>
+            <div v-if="showInput" class="h-confirm__input">
+                <h-input
+                    ref="input"
+                    v-model="inputValue"
+                    size="small"
+                    :type="inputType"
+                    :placeholder="inputPlaceholder"
+                    @enter-press="handleAction('confirm')" />
+                <div v-if="editorErrorMessage" class="h-confirm__error">{{ editorErrorMessage }}</div>
             </div>
         </div>
         <template #foot>
@@ -72,14 +49,6 @@
 import HDialog from '../h-dialog/main.vue';
 import HButton from '../h-button/main.vue';
 import HInput from '../h-input/main.vue';
-
-const ICON_TYPES = {
-    info: 'info',
-    success: 'success',
-    warning: 'warning',
-    error: 'danger',
-    danger: 'danger'
-};
 
 export default {
     name: 'h-confirm',
@@ -121,9 +90,6 @@ export default {
         };
     },
     computed: {
-        iconType() {
-            return ICON_TYPES[this.type] || '';
-        },
         confirmType() {
             return this.confirmButtonType || (this.type === 'danger' ? 'danger' : 'primary');
         }

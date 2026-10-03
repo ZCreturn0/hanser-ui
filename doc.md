@@ -108,7 +108,7 @@ import { confirm, alert, prompt } from 'hanser-ui/components/h-confirm';
 
 | 选项                      | 说明                                                                                                    | 类型            | 默认值                                |
 | ------------------------- | ------------------------------------------------------------------------------------------------------- | --------------- | ------------------------------------- |
-| type                      | 图标：`info`、`success`、`warning`、`error`；`danger` 同 `error` 的图标，确定按钮同时变红               | String          | -                                     |
+| type                      | 只有 `danger` 有效果：确定按钮变红；`info`、`success`、`warning`、`error` 照旧能传，不影响显示          | String          | -                                     |
 | confirmButtonText         | 确定按钮文字                                                                                            | String          | 确定                                  |
 | cancelButtonText          | 取消按钮文字                                                                                            | String          | 取消                                  |
 | confirmButtonType         | 确定按钮类型，同 h-button 的 `type`                                                                     | String          | primary，`type` 为 danger 时是 danger |
