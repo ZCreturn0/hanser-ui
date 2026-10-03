@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.9.0](https://github.com/ZCreturn0/hanser-ui/compare/v1.8.0...v1.9.0) (2026-10-03)
+
+
+### Features
+
+* h-confirm 去掉类型图标，type 只用来把确定按钮变红 ([b1978d2](https://github.com/ZCreturn0/hanser-ui/commit/b1978d2e6618b39e0156d9eb7f3a743c920a92e4))
+
 ## [1.8.0](https://github.com/ZCreturn0/hanser-ui/compare/v1.7.0...v1.8.0) (2026-10-03)
 
 
