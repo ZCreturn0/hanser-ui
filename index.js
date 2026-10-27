@@ -4,6 +4,7 @@ export { default as HButton } from './components/h-button';
 export { default as HCard } from './components/h-card';
 export { Confirm, confirm, alert, prompt } from './components/h-confirm';
 export { default as HDialog } from './components/h-dialog';
+export { default as HDrawer } from './components/h-drawer';
 export { default as HInput } from './components/h-input';
 export { Message } from './components/h-message';
 export { default as HModal } from './components/h-modal';
