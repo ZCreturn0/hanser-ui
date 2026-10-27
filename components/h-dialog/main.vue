@@ -1,5 +1,5 @@
 <template>
-    <div v-show="visible" ref="root" class="h-dialog" :style="rootStyle" @click.self="handleOverlayClick">
+    <div v-show="visible" ref="root" class="h-dialog" :style="rootStyle" @mousedown.self="handleOverlayMousedown">
         <div
             ref="panel"
             class="h-dialog__panel"
@@ -238,10 +238,11 @@ export default {
         close(reason = 'api') {
             this.requestClose(reason);
         },
-        handleOverlayClick() {
-            if (this.closeOnClickModal) {
-                this.requestClose('overlay');
-            }
+        // 按下就关：在面板里拖选文字、松手落到遮罩上不会误关。拦住默认动作，免得焦点刚还回入口又被这次按下挪到 body
+        handleOverlayMousedown(event) {
+            if (!this.closeOnClickModal) return;
+            event.preventDefault();
+            this.requestClose('overlay');
         },
         handleKeydown(event) {
             if (!this.visible || openedStack[openedStack.length - 1] !== this) return;
