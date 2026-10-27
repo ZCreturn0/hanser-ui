@@ -269,7 +269,11 @@ export default {
             }
             const first = focusable[0];
             const last = focusable[focusable.length - 1];
-            if (event.shiftKey && (document.activeElement === first || document.activeElement === panel)) {
+            const current = document.activeElement;
+            // 打开时落焦的元素可能排在第一个可聚焦元素前面（比如带 data-autofocus 的外层），从那里往回 Tab 也要绕到最后一个
+            const beforeFirst =
+                current === first || Boolean(first.compareDocumentPosition(current) & Node.DOCUMENT_POSITION_PRECEDING);
+            if (event.shiftKey && panel.contains(current) && beforeFirst) {
                 event.preventDefault();
                 last.focus();
             } else if (
@@ -299,7 +303,7 @@ export default {
             this.$nextTick(() => {
                 const panel = this.$refs.panel;
                 if (!panel || panel.contains(document.activeElement)) return;
-                const autofocus = panel.querySelector('[autofocus]');
+                const autofocus = panel.querySelector('[autofocus], [data-autofocus]');
                 (autofocus || panel).focus();
             });
         },
