@@ -7,8 +7,8 @@
             :style="panelStyle"
             :role="role"
             aria-modal="true"
-            :aria-labelledby="hasLabel ? titleId : null"
-            :aria-label="hasLabel ? null : ariaLabel"
+            :aria-labelledby="ariaLabel || !hasLabel ? null : titleId"
+            :aria-label="ariaLabel || (hasLabel ? null : '弹窗')"
             tabindex="-1">
             <div class="h-dialog__main">
                 <div v-if="showHeader" class="h-dialog__head">
@@ -61,9 +61,10 @@ export default {
             type: String,
             default: ''
         },
+        // 传了就优先用：标题区里常放按钮，拿它当名称会把按钮文字也念出来；都没有时兜底叫「弹窗」
         ariaLabel: {
             type: String,
-            default: '弹窗'
+            default: ''
         },
         // 需要用户确认的弹窗用 alertdialog
         role: {
