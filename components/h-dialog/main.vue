@@ -240,7 +240,8 @@ export default {
         },
         // 按下就关：在面板里拖选文字、松手落到遮罩上不会误关。拦住默认动作，免得焦点刚还回入口又被这次按下挪到 body
         handleOverlayMousedown(event) {
-            if (!this.closeOnClickModal) return;
+            // 只认左键：右键、中键按在遮罩上不关，右键菜单这些默认动作也照常
+            if (!this.closeOnClickModal || event.button !== 0) return;
             event.preventDefault();
             this.requestClose('overlay');
         },
