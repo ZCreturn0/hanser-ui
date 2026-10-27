@@ -246,7 +246,10 @@ export default {
         },
         handleKeydown(event) {
             if (!this.visible || openedStack[openedStack.length - 1] !== this) return;
-            if (event.key === 'Escape' && this.closeOnPressEscape) {
+            if (event.key === 'Escape' || event.key === 'Esc') {
+                // 输入法组字时的 Esc 是取消候选词（Safari 组字时 isComposing 不可靠，要再看 keyCode 229）；里面已经拦下的也不关
+                const composing = event.isComposing || event.keyCode === 229;
+                if (!this.closeOnPressEscape || composing || event.defaultPrevented) return;
                 event.preventDefault();
                 this.requestClose('escape');
             } else if (event.key === 'Tab') {
