@@ -11,7 +11,11 @@
             @focusout="handleReferenceFocusout">
             <slot name="reference" />
         </span>
-        <transition :name="transition" @after-enter="$emit('after-enter')" @after-leave="handleAfterLeave">
+        <transition
+            :name="transition"
+            @before-enter="handleBeforeEnter"
+            @after-enter="$emit('after-enter')"
+            @after-leave="handleAfterLeave">
             <!-- destroy-on-close 时面板随开关增删，里面的内容每次重建；否则面板一直留着，只切显示 -->
             <div
                 v-if="destroyOnClose && isVisible"
@@ -41,7 +45,7 @@
 </template>
 
 <script>
-import { createPopper } from '@popperjs/core';
+import { createPopper, detectOverflow } from '@popperjs/core';
 
 const validTriggers = ['click', 'hover', 'manual'];
 
@@ -54,6 +58,29 @@ function isEscapeKey(event) {
 function isComposing(event) {
     return event.isComposing || event.keyCode === 229;
 }
+
+const oppositeSide = { top: 'bottom', bottom: 'top', left: 'right', right: 'left' };
+
+// 外部参照物照发帖框原来的摆法：首选那侧放不下、对面更宽敞就翻（对面也放不下照样翻），对齐方式不换，横向放不下交给收进视口平移
+const roomierSide = {
+    name: 'roomierSide',
+    phase: 'main',
+    requiresIfExists: ['offset'],
+    data: { _skip: false },
+    fn({ state, name }) {
+        if (state.modifiersData[name]._skip) return;
+        const [side, align] = state.placement.split('-');
+        const opposite = oppositeSide[side];
+        if (!opposite) return;
+        const lack = detectOverflow(state, { placement: state.placement })[side];
+        if (lack <= 0) return;
+        const flipped = align ? `${opposite}-${align}` : opposite;
+        if (detectOverflow(state, { placement: flipped })[opposite] >= lack) return;
+        state.modifiersData[name]._skip = true;
+        state.placement = flipped;
+        state.reset = true;
+    }
+};
 
 export default {
     name: 'h-popover',
@@ -234,6 +261,7 @@ export default {
             if (value) this.hide();
         },
         placement() {
+            this.lastPlacement = '';
             this.recreatePopper();
         },
         offset() {
@@ -252,6 +280,8 @@ export default {
         this.focusBeforeOpen = null;
         this.resizeObserver = null;
         this.followBound = false;
+        this.lastPlacement = '';
+        this.hoverSuppressed = false;
     },
     mounted() {
         this.moveToBody();
@@ -261,6 +291,7 @@ export default {
     },
     beforeDestroy() {
         this.clearTimers();
+        this.releaseHover();
         this.removeDocumentListeners();
         this.unfollowReference();
         this.destroyPopper();
@@ -346,10 +377,29 @@ export default {
             if (this.trigger === 'click') this.toggle();
         },
         handleReferenceMouseenter() {
-            if (this.trigger === 'hover') this.scheduleShow();
+            if (this.trigger === 'hover' && !this.hoverSuppressed) this.scheduleShow();
         },
         handleReferenceMouseleave() {
-            if (this.trigger === 'hover') this.scheduleHide();
+            if (this.trigger !== 'hover') return;
+            this.releaseHover();
+            this.scheduleHide();
+        },
+        // 悬停打开的气泡被 Esc 关掉时鼠标多半还在触发元素上，面板盖着它的话一撤掉浏览器就补发 mouseenter；等鼠标离开再允许悬停打开
+        suppressHover() {
+            if (this.trigger !== 'hover') return;
+            this.hoverSuppressed = true;
+            document.addEventListener('mousemove', this.handleSuppressedMousemove, true);
+        },
+        // 鼠标已经不在触发元素上（比如 Esc 时停在没盖住它的面板上），下次移进来照常打开
+        handleSuppressedMousemove(event) {
+            const reference = this.$refs.reference;
+            if (reference && reference.contains(event.target)) return;
+            this.releaseHover();
+        },
+        releaseHover() {
+            if (!this.hoverSuppressed) return;
+            this.hoverSuppressed = false;
+            document.removeEventListener('mousemove', this.handleSuppressedMousemove, true);
         },
         handleReferenceFocusin() {
             if (this.trigger === 'hover') this.scheduleShow();
@@ -374,12 +424,14 @@ export default {
             event.stopPropagation();
             event.preventDefault();
             this.closeReason = 'escape';
+            this.suppressHover();
             this.hide();
         },
         handleVisibilityChange(value) {
             this.clearTimers();
             if (value) {
                 this.closeReason = '';
+                this.releaseHover();
                 this.focusBeforeOpen = document.activeElement;
                 this.addDocumentListeners();
                 this.$nextTick(() => {
@@ -391,12 +443,21 @@ export default {
             } else {
                 const before = this.focusBeforeOpen;
                 this.focusBeforeOpen = null;
+                const panel = this.$refs.panel;
+                const placed = panel && panel.getAttribute('data-popper-placement');
+                if (placed) this.lastPlacement = placed;
                 this.removeDocumentListeners();
                 this.unfollowReference();
                 if (this.shouldReturnFocus && this.closeReason !== 'outside') {
                     this.restoreFocus(this.$refs.panel, before);
                 }
                 this.$emit('hide');
+            }
+        },
+        // 滑入方向靠 data-popper-placement，popper 量完尺寸才写它，那时进场样式已按没有位移算过、滑入看不出来，所以一插进来先按上次弹出的方向写上
+        handleBeforeEnter(el) {
+            if (!el.hasAttribute('data-popper-placement')) {
+                el.setAttribute('data-popper-placement', this.lastPlacement || this.placement);
             }
         },
         handleAfterLeave(el) {
@@ -418,11 +479,12 @@ export default {
             this.closeReason = 'outside';
             this.hide();
         },
-        // 焦点不在面板里：页面上按 Esc 也关，鼠标点开的菜单焦点多半还在 body 上；里面已经拦下的不关
+        // 焦点不在面板里：页面上按 Esc 也关，鼠标点开的菜单焦点多半还在 body 上；里面已经拦下的不关，打开就移进焦点的面板只认面板里的 Esc，焦点被挪出去是用户自己走开了
         handleDocumentKeydown(event) {
             if (!isEscapeKey(event) || isComposing(event) || event.defaultPrevented) return;
-            if (!this.closeOnPressEscape || !this.isVisible) return;
+            if (!this.closeOnPressEscape || !this.isVisible || this.autofocus) return;
             this.closeReason = 'escape';
+            this.suppressHover();
             this.hide();
         },
         // Esc 挂在 html 上且不拦默认动作：先于 document 上的弹窗、抽屉跑完又不影响它们，开在里面时照旧一起关
@@ -472,10 +534,13 @@ export default {
         // 两种锚法都交给 popper 翻转、收进视口，离视口边 8px；位置一律不写 transform，自定义过渡要用它
         popperOptions() {
             const external = this.isExternal;
+            // 外部参照物改用 roomierSide 翻面，只有 auto 系列要靠 flip 挑方向
+            const roomier = external && this.placement.indexOf('auto') !== 0;
             const modifiers = [
                 { name: 'offset', options: { offset: [0, this.offset] } },
                 // 外部参照物首选那侧只要放得下就不翻，离视口边不够 8px 的部分由下面收进视口时让出来
-                { name: 'flip', options: { padding: external ? 0 : 8 } },
+                { name: 'flip', enabled: !roomier, options: { padding: external ? 0 : 8 } },
+                Object.assign({}, roomierSide, { enabled: roomier }),
                 // altAxis：上下都放不下时也收进视口，不然会伸出视口。外部参照物被滚出视口时面板停在视口边上，不跟着出去
                 { name: 'preventOverflow', options: { padding: 8, altAxis: true, tether: !external } },
                 {
