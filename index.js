@@ -12,4 +12,5 @@ export { default as HModal } from './components/h-modal';
 export { default as HPicker } from './components/h-picker';
 export { default as HPopover } from './components/h-popover';
 export { HRadio, HRadioGroup } from './components/h-radio';
+export { default as HSwitch } from './components/h-switch';
 export { default as HTabs } from './components/h-tabs';
