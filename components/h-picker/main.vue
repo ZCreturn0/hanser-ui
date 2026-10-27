@@ -161,7 +161,10 @@ export default {
                 clearTimeout(this.timers[ci]);
                 // 惯性滚动没有接口能叫停，临时禁止滚动能打断它
                 el.style.overflowY = 'hidden';
-                const item = column[this.nearest(ci, Math.round(el.scrollTop / this.itemHeight))];
+                const at = Math.round(el.scrollTop / this.itemHeight);
+                // 停在选中项上的列不动：选中项开着时过期变成不可选，该由外面决定怎么办，不能替用户换成别的
+                if (at === this.indexes[ci]) return;
+                const item = column[this.nearest(ci, at)];
                 if (!item || item.value === values[ci]) return;
                 // 多列一起落定时，后一列要带上前一列刚定的值，不能等外面把 value 传回来
                 values = values.map((value, k) => (k === ci ? item.value : value));
