@@ -1,0 +1,64 @@
+.h-picker {
+    position: relative;
+    display: flex;
+}
+
+/* 选中位的底色条，不挡滚动和点击 */
+.h-picker__band {
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: var(--h-picker-item-height);
+    border-radius: 10px;
+    background-color: var(--theme-menu-hover-bg-color);
+    pointer-events: none;
+}
+
+.h-picker__column {
+    position: relative;
+    flex: 1;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+    outline: none;
+    -webkit-mask-image: linear-gradient(to bottom, transparent, currentColor 32%, currentColor 68%, transparent);
+    mask-image: linear-gradient(to bottom, transparent, currentColor 32%, currentColor 68%, transparent);
+}
+
+.h-picker__column::-webkit-scrollbar {
+    display: none;
+}
+
+.h-picker__item {
+    height: var(--h-picker-item-height);
+    color: var(--theme-surface-secondary-text-color);
+    font-size: 16px;
+    line-height: var(--h-picker-item-height);
+    text-align: center;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+    scroll-snap-align: center;
+    cursor: pointer;
+}
+
+.h-picker__item--selected {
+    color: var(--theme-surface-text-color);
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* 焦点框画在选中项上：整列四周在上下渐隐里看不清 */
+.h-picker__column:focus-visible .h-picker__item--selected {
+    border-radius: 10px;
+    outline: 2px solid var(--theme-surface-link-color);
+    outline-offset: -2px;
+}
+
+/* 不可选的项不画删除线，直接隐去，位置留着，滚到那里会弹回最近能选的 */
+.h-picker__item--disabled {
+    visibility: hidden;
+    pointer-events: none;
+}

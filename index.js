@@ -8,6 +8,7 @@ export { default as HDrawer } from './components/h-drawer';
 export { default as HInput } from './components/h-input';
 export { Message } from './components/h-message';
 export { default as HModal } from './components/h-modal';
+export { default as HPicker } from './components/h-picker';
 export { default as HPopover } from './components/h-popover';
 export { HRadio, HRadioGroup } from './components/h-radio';
 export { default as HTabs } from './components/h-tabs';
