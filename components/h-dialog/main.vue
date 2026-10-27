@@ -1,5 +1,5 @@
 <template>
-    <div v-show="visible" ref="root" class="h-dialog" :style="rootStyle" @click.self="handleOverlayClick">
+    <div v-show="visible" ref="root" class="h-dialog" :style="rootStyle" @mousedown.self="handleOverlayMousedown">
         <div
             ref="panel"
             class="h-dialog__panel"
@@ -7,8 +7,8 @@
             :style="panelStyle"
             :role="role"
             aria-modal="true"
-            :aria-labelledby="hasLabel ? titleId : null"
-            :aria-label="hasLabel ? null : ariaLabel"
+            :aria-labelledby="ariaLabel || !hasLabel ? null : titleId"
+            :aria-label="ariaLabel || (hasLabel ? null : '弹窗')"
             tabindex="-1">
             <div class="h-dialog__main">
                 <div v-if="showHeader" class="h-dialog__head">
@@ -61,9 +61,10 @@ export default {
             type: String,
             default: ''
         },
+        // 传了就优先用：标题区里常放按钮，拿它当名称会把按钮文字也念出来；都没有时兜底叫「弹窗」
         ariaLabel: {
             type: String,
-            default: '弹窗'
+            default: ''
         },
         // 需要用户确认的弹窗用 alertdialog
         role: {
@@ -237,14 +238,19 @@ export default {
         close(reason = 'api') {
             this.requestClose(reason);
         },
-        handleOverlayClick() {
-            if (this.closeOnClickModal) {
-                this.requestClose('overlay');
-            }
+        // 按下就关：在面板里拖选文字、松手落到遮罩上不会误关。拦住默认动作，免得焦点刚还回入口又被这次按下挪到 body
+        handleOverlayMousedown(event) {
+            // 只认左键：右键、中键按在遮罩上不关，右键菜单这些默认动作也照常
+            if (!this.closeOnClickModal || event.button !== 0) return;
+            event.preventDefault();
+            this.requestClose('overlay');
         },
         handleKeydown(event) {
             if (!this.visible || openedStack[openedStack.length - 1] !== this) return;
-            if (event.key === 'Escape' && this.closeOnPressEscape) {
+            if (event.key === 'Escape' || event.key === 'Esc') {
+                // 输入法组字时的 Esc 是取消候选词（Safari 组字时 isComposing 不可靠，要再看 keyCode 229）；里面已经拦下的也不关
+                const composing = event.isComposing || event.keyCode === 229;
+                if (!this.closeOnPressEscape || composing || event.defaultPrevented) return;
                 event.preventDefault();
                 this.requestClose('escape');
             } else if (event.key === 'Tab') {
@@ -264,7 +270,11 @@ export default {
             }
             const first = focusable[0];
             const last = focusable[focusable.length - 1];
-            if (event.shiftKey && (document.activeElement === first || document.activeElement === panel)) {
+            const current = document.activeElement;
+            // 打开时落焦的元素可能排在第一个可聚焦元素前面（比如带 data-autofocus 的外层），从那里往回 Tab 也要绕到最后一个
+            const beforeFirst =
+                current === first || Boolean(first.compareDocumentPosition(current) & Node.DOCUMENT_POSITION_PRECEDING);
+            if (event.shiftKey && panel.contains(current) && beforeFirst) {
                 event.preventDefault();
                 last.focus();
             } else if (
@@ -294,7 +304,7 @@ export default {
             this.$nextTick(() => {
                 const panel = this.$refs.panel;
                 if (!panel || panel.contains(document.activeElement)) return;
-                const autofocus = panel.querySelector('[autofocus]');
+                const autofocus = panel.querySelector('[autofocus], [data-autofocus]');
                 (autofocus || panel).focus();
             });
         },

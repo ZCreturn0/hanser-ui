@@ -1,0 +1,61 @@
+.h-stepper {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    color: var(--theme-surface-secondary-text-color);
+    font-size: 13px;
+}
+
+.h-stepper__value {
+    min-width: 52px;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+}
+
+.h-stepper__btn {
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: 0;
+    border-radius: 6px;
+    background: none;
+    color: var(--theme-surface-secondary-text-color);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.h-stepper__btn:hover:not(:disabled) {
+    background-color: var(--theme-surface-active-bg-color);
+    color: var(--theme-surface-text-color);
+}
+
+/* 到头了就藏起来，不留一个点不动的按钮 */
+.h-stepper__btn:disabled {
+    visibility: hidden;
+}
+
+.h-stepper--disabled .h-stepper__btn {
+    visibility: visible;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.h-stepper__minus {
+    width: 10px;
+    height: 1.5px;
+    border-radius: 1px;
+    background-color: currentColor;
+}
+
+/* 加号画在组件里，组件库不能指望使用方页面带着图标样式；大小跟按钮字号走 */
+.h-stepper__plus {
+    width: 1em;
+    height: 1em;
+    background-color: currentColor;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 5v14M5 12h14'/%3E%3C/svg%3E")
+        center / contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 5v14M5 12h14'/%3E%3C/svg%3E")
+        center / contain no-repeat;
+}

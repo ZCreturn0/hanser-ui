@@ -1,0 +1,71 @@
+.h-tag {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+/* 压在右上角的小圆标，平时不占眼，鼠标停在标签上或焦点走进来才出现 */
+.h-tag__close {
+    position: absolute;
+    top: -7px;
+    right: -8px;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--theme-surface-secondary-text-color);
+    box-shadow: 0 0 0 2px var(--theme-surface-bg-color);
+    color: var(--theme-surface-bg-color);
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease, background-color 0.15s ease;
+}
+
+/* 圆标太小，点击范围往外撑一圈 */
+.h-tag__close::before {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+}
+
+/* 字体图标缩到 10px 太虚，单画一个粗一点的 × */
+.h-tag__close-icon {
+    width: 10px;
+    height: 10px;
+    background-color: currentColor;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='4' stroke-linecap='round'%3E%3Cpath d='M5 5l14 14M19 5L5 19'/%3E%3C/svg%3E")
+        center / contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='4' stroke-linecap='round'%3E%3Cpath d='M5 5l14 14M19 5L5 19'/%3E%3C/svg%3E")
+        center / contain no-repeat;
+}
+
+.h-tag:hover .h-tag__close,
+.h-tag:focus-within .h-tag__close {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.h-tag__close:hover {
+    background-color: var(--theme-surface-text-color);
+}
+
+/* 没有鼠标悬停的设备找不到它，一直显示 */
+@media (hover: none) {
+    .h-tag__close {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .h-tag__close {
+        transition: none;
+    }
+}

@@ -1,0 +1,91 @@
+/* 根节点留在原处只占位，不参与布局 */
+.h-drawer {
+    display: contents;
+}
+
+.h-drawer__mask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background-color: var(--theme-modal-bg-color);
+}
+
+.h-drawer__mask--btt {
+    align-items: flex-end;
+}
+
+.h-drawer__panel {
+    display: flex;
+    flex-direction: column;
+    max-height: 88vh;
+    background-color: var(--theme-surface-bg-color);
+    color: var(--theme-surface-text-color);
+    box-shadow: var(--theme-float-shadow);
+    outline: none;
+    overscroll-behavior: contain;
+}
+
+.h-drawer__mask--btt .h-drawer__panel {
+    width: 100%;
+    padding-bottom: env(safe-area-inset-bottom);
+    border-radius: 16px 16px 0 0;
+}
+
+.h-drawer__head {
+    display: flex;
+    flex: none;
+    align-items: center;
+    min-height: 52px;
+    padding: 4px 8px 0 20px;
+    box-sizing: border-box;
+}
+
+.h-drawer__title {
+    flex: 1;
+    min-width: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* 内容自己分头部和滚动区时，靠这里一路传下去的高度上限才滚得起来 */
+.h-drawer__body {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    min-height: 0;
+    max-height: inherit;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.h-drawer-enter-active,
+.h-drawer-leave-active {
+    transition: opacity 0.18s ease;
+}
+
+.h-drawer-enter-active .h-drawer__panel,
+.h-drawer-leave-active .h-drawer__panel {
+    transition: transform 0.22s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.h-drawer-enter,
+.h-drawer-leave-to {
+    opacity: 0;
+}
+
+.h-drawer__mask--btt.h-drawer-enter .h-drawer__panel,
+.h-drawer__mask--btt.h-drawer-leave-to .h-drawer__panel {
+    transform: translateY(32%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .h-drawer-enter-active,
+    .h-drawer-leave-active,
+    .h-drawer-enter-active .h-drawer__panel,
+    .h-drawer-leave-active .h-drawer__panel {
+        transition: none;
+    }
+}

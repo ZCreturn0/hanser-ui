@@ -1,0 +1,112 @@
+.h-calendar__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32px;
+}
+
+.h-calendar__title {
+    font-size: 14px;
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+}
+
+.h-calendar__nav {
+    display: grid;
+    place-items: center;
+    flex: none;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border: 0;
+    border-radius: 8px;
+    background: none;
+    color: var(--theme-surface-secondary-text-color);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.h-calendar__nav:hover {
+    background-color: var(--theme-surface-active-bg-color);
+    color: var(--theme-surface-text-color);
+}
+
+.h-calendar__nav:disabled {
+    visibility: hidden;
+}
+
+/* 翻页图标画在组件里，组件库不能指望使用方页面带着图标样式；线条跟字色，大小跟字号 */
+.h-calendar__icon {
+    width: 1em;
+    height: 1em;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.h-calendar__grid {
+    display: grid;
+    grid-template-columns: repeat(7, var(--h-calendar-cell-width, 36px));
+}
+
+.h-calendar__weekday {
+    height: 28px;
+    color: var(--theme-surface-secondary-text-color);
+    font-size: 12px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.h-calendar__blank {
+    height: 32px;
+}
+
+.h-calendar__day {
+    display: grid;
+    place-items: center;
+    height: 32px;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--theme-surface-text-color);
+    font: inherit;
+    font-size: 13px;
+    font-variant-numeric: tabular-nums;
+    cursor: pointer;
+}
+
+.h-calendar__day-label {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+}
+
+.h-calendar__day:hover .h-calendar__day-label {
+    background-color: var(--theme-surface-active-bg-color);
+}
+
+/* 悬停、今天、选中、置灰这几条同权重，靠先后顺序生效：选中的底色压过悬停，置灰压过前面所有 */
+.h-calendar__day.h-calendar__day--today .h-calendar__day-label {
+    font-weight: 600;
+}
+
+.h-calendar__day.h-calendar__day--selected .h-calendar__day-label {
+    background-color: var(--theme-bg-primary);
+    color: var(--theme-text-color-white);
+    font-weight: 600;
+}
+
+/* 置灰不靠透明度（对比度会掉到 3 以下），换成次要色 */
+.h-calendar__day:disabled {
+    cursor: not-allowed;
+}
+
+.h-calendar__day:disabled .h-calendar__day-label {
+    background: none;
+    color: var(--theme-surface-secondary-text-color);
+    font-weight: 400;
+}
