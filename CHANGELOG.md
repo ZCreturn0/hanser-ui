@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.10.0](https://github.com/ZCreturn0/hanser-ui/compare/v1.9.0...v1.10.0) (2026-10-27)
+
+
+### Features
+
+* h-dialog 打开时也认 data-autofocus ([a204c65](https://github.com/ZCreturn0/hanser-ui/commit/a204c658221a4f0b850d6ffe86e3ac1e61302fec))
+* h-popover 支持用 reference 指定参照元素，新增焦点管理、关闭即销毁和滑入过渡 ([0d92f4c](https://github.com/ZCreturn0/hanser-ui/commit/0d92f4c245e3ec6098300d2e5331a239ecb53726))
+* 新增 h-calendar 月历 ([139043c](https://github.com/ZCreturn0/hanser-ui/commit/139043c8ef49d4afc90f6efc3c6cc3f144c33476))
+* 新增 h-drawer 底部弹层 ([ee11c54](https://github.com/ZCreturn0/hanser-ui/commit/ee11c54ffb96107dbf0c5460a65f8156b6436bb5))
+* 新增 h-picker 滚轮选择 ([1911761](https://github.com/ZCreturn0/hanser-ui/commit/1911761d94b015b35a2a7d5a3f132152896b2a0c))
+* 新增 h-stepper 数字步进 ([0fc1825](https://github.com/ZCreturn0/hanser-ui/commit/0fc1825f646f254348ad8b96c4c61b5485dad5c4))
+* 新增 h-switch 开关 ([a3782b0](https://github.com/ZCreturn0/hanser-ui/commit/a3782b07ed59a4936bf2fb7136ee119365eb29f4))
+* 新增 h-tag 标签 ([5adf65e](https://github.com/ZCreturn0/hanser-ui/commit/5adf65e4b34f377d6c63a44df9b7f0e7f86c3207))
+
+
+### Bug Fixes
+
+* h-dialog 传了 aria-label 就优先用 ([5896efe](https://github.com/ZCreturn0/hanser-ui/commit/5896efee6ac2b7423a75b93d0245badb9eb0aad1))
+* h-dialog 只在左键按下遮罩时关闭 ([a928ad6](https://github.com/ZCreturn0/hanser-ui/commit/a928ad658f98e68b3ee7e6bbd972c3c6cb09b927))
+* h-dialog 点遮罩改成在遮罩上按下就关 ([4f53643](https://github.com/ZCreturn0/hanser-ui/commit/4f536437e18fbed6dcdfbde1f968dc5b9656f468))
+* h-dialog 输入法组字时和 Esc 已被里面拦下时不关 ([7a235b8](https://github.com/ZCreturn0/hanser-ui/commit/7a235b8375af52461f763c1c0aab706b220057cf))
+* h-picker confirm() 不替停在选中项上的列换值 ([7102a80](https://github.com/ZCreturn0/hanser-ui/commit/7102a8053d7bded0ce58eb6db80bd0d3cb2a30e6))
+* h-popover 带参照物时按原来的规则翻面，滑入方向开场就写好，悬停气泡被 Esc 关掉后不再立刻弹出 ([eb1d6e7](https://github.com/ZCreturn0/hanser-ui/commit/eb1d6e7df12226a9537da1619dbdf949ab899564))
+
 ## [1.9.0](https://github.com/ZCreturn0/hanser-ui/compare/v1.8.0...v1.9.0) (2026-10-03)
 
 
