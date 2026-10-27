@@ -15,3 +15,4 @@ export { HRadio, HRadioGroup } from './components/h-radio';
 export { default as HStepper } from './components/h-stepper';
 export { default as HSwitch } from './components/h-switch';
 export { default as HTabs } from './components/h-tabs';
+export { default as HTag } from './components/h-tag';
